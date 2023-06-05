@@ -7,7 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      custom: ["Raleway"],
+      custom: ["Raleway", "Sans"],
+      title: ["Playfair"],
     },
     colors: {
       // Configure your color palette here

@@ -9,6 +9,7 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsCartDash, BsSearch } from "react-icons/bs";
+import { GrFacebookOption } from "react-icons/gr";
 
 interface NavItem {
   label: string;
@@ -25,21 +26,21 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "biancafe",
   },
   {
-    label: "FOR BUSINESS",
-    page: "business",
-  },
-  {
     label: "SHOP",
     page: "shop",
+  },
+  {
+    label: "FOR BUSINESS",
+    page: "business",
   },
   {
     label: "LEARN",
     page: "learn",
   },
-  {
-    label: "LOYALTY PROGRAM",
-    page: "program",
-  },
+  // {
+  //   label: "LOYALTY PROGRAM",
+  //   page: "program",
+  // },
   {
     label: "CONTACT US",
     page: "contact",
@@ -53,7 +54,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:border-b dark:border-stone-600">
       <div>
         {/* <div className="left-0 right-0 mx-auto bg-primary">
           <p className="text-white px-8 py-4">Find The Store</p>
@@ -65,19 +66,20 @@ const Navbar = () => {
               alt="Logo"
               width={200}
               height={50}
-              className="lg:ml-[50%]"
+              className="md:ml-[50%]"
             />
           </div>
           <div className="flex items-center justify-between">
-            <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer" />
-            <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer" />
+            <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
+            <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
             <span className="hidden sm:flex text-sm">|</span>
-            <span className="hidden sm:flex items-center text-secondary">
-              <FaFacebookF className="mr-4 ml-4 text-base cursor-pointer" />
-              <FaInstagram className="mr-4 text-base cursor-pointer" />
-              <FaLinkedinIn className="mr-4 text-base cursor-pointer" />
+            <span className="hidden sm:flex items-center">
+              <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              <FaLinkedinIn className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
             </span>
           </div>
+
           <div className="md:hidden">
             <button
               className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -95,13 +97,15 @@ const Navbar = () => {
           >
             <div className="md:flex md:space-x-6 items-center justify-center space-y-6 md:pb-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
+                const linkClassName =
+                  item.label == "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
+                // console.log(item.label);
+                // console.log(linkClassName);
                 return (
                   <Link
                     key={idx}
                     to={item.page}
-                    className={
-                      "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 font-custom font-semi-bold"
-                    }
+                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-300`} //hover:border-primary, hover:border-b
                     activeClass="active"
                     spy={true}
                     smooth={true}

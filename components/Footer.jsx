@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
+import { GrFacebookOption } from "react-icons/gr";
 
 const Footer = () => {
   const links = [
@@ -51,10 +52,10 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-gray-50 h-auto md:h-1/2 w-full flex flex-col md:flex-row justify-around items-start p-8 md:p-18">
+      <div className="flex flex-wrap justify-center">
         <div className="p-5 ">
           <ul>
-            <div className="md:flex md:items-center md:justify-center md:pb-5 ">
+            <div className="md:flex md:items-center mr-50% md:justify-center md:pb-5 ">
               <Image
                 src="/img/Bianco-Logo-Black.png"
                 alt="Logo"
@@ -80,13 +81,32 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-secondary font-regular text-xl pb-6 font-custom">
+            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title">
               Quick Links
             </p>
+
             {links.map((link) => (
               <li
                 key={link.id}
-                className="text-secondary font-light text-xs font-custom pb-2  hover:text-blue-600 cursor-pointer"
+                className="text-secondary font-light text-xs font-custom pb-2 cursor-pointer transition-all
+                duration-500
+                before:content-['']
+                before:absolute
+                before:bottom-1
+                before:left-0
+                before:w-0
+                before:h-1
+                before:rounded-full
+                before:opacity-0
+                before:transition-all
+                before:duration-500
+                before:bg-gradient-to-r
+                before:from-secondary
+                before:via-slate-400
+                before:to-white
+                hover:before:w-full
+                hover:before:opacity-100
+                relative"
               >
                 {link.label}
               </li>
@@ -95,13 +115,31 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-secondary font-regular text-xl pb-6 font-custom">
+            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Policies
             </p>
             {policies.map((policy) => (
               <li
                 key={policy.id}
-                className="text-secondary font-light text-xs font-custom pb-2 hover:text-blue-600 cursor-pointer"
+                className="text-secondary font-light text-xs font-custom pb-2 cursor-pointer transition-all
+                duration-500
+                before:content-['']
+                before:absolute
+                before:bottom-1
+                before:left-0
+                before:w-0
+                before:h-1
+                before:rounded-full
+                before:opacity-0
+                before:transition-all
+                before:duration-500
+                before:bg-gradient-to-r
+                before:from-secondary
+                before:via-slate-400
+                before:to-white
+                hover:before:w-full
+                hover:before:opacity-100
+                relative"
               >
                 {policy.label}
               </li>
@@ -110,10 +148,10 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-secondary font-regular text-xl pb-6 font-custom">
+            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Connect With Us
             </p>
-            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 hover:text-blue-600 cursor-pointer">
+            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer ">
               <div className="flex items-center justify-center mr-2">
                 <FaMapMarkerAlt />
               </div>
@@ -123,16 +161,17 @@ const Footer = () => {
                 <br /> Bangladesh
               </span>
             </li>
-            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 hover:text-blue-600 cursor-pointer">
+            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer  ">
               <div className="flex items-center justify-center mr-2">
                 <FaPhone />
               </div>
               <span className="ml-2">
-                +880 111 XXX 222 333 <br /> +880 111 XXX 222 444 <br />
-                +880 111 XXX 222 111
+                <span>+880 111 XXX 222 333 </span> <br />
+                <span>+880 111 XXX 222 444</span>
+                <br /> <span> +880 111 XXX 222 111</span>
               </span>
             </li>
-            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 hover:text-blue-600 cursor-pointer">
+            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer">
               <div className="flex items-center justify-center mr-2">
                 <FaEnvelope />
               </div>
@@ -142,10 +181,10 @@ const Footer = () => {
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-secondary font-regular text-xl pb-6 font-custom">
+            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Newsletter
             </p>
-            <li className="text-secondary font-light text-xs font-custom pb-2 hover:text-blue-600 cursor-pointer">
+            <li className="text-secondary font-light text-xs font-custom pb-2 ">
               SUBSCRIBE TO OUR NEWSLETTER
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-5 hover:text-blue-600 cursor-pointer">
@@ -160,9 +199,9 @@ const Footer = () => {
               />
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
-              <FaFacebookF className="mr-4 cursor-pointer" />
-              <FaInstagram className="mr-4 cursor-pointer" />
-              <FaLinkedinIn className="mr-4 cursor-pointer" />
+              <GrFacebookOption className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              <FaInstagram className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
             </li>
           </ul>
         </div>
