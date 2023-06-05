@@ -65,6 +65,7 @@ const Navbar = () => {
               alt="Logo"
               width={200}
               height={50}
+              className="lg:ml-[50%]"
             />
           </div>
           <div className="flex items-center justify-between">
