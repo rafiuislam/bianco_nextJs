@@ -1,14 +1,15 @@
 import Image from "next/image";
-// import HeroSlider from "../components/HeroSlider";
 import Slider from "../components/Slider";
+import About from "../components/homeSections/About";
+import Popular from "../components/homeSections/Popular";
 
 //HomePage
 export default function Home() {
   return (
-    <>
-      {/* <HeroSlider /> */}
-      {/* <ElementsSlider /> */}
+    <div className="bg-bg-h">
       <Slider />
-    </>
+      <About />
+      <Popular />
+    </div>
   );
 }

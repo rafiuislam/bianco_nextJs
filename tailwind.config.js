@@ -7,16 +7,16 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      custom: ["Raleway", "Sans"],
-      title: ["Playfair"],
+      custom: ["Raleway", "sans-serif"],
+      title: ["Playfair Display", "serif"],
     },
     colors: {
       // Configure your color palette here
       transparent: "transparent",
       current: "currentColor",
-      "bg-h": "#F4F0EC",
-      primary: "#007A4C",
-      secondary: "#63554b",
+      "bg-h": "#F4F0EC", // bg-color
+      primary: "#007A4C", // Green
+      secondary: "#63554b", // Coffee
       white: "#FFFFFF",
     },
     extend: {
@@ -31,6 +31,8 @@ module.exports = {
         "3xl": "1.875rem", // Triple extra large
         "4xl": "2.25rem", // Quadruple extra large
         "5xl": "3rem", // Quintuple extra large
+        "6xl": "3.75rem", // Sixfold extra large
+        "7xl": "4.5rem", // Sevenfold extra large
       },
       fontWeight: {
         light: "300", // Light
