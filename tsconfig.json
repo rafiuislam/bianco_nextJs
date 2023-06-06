@@ -23,7 +23,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/_app.js",
-    "pages/index.jsx"
+    "pages/index.jsx",
+    "components/SlideUp.jsx"
   ],
   "exclude": ["node_modules"]
 }

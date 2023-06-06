@@ -1,6 +1,11 @@
+"use client";
 import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import Image from "next/image";
+import { Link } from "react-scroll/modules";
+import { HiArrowDown } from "react-icons/hi";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Slider = () => {
   const slides = [
@@ -76,6 +81,19 @@ const Slider = () => {
             <RxDotFilled className="text-white" />
           </div>
         ))}
+      </div>
+      <div className="flex flex-row items-center text-center justify-center py-2">
+        <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <HiArrowDown size={30} className="animate-bounce fill-primary" />
+          {/* <MdKeyboardArrowDown size={35} className="animate-bounce" /> */}
+        </Link>
       </div>
     </div>
   );

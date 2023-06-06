@@ -20,6 +20,51 @@ module.exports = {
       white: "#FFFFFF",
     },
     extend: {
+      animation: {
+        fadeIn: "fadeIn 1.5s",
+        bounce:
+          "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
+        slideUp: "slideUp 0.5s",
+        slideUpEaseInOut: "slideUp 0.8s ease-in-out",
+        slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        slideFromRight:
+          "slideFromRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        slideFromLeft:
+          "slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        fadeAndScale: "fadeAndScale 1s ease-in-out",
+      },
+      animationDelay: {
+        0: "0s",
+        2: "0.2s",
+        4: "0.4s",
+        6: "0.6s",
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        slideUp: {
+          from: { transform: "translateY(100%)" },
+          to: { transform: "translateY(0)" },
+        },
+        bounce: {
+          from: { transform: "translateY(10px)" },
+          to: { transform: "translateY(0)" },
+        },
+        slideFromRight: {
+          "0%": { transform: "translateX(100%)", opacity: 0 },
+          "100%": { transform: "translateX(0)", opacity: 1 },
+        },
+        slideFromLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: 0 },
+          "100%": { transform: "translateX(0)", opacity: 1 },
+        },
+        fadeAndScale: {
+          "0%": { opacity: 0, transform: "scale(0.5)" },
+          "100%": { opacity: 1, transform: "scale(1)" },
+        },
+      },
       fontSize: {
         "2xs": "0.625rem", // Extra extra small
         xs: "0.75rem", // Extra small
