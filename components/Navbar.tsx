@@ -53,6 +53,10 @@ const Navbar = () => {
   //   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false);
 
+  const toggleNavbar = () => {
+    setNavbar(!navbar);
+  };
+
   return (
     <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:border-b dark:border-stone-600">
       <div>
@@ -82,8 +86,10 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button
-              className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-              onClick={() => setNavbar(!navbar)}
+              className={`p-2 text-gray-700 rounded-md outline-none ${
+                navbar ? "animate-showMenu" : ""
+              }`}
+              onClick={toggleNavbar}
             >
               {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
             </button>
@@ -92,7 +98,7 @@ const Navbar = () => {
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
+              navbar ? "block animate-slideFromRight" : "hidden "
             }`}
           >
             <div className="md:flex md:space-x-6 items-center justify-center space-y-6 md:pb-6 md:space-y-0">
@@ -105,7 +111,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     to={item.page}
-                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-300`} //hover:border-primary, hover:border-b
+                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-150`} //hover:border-primary, hover:border-b
                     activeClass="active"
                     spy={true}
                     smooth={true}

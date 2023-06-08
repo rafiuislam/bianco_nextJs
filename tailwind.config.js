@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      dancing: ["Dancing Script", "cursive"],
       custom: ["Raleway", "sans-serif"],
       title: ["Playfair Display", "serif"],
     },
@@ -20,17 +21,27 @@ module.exports = {
       white: "#FFFFFF",
     },
     extend: {
+      // backgroundImage: {
+      //   about: "url('/public/img/Bianco-Logo-White.png')",
+      // },
       animation: {
+        "slide-left": "slideLeft 0.5s ease-in-out",
+        "slide-right": "slideRight 0.5s ease-in-out",
+        parallax: "parallax 10s infinite linear",
         fadeIn: "fadeIn 1.5s",
+        showMenu: "showMenu 0.7s",
         bounce:
           "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
         slideUp: "slideUp 0.5s",
         slideUpEaseInOut: "slideUp 0.8s ease-in-out",
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
         slideFromRight:
-          "slideFromRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-        slideFromLeft:
-          "slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+          "slideFromRight 0.8s cubic-bezier(0.25, 0.1, 0.75, 0.9) ",
+        // slideFromLeft:
+        //   "slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        slideFromLeft: "slideFromLeft 0.8s cubic-bezier(0.25, 0.1, 0.75, 0.9)",
+        slideDownCubiBezier:
+          "slideDown 1.5s cubic-bezier(0.165, 0.84, 0.44, 1)",
         fadeAndScale: "fadeAndScale 1s ease-in-out",
       },
       animationDelay: {
@@ -40,6 +51,18 @@ module.exports = {
         6: "0.6s",
       },
       keyframes: {
+        parallax: {
+          "0%": {
+            transform: "translateZ(-1px) scale(2)",
+          },
+          "100%": {
+            transform: "translateZ(-1px) scale(3)",
+          },
+        },
+        showMenu: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        },
         fadeIn: {
           from: { opacity: 0 },
           to: { opacity: 1 },
@@ -63,6 +86,24 @@ module.exports = {
         fadeAndScale: {
           "0%": { opacity: 0, transform: "scale(0.5)" },
           "100%": { opacity: 1, transform: "scale(1)" },
+        },
+        slideDown: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
       fontSize: {

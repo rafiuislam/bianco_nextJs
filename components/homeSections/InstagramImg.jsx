@@ -8,7 +8,7 @@ const InstagramImg = ({ socialImg }) => {
       <Image
         src={socialImg}
         alt="/"
-        className="w-full h-full"
+        className="w-full h-full transition-transform duration-300 transform-gpu hover:scale-105"
         layout="responsive"
       />
       {/* Overlay */}

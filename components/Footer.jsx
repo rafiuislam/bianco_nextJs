@@ -51,11 +51,11 @@ const Footer = () => {
   ];
 
   return (
-    <>
-      <div className="flex flex-wrap justify-center">
-        <div className="p-5 ">
+    <section>
+      <div className="flex flex-wrap flex-none md:justify-center lg:justify-evenly">
+        <div className="p-5 flex-col mx-auto md:mx-0  md:pb-5">
           <ul>
-            <div className="md:flex md:items-center mr-50% md:justify-center md:pb-5">
+            <div className="flex items-center mr-50% justify-center">
               <Image
                 src="/img/Bianco-Logo-Black.png"
                 alt="Logo"
@@ -64,8 +64,8 @@ const Footer = () => {
               />
             </div>
             <div className="md:pb-5 md:block">
-              <div className="w-60 h-60 text-justify ">
-                <p className="text-secondary font-light text-sm font-custom">
+              <div className="w-60 h-65 text-justify mb-6">
+                <p className="text-secondary font-light text-sm font-custom ">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
@@ -79,9 +79,9 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="p-5">
+        <div className="p-5 mx-10 md:mx-0">
           <ul>
-            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title">
+            <p className="text-secondary font-regular text-xl font-title sm:pt-0 xs:pt-0 pt-6 pb-6 ">
               Quick Links
             </p>
 
@@ -113,7 +113,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="p-5">
+        <div className="p-5 mx-10 md:mx-0">
           <ul>
             <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Policies
@@ -146,7 +146,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="p-5">
+        <div className="p-5 mx-10 md:mx-0">
           <ul>
             <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Connect With Us
@@ -179,7 +179,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="p-5">
+        <div className="p-5 mx-10 md:mx-0">
           <ul>
             <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Newsletter
@@ -211,7 +211,7 @@ const Footer = () => {
           COPYRIGHT 2023 BIANCO BANGLADESH
         </h1>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ interface Props {
   children?: ReactNode;
 }
 
-export default function SlideFromRight({ children, offset = "0px" }: Props) {
+export default function SlideDown({ children, offset = "0px" }: Props) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -15,17 +15,25 @@ export default function SlideFromRight({ children, offset = "0px" }: Props) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.remove("opacity-0");
-            entry.target.classList.add("animate-slideFromRight");
+            entry.target.classList.add("animate-slideDownCubiBezier");
           }
         });
       },
       { rootMargin: offset }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const targetElement = ref.current;
+
+    if (targetElement) {
+      observer.observe(targetElement);
     }
-  }, [offset, ref]);
+
+    return () => {
+      if (targetElement) {
+        observer.unobserve(targetElement);
+      }
+    };
+  }, [offset]);
 
   return (
     <div ref={ref} className="relative opacity-0">
