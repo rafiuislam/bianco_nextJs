@@ -48,7 +48,7 @@ const Slider = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [nextSlide]);
+  }, [nextSlide, currentIndex]);
 
   const handleLeftArrowClick = useCallback(() => {
     prevSlide();
