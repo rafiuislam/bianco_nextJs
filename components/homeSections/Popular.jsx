@@ -27,7 +27,7 @@ const Popular = () => {
         </h1>
       </SlideUp>
       <FadeAndScale offset="-300px 0px -300px 0px">
-        <div className="flex flex-wrap flex-row justify-center py-8 sm:py-2 z-10 md:justify-center ">
+        <div className="flex flex-wrap flex-row justify-center py-8 sm:py-2 z-10 md:justify-center animate-fadeIn">
           {tags.map((item, idx) => {
             return (
               <p

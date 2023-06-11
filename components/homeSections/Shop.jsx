@@ -105,7 +105,7 @@ const Shop = () => {
     // More products...
   ];
   return (
-    <section id="shop" className="relative">
+    <section id="homeshop" className="relative">
       <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:pt-24 lg:max-w-7xl lg:px-8">
         <SlideUp offset="-300px 0px -300px 0px">
           <h1 className="lg:mb-6  text-center text-primary font-medium text-5xl font-title">

@@ -192,10 +192,6 @@ const Footer = () => {
                 type="email"
                 placeholder="Enter Your Email"
                 className="py-1 pl-4 pr-8 focus:outline-none"
-                style={{
-                  backgroundColor: "#E5DDD8",
-                  "::placeholder": { color: "#63554b" },
-                }}
               />
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">

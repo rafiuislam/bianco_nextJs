@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Slider from "../components/Slider";
-
+import Slider from "../components/homeSections/Slider";
 import About from "../components/homeSections/About";
 import Popular from "../components/homeSections/Popular";
 import Instagram from "../components/homeSections/Instagram";

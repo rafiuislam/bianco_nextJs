@@ -6,8 +6,8 @@ import SlideDown from "../animate/SlideDown";
 const ProductItem = ({ product }) => {
   return (
     <div key={product.id}>
-      <div className="group relative flex flex-col justify-center items-center">
-        <div className="w-full overflow-hidden rounded-md bg- flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75 bg-opacity-50">
+      <div className="group relative flex flex-col justify-center items-center ">
+        <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75 ">
           <SlideDown offset="300px 0px 300px 0px">
             <Image
               src={product.imageSrc}

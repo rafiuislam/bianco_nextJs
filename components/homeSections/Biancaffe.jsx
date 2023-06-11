@@ -3,20 +3,22 @@ import Image from "next/image";
 import SlideFromLeft from "../animate/SlideFromLeft";
 import SlideFromRight from "../animate/SlideFromRight";
 import SlideUp from "../animate/SlideUp";
+import imgBian from "../../public/img/Take-Your-Time-bg.jpg";
 
 const Biancaffe = () => {
   return (
-    <section id="biancaffe" className="w-full m-auto ">
+    <section id="biancaffe" className="w-full m-auto">
       <div className="relative h-[500px] mt-[15%] md:mt-[8%] lg:mt-[5%]">
         <Image
           src="/img/Take-Your-Time-bg.jpg"
           alt="Logo"
           layout="fill"
           objectFit="cover"
-          className="relative w-full h-full parallax"
+          className="relative w-full h-full "
           data-speed="0.5"
         />
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black">
+
+        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center ">
           <div
             className="bg-white bg-opacity-50 text-black p-4 flex flex-col justify-center"
             style={{ width: "700px", height: "300px" }}

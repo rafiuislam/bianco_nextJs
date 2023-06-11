@@ -1,25 +1,18 @@
-"use client"; // this is a client component
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-scroll/modules";
-import { usePathname } from "next/navigation";
-import { RiMoonFill, RiSunLine } from "react-icons/ri";
-import { useTheme } from "next-themes";
+// use client"; // this is a client component
+import React, { useState } from "react";
+
+import Link from "next/link";
+// import { useTheme } from "next-themes";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsCartDash, BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 
-interface NavItem {
-  label: string;
-  page: string;
-}
-
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS = [
   {
     label: "HOME",
-    page: "home",
+    page: "",
   },
   {
     label: "BIANCAFFE",
@@ -37,10 +30,6 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "LEARN",
     page: "learn",
   },
-  // {
-  //   label: "LOYALTY PROGRAM",
-  //   page: "program",
-  // },
   {
     label: "CONTACT US",
     page: "contact",
@@ -48,9 +37,8 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 const Navbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  //   const pathname = usePathname()
+  // const { systemTheme, theme, setTheme } = useTheme();
+  // const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
   const toggleNavbar = () => {
@@ -60,9 +48,6 @@ const Navbar = () => {
   return (
     <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:border-b dark:border-stone-600">
       <div>
-        {/* <div className="left-0 right-0 mx-auto bg-primary">
-          <p className="text-white px-8 py-4">Find The Store</p>
-        </div> */}
         <div className="flex items-center justify-between">
           <div className="md:mx-auto md:py-5 md:block">
             <Image
@@ -86,58 +71,50 @@ const Navbar = () => {
 
           <div className="md:hidden">
             <button
-              className={`p-2 text-gray-700 rounded-md outline-none ${
+              className={`p-2 rounded-md outline-none ${
                 navbar ? "animate-showMenu" : ""
               }`}
               onClick={toggleNavbar}
             >
-              {navbar ? <IoMdClose size={25} /> : <IoMdMenu size={25} />}
+              {navbar ? (
+                <IoMdClose
+                  size={25}
+                  className="hover:text-red transition-colors duration-300"
+                />
+              ) : (
+                <IoMdMenu
+                  size={25}
+                  className="hover:text-primary transition-colors duration-300"
+                />
+              )}
             </button>
           </div>
         </div>
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block animate-slideFromRight" : "hidden "
+              navbar
+                ? "block animate-slideFromRight md:animate-none"
+                : "hidden "
             }`}
           >
             <div className="md:flex md:space-x-6 items-center justify-center space-y-6 md:pb-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
                 const linkClassName =
-                  item.label == "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
-                // console.log(item.label);
-                // console.log(linkClassName);
+                  item.label === "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
+
                 return (
                   <Link
                     key={idx}
-                    to={item.page}
-                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-150`} //hover:border-primary, hover:border-b
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
+                    href={`/${item.page}`}
+                    passHref
+                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-150`}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
                   </Link>
                 );
               })}
-              {/* {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiSunLine size={15} color="black" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiMoonFill size={15} />
-                </button>
-              )} */}
             </div>
           </div>
         </div>

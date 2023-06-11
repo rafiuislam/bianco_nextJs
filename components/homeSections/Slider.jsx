@@ -5,11 +5,11 @@ import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import heroImg1 from "../public/img_hero/Slider-1.jpg";
-import heroImg2 from "../public/img_hero/Slider-2.jpg";
-import heroImg3 from "../public/img_hero/Slider-3.jpg";
-import SlideUp from "../components/animate/SlideUp";
-import SlideDown from "../components/animate/SlideDown";
+import heroImg1 from "../../public/img_hero/Slider-1.jpg";
+import heroImg2 from "../../public/img_hero/Slider-2.jpg";
+import heroImg3 from "../../public/img_hero/Slider-3.jpg";
+import SlideUp from "../animate/SlideUp";
+import SlideDown from "../animate/SlideDown";
 
 const Slider = () => {
   const slides = [
@@ -68,7 +68,10 @@ const Slider = () => {
   };
 
   return (
-    <div className="max-w-screen w-full h-[700px] m-auto relative group">
+    <section
+      id="slider"
+      className="max-w-screen w-full h-[700px] m-auto relative group"
+    >
       <div id="image-div" className="w-full h-full relative">
         <Image
           src={slides[currentIndex].url}
@@ -136,7 +139,7 @@ const Slider = () => {
           />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 
