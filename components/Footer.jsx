@@ -155,7 +155,7 @@ const Footer = () => {
               <div className="flex items-center justify-center mr-2">
                 <FaMapMarkerAlt />
               </div>
-              <span className="ml-2 ">
+              <span className="ml-2">
                 House# 4a, Road# 0a, Shanta
                 <br /> Province, Uttara, Dhaka,
                 <br /> Bangladesh

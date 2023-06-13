@@ -20,7 +20,7 @@ const NAV_ITEMS = [
   },
   {
     label: "SHOP",
-    page: "shop",
+    page: "ShopPage",
   },
   {
     label: "FOR BUSINESS",

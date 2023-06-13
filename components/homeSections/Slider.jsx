@@ -24,57 +24,98 @@ const Slider = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
-  }, [slides.length]);
+  // const prevSlide = useCallback(() => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+  //   );
+  // }, [slides.length]);
 
-  const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
-    const imageDiv = document.getElementById("image-div");
-    imageDiv.classList.add("animate-slideFromRight");
-    setTimeout(() => {
-      imageDiv.classList.remove("animate-slideFromRight");
-    }, 1000);
-  }, [slides.length]);
+  // const nextSlide = useCallback(() => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+  //   );
+  //   const imageDiv = document.getElementById("image-div");
+  //   imageDiv.classList.add("animate-slideFromRight");
+  //   setTimeout(() => {
+  //     imageDiv.classList.remove("animate-slideFromRight");
+  //   }, 1000);
+  // }, [slides.length]);
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, [nextSlide, currentIndex]);
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide, 5000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [nextSlide, currentIndex]);
 
-  const handleLeftArrowClick = useCallback(() => {
-    prevSlide();
-    const imageDiv = document.getElementById("image-div");
-    imageDiv.classList.add("animate-slideFromLeft");
-    setTimeout(() => {
-      imageDiv.classList.remove("animate-slideFromLeft");
-    }, 1000);
-  }, [prevSlide]);
+  // const handleLeftArrowClick = useCallback(() => {
+  //   prevSlide();
+  //   const imageDiv = document.getElementById("image-div");
+  //   imageDiv.classList.add("animate-slideFromLeft");
+  //   setTimeout(() => {
+  //     imageDiv.classList.remove("animate-slideFromLeft");
+  //   }, 1000);
+  // }, [prevSlide]);
 
-  // const handleRightArrowClick = useCallback(() => {
-  //   nextSlide();
-  // }, [nextSlide]);
+  // // const handleRightArrowClick = useCallback(() => {
+  // //   nextSlide();
+  // // }, [nextSlide]);
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
+  // const goToSlide = (slideIndex) => {
+  //   setCurrentIndex(slideIndex);
+  // };
+
+  const [index, setIndex] = useState(0);
+
+  const handleArrow = (direction) => {
+    if (direction === "l") {
+      setIndex(index === 0 ? 2 : index - 1);
+      const imageDiv = document.getElementById("image-div");
+      imageDiv.classList.add("animate-slideFromLeft");
+      setTimeout(() => {
+        imageDiv.classList.remove("animate-slideFromLeft");
+      }, 800);
+    }
+    if (direction === "r") {
+      setIndex(index === 2 ? 0 : index + 1);
+      const imageDiv = document.getElementById("image-div");
+      imageDiv.classList.add("animate-slideFromRight");
+      setTimeout(() => {
+        imageDiv.classList.remove("animate-slideFromRight");
+      }, 800);
+    }
   };
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+      const imageDiv = document.getElementById("image-div");
+      imageDiv.classList.add("animate-slideFromRight");
+      setTimeout(() => {
+        imageDiv.classList.remove("animate-slideFromRight");
+      }, 800);
+    }, 5000); // Adjust the interval duration (in milliseconds) as needed
+
+    return () => clearInterval(interval);
+  }, [index]);
+
+  const goToSlide = (index) => {
+    setIndex(index);
+  };
+
+  console.log(index);
 
   return (
     <section
       id="slider"
-      className="max-w-screen w-full h-[700px] m-auto relative group"
+      className="max-w-screen w-full h-[700px] m-auto relative group overflow-y-hidden overflow-x-hidden"
     >
       <div id="image-div" className="w-full h-full relative">
         <Image
-          src={slides[currentIndex].url}
+          src={slides[index].url}
           layout="fill"
           objectFit="cover"
           alt="Slider Image"
@@ -84,14 +125,14 @@ const Slider = () => {
       {/* Left Arrow */}
       <div
         className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-        onClick={handleLeftArrowClick}
+        onClick={() => handleArrow("l")}
       >
         <BsChevronCompactLeft size={30} />
       </div>
       {/* Right Arrow */}
       <div
         className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
-        onClick={nextSlide}
+        onClick={() => handleArrow("r")}
       >
         <BsChevronCompactRight size={30} />
       </div>
@@ -106,7 +147,7 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      {currentIndex === 0 && (
+      {index === 0 && (
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
           <SlideUp offset="-300px 0px -300px 0px">
             <p className="text-5xl text-primary font-medium animate-slideUpCubiBezier">
