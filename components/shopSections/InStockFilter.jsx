@@ -40,7 +40,8 @@ const InStockFilter = ({ products, onFilterChange }) => {
           disabled
         />
         <span className="pl-2">
-          Out of Stock ({getTotalProductCount(products) - inStockCount})
+          Out of Stock ({"0"}
+          {getTotalProductCount(products) - inStockCount})
         </span>
       </label>
     </div>

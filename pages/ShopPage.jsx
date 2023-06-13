@@ -14,10 +14,10 @@ const ShopPage = () => {
     setShowInStockOnly(newValue);
   };
 
-  const handlePriceRangeFilterChange = (from, to) => {
-    setPriceRangeFrom(from);
-    setPriceRangeTo(to);
-  };
+  // const handlePriceRangeFilterChange = (from, to) => {
+  //   setPriceRangeFrom(from);
+  //   setPriceRangeTo(to);
+  // };
 
   const filteredProducts = products.filter((product) => {
     const isInStock = !showInStockOnly || product.inStock;
@@ -31,8 +31,8 @@ const ShopPage = () => {
   });
 
   return (
-    <div className="grid grid-cols-12 h-full ">
-      <div className="col-span-12 md:col-span-2 md:row-span-full bg-bg-h pl-6">
+    <div className="grid grid-cols-12 h-full">
+      <div className="col-span-12 md:col-span-2 md:row-span-full bg-bg-h pl-6 pr-1">
         {/* <CategoryFilter /> */}
         <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
           Shop
@@ -54,31 +54,37 @@ const ShopPage = () => {
           <div className="lg:mb-1 text-left text-black font-medium text-sm font-Raleway">
             <p>Price</p>
           </div>
-          <div className="flex flex-col space-y-2">
-            <div>
-              <label htmlFor="priceRangeFrom">From:</label>
+          <div className="flex flex-col space-y-2 ">
+            <div className="flex items-center">
+              <label htmlFor="priceRangeFrom" className="mr-2">
+                Tk
+              </label>
               <input
                 type="number"
                 id="priceRangeFrom"
                 value={priceRangeFrom}
                 onChange={(e) => setPriceRangeFrom(e.target.value)}
                 placeholder="From"
+                className="w-20 border border-black outline-none pl-1 "
               />
             </div>
-            <div>
-              <label htmlFor="priceRangeTo">To:</label>
+            <div className="flex items-center">
+              <label htmlFor="priceRangeTo" className="mr-2">
+                Tk
+              </label>
               <input
                 type="number"
                 id="priceRangeTo"
                 value={priceRangeTo}
                 onChange={(e) => setPriceRangeTo(e.target.value)}
                 placeholder="To"
+                className="w-20 border border-black outline-none pl-1"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="col-span-12 md:col-span-10 bg-bg-h p-16">
+      <div className="col-span-12 md:col-span-10 bg-bg-h p-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <div

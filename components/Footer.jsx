@@ -187,11 +187,11 @@ const Footer = () => {
             <li className="text-secondary font-light text-xs font-custom pb-2 ">
               SUBSCRIBE TO OUR NEWSLETTER
             </li>
-            <li className="flex items-center text-secondary font-light text-xs font-custom pb-5 hover:text-blue-600 cursor-pointer">
+            <li className="flex items-center text-secondary font-light text-xs font-custom pb-5 hover:text-secondary cursor-pointer">
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="py-1 pl-4 pr-8 focus:outline-none"
+                className="py-1 pl-4 pr-4 focus:outline-none placeholder-secondary"
               />
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
