@@ -9,6 +9,7 @@ const InStockFilter = ({ products, onFilterChange }) => {
     onFilterChange(newValue);
   };
 
+  //iterates over the products array and counts the number of products that have inStock set to true
   const inStockCount = products.reduce((count, product) => {
     return product.inStock ? count + 1 : count;
   }, 0);
@@ -17,33 +18,36 @@ const InStockFilter = ({ products, onFilterChange }) => {
     return products.length;
   };
 
-  useEffect(() => {
-    const totalProductCount = getTotalProductCount(products);
-    console.log("Total products:", totalProductCount);
-  }, [products]);
+  // useEffect(() => {
+  //   const totalProductCount = getTotalProductCount(products);
+  // }, [products]);
 
   return (
-    <div>
-      <label className="flex items-center">
-        <input
-          type="checkbox"
-          checked={showInStockOnly}
-          onChange={toggleShowInStockOnly}
-        />
-        <span className="pl-2">In Stock ({"0" + inStockCount})</span>
-      </label>
-      <label className="flex items-center">
-        <input
-          type="checkbox"
-          // checked={showInStockOnly}
-          onChange={toggleShowInStockOnly}
-          disabled
-        />
-        <span className="pl-2">
-          Out of Stock ({"0"}
-          {getTotalProductCount(products) - inStockCount})
-        </span>
-      </label>
+    <div className="flex flex-wrap ">
+      <div className="flex-grow">
+        <label className="flex items-center ">
+          <input
+            type="checkbox"
+            checked={showInStockOnly}
+            onChange={toggleShowInStockOnly}
+          />
+          <span className="pl-2">In Stock ({"0" + inStockCount})</span>
+        </label>
+      </div>
+      <div className="flex-grow">
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            // checked={showInStockOnly}
+            onChange={toggleShowInStockOnly}
+            disabled
+          />
+          <span className="pl-2">
+            Out of Stock ({"0"}
+            {getTotalProductCount(products) - inStockCount})
+          </span>
+        </label>
+      </div>
     </div>
   );
 };

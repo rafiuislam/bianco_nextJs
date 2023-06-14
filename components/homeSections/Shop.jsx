@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import shopImg1 from "../../public/img_shop/1.png";
-import shopImg2 from "../../public/img_shop/2.png";
-import shopImg3 from "../../public/img_shop/3.png";
-import shopImg4 from "../../public/img_shop/4.png";
-import shopImg5 from "../../public/img_shop/5.png";
-import shopImg6 from "../../public/img_shop/6.png";
+// import shopImg1 from "../../public/img_shop/1.png";
+// import shopImg2 from "../../public/img_shop/2.png";
+// import shopImg3 from "../../public/img_shop/3.png";
+// import shopImg4 from "../../public/img_shop/4.png";
+// import shopImg5 from "../../public/img_shop/5.png";
+// import shopImg6 from "../../public/img_shop/6.png";
 import SlideUp from "../animate/SlideUp";
 // import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
@@ -105,22 +105,34 @@ const Shop = () => {
   //   },
   //   // More products...
   // ];
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <section id="homeshop" className="relative">
-      <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:pt-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:pt-24 lg:max-w-7xl lg:px-8">
         <SlideUp offset="-300px 0px -300px 0px">
           <h1 className="lg:mb-6  text-center text-primary font-medium text-5xl font-title">
             Shop
           </h1>
         </SlideUp>
 
-        <div className="mt-6 relative z-10">
+        <div className="mt-6 relative ">
           <Carousel
             responsive={responsive}
-            ssr={true} // Server-side rendering support
+            autoPlay={true}
+            swipeable={true}
+            draggable={true}
+            showDots={false}
             infinite={true}
             containerClass="carousel-container"
             itemClass="carousel-item"
+            beforeChange={(previousSlide, nextSlide) => {
+              if (nextSlide === products.length - 1) {
+                // If the next slide is the last product, update the active index
+                setActiveIndex(nextSlide);
+                console.log(nextSlide);
+              }
+            }}
           >
             {products.map((product) => (
               <ProductItem key={product.id} product={product} />

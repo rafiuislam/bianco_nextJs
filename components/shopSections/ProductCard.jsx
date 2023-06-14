@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 // import SlideUp from "../animate/SlideUp";
@@ -32,8 +33,8 @@ const ProductCard = ({ product }) => {
               {product.desc}
             </p>
           </div>
-          <div className="flex justify-center items-center ">
-            <button className="mt-4 bg-primary text-white font-semibold text-base font-raleway py-2 px-4 rounded group-hover:scale-105 transition-transform duration-300 ">
+          <div className="flex justify-center items-center">
+            <button className="mt-4 bg-primary text-white font-semibold text-base font-raleway py-2 px-4 rounded hover:bg-secondary/75 ">
               Add to Cart
             </button>
           </div>
