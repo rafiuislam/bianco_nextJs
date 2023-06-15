@@ -53,29 +53,30 @@ const ShopPage = () => {
 
   return (
     <div className="grid grid-cols-12 h-full">
-      <div className="col-span-12 md:col-span-2 md:row-span-full bg-bg-h pl-6 pr-1">
-        {/* <CategoryFilter /> */}
+      <div className="col-span-12 md:col-span-3 md:row-span-full bg-bg-h p-6 md:pb-20 h-full">
         <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
           Shop
         </h1>
-        <div className="lg:ml-14">
-          <div className="lg:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 ">
+        <div className="lg:ml-20 md:ml-10 mt-10">
+          <div className="md:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 ">
             <h1>Filters</h1>
           </div>
-          <div className="lg:mb-1 text-left text-black font-medium text-sm font-Raleway">
+          <div className="md:mb-1 text-left text-black font-medium text-sm font-Raleway">
             <p>Availability</p>
           </div>
-          <div className="text-left lg:pb-6">
+          {/* InStock filter */}
+          <div className="text-left md:pb-6">
             <InStockFilter
               products={products}
               onFilterChange={handleFilterChange}
             />
           </div>
-          <div className="lg:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
-          <div className="lg:mb-1 text-left text-black font-medium text-sm font-Raleway">
+          <div className="md:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          {/* Price range filter */}
+          <div className="md:mb-1 text-left text-black font-medium text-sm font-Raleway">
             <p>Price</p>
           </div>
-          <div className="flex flex-col space-y-2 ">
+          <div className="flex flex-col space-y-2">
             <div className="flex items-center">
               <label htmlFor="priceRangeFrom" className="mr-2">
                 Tk
@@ -105,7 +106,8 @@ const ShopPage = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-12 md:col-span-10 bg-bg-h p-8">
+      <div className="col-span-12 md:col-span-9 bg-bg-h  p-8 md:pl-2">
+        {/* search and Asc~Desc filter */}
         <div className="col-span-2 md:col-start-12 pb-8 md:grid md:place-content-end">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
             <div className="grid place-content-center">
@@ -120,6 +122,7 @@ const ShopPage = () => {
             <SortComponent sortBy={sortBy} setSortBy={setSortBy} />
           </div>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sortedAndFilteredProducts.map((product) => (
             <div

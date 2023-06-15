@@ -130,7 +130,7 @@ const Shop = () => {
               if (nextSlide === products.length - 1) {
                 // If the next slide is the last product, update the active index
                 setActiveIndex(nextSlide);
-                console.log(nextSlide);
+                // console.log(nextSlide);
               }
             }}
           >
@@ -141,7 +141,7 @@ const Shop = () => {
         </div>
       </div>
 
-      <div className="inset-0 z-0 w-full h-[500px] mt-[26%] sm:mt-[26%] md:mt-[20%] lg:mt-[11%] absolute mx-auto">
+      {/* <div className="inset-0 z-0 w-full h-[500px] mt-[26%] sm:mt-[26%] md:mt-[20%] lg:mt-[11%] absolute mx-auto">
         <div className="bg-opacity-80 bg-cover bg-no-repeat bg-center md:bg-contain md:bg-center lg:bg-contain lg:bg-center">
           <Image
             src="/img_shop/Shop-Background-1.png"
@@ -150,7 +150,7 @@ const Shop = () => {
             objectFit="cover"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 pl-6 sm:pl-0 ${
               navbar
                 ? "block animate-slideFromRight md:animate-none"
                 : "hidden "
@@ -108,7 +108,7 @@ const Navbar = () => {
                     key={idx}
                     href={`/${item.page}`}
                     passHref
-                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary  hover:scale-105 transition-all duration-150`}
+                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}

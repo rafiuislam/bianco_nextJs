@@ -21,110 +21,21 @@ const spotify = () => {
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </h1>
-      {/* <div class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-amber-500 via-yellow-300 to-amber-500">
-        <div class="mx-24 md:mx-0 max-w-screen-sm">
-          <div class="space-y-10 text-gray-800 font-dancing font-bold">
-            <p
-              class="
-                inline-block
-               
-                relative
-                cursor-pointer
-                transition-all
-                duration-500
-                before:content-['']
-                before:absolute
-                before:-bottom-2
-                before:left-0
-                before:w-0
-                before:h-1.5
-                before:rounded-full
-                before:opacity-0
-                before:transition-all
-                before:duration-500
-                before:bg-gradient-to-r
-                before:from-secondary
-                before:via-slate-400
-                before:to-white
-                hover:before:w-full
-                hover:before:opacity-100
-        "
-            >
-              Sample Underlined Text Goes Here
-            </p>
-            <p
-              class="capitalize
-                inline-block
-                text-3xl
-                relative
-                cursor-pointer
-                transition-all
-                duration-500
-                before:content-['']
-                before:absolute
-                before:-bottom-2
-                before:right-0
-                before:w-0
-                before:h-1.5
-                before:rounded-full
-                before:opacity-0
-                before:transition-all
-                before:duration-500
-                before:bg-gradient-to-r
-                before:from-gray-600
-                before:via-slate-400
-                before:to-zinc-500
-                hover:before:w-full
-                hover:before:opacity-100
-        "
-            >
-              Sample Underlined Text Goes Here
-            </p>
-            <p
-              class="capitalize
-                inline-block
-                text-3xl
-                relative
-                cursor-pointer
-                transition-all
-                duration-500
-                before:content-['']
-                before:absolute
-                before:-bottom-2
-                before:left-1/2
-                before:-translate-x-1/2
-                before:w-0
-                before:h-1.5
-                before:rounded-full
-                before:opacity-0
-                before:transition-all
-                before:duration-500
-                before:bg-gradient-to-r
-                before:from-gray-600
-                before:via-slate-400
-                before:to-zinc-500
-                hover:before:w-full
-                hover:before:opacity-100
-        "
-            >
-              Sample Underlined Text Goes Here
-            </p>
-            <p class="text-3xl">
-              Lorem ipsum dolor sit amet consectetur{" "}
-              <a
-                href=""
-                class="bg-gradient-to-r from-red-500 via-blue-400 to-lime-600 bg-[length:0%_5px] bg-no-repeat bg-left-bottom hover:bg-[length:100%_5px] transition-all duration-500"
-              >
-                {" "}
-                adipisicing elit. Repellat rerum sint cupiditate ad, neque
-                nulla, illo, quaerat culpa
-              </a>{" "}
-              quasi non dolorem aliquid consequuntur et?
-            </p>
-          </div>
+        <div class="grid grid-rows-4 gap-2 pb-2">
+          <div class="bg-primary/20">Item 1</div>
+          <div class="bg-secondary/20 row-span-2">Item 2</div>
+          <div class="bg-primary/20 row-span-3">Item 3</div>
+          {/* <div class="bg-black/20 col-span-3">Item 4</div>
+          <div class="bg-red/20">Item 5</div> */}
         </div>
-      </div> */}
+        <div class="grid grid-cols-5 gap-2">
+          <div class="bg-primary/20">Item 1</div>
+          <div class="bg-secondary/20 col-span-2">Item 2</div>
+          <div class="bg-primary/20 col-span-2">Item 3</div>
+          <div class="bg-black/20 col-span-3">Item 4</div>
+          <div class="bg-red/20">Item 5</div>
+        </div>
+      </h1>
     </div>
   );
 };
