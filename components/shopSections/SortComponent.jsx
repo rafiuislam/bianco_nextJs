@@ -1,14 +1,14 @@
 import React from "react";
 
 const sortOptions = [
-  { value: "PriceHighToLow", title: "Price High To Low" },
-  { value: "PriceLowToHigh", title: "Price Low To High" },
+  { value: "PriceHighToLow", title: "Price desc" },
+  { value: "PriceLowToHigh", title: "Price asc" },
 ];
 
 const SortComponent = ({ sortBy, setSortBy }) => {
   return (
     <select
-      className="bg-bg-h border outline-none"
+      className="bg-bg-h border outline-none p-1"
       value={sortBy || "PriceLowToHigh"}
       onChange={(e) => setSortBy(e.target.value)}
     >

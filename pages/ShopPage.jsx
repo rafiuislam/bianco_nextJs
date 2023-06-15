@@ -5,6 +5,10 @@ import ProductCard from "../components/shopSections/ProductCard";
 import InStockFilter from "../components/shopSections/InStockFilter";
 import PriceFilterSlider from "../components/shopSections/PriceFilterSlider";
 import SortComponent from "../components/shopSections/SortComponent";
+import SearchFilter from "../components/shopSections/SearchFilter";
+import BeanType from "../components/shopSections/BeanType";
+import PackageOption from "../components/shopSections/PackageOption";
+import RoastProfile from "../components/shopSections/RoastProfile";
 
 const ShopPage = () => {
   const [showInStockOnly, setShowInStockOnly] = useState(false);
@@ -12,17 +16,45 @@ const ShopPage = () => {
   const [priceRangeTo, setPriceRangeTo] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedBeanType, setSelectedBeanType] = useState("");
+  const [selectedPackage, setSelectedPackage] = useState("");
+  const [selectedRoastProfile, setSelectedRoastProfile] = useState("");
+
+  // Derive beanTypes from products
+  const beanTypes = [...new Set(products.map((product) => product.beanType))];
+
+  // Derive packageOptions from products
+  const packageOptions = [
+    ...new Set(products.map((product) => product.packageOption)),
+  ];
+
+  // Derive roastProfiles from products
+  const roastProfiles = [
+    ...new Set(products.map((product) => product.roastProfile)),
+  ];
+
+  const handleBeanTypeChange = (value) => {
+    setSelectedBeanType(value);
+  };
+
+  const handlePackageChange = (value) => {
+    setSelectedPackage(value);
+  };
+
+  const handleRoastProfileChange = (value) => {
+    setSelectedRoastProfile(value);
+  };
 
   const handleFilterChange = (newValue) => {
     setShowInStockOnly(newValue);
   };
-  console.log(searchQuery);
+  // console.log(searchQuery);
 
+  // Search filter event change
   const handleSearchQueryChange = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  // sort on instock & price range
   const filteredProducts = products.filter((product) => {
     const isInStock = !showInStockOnly || product.inStock;
     const isInRange =
@@ -33,9 +65,29 @@ const ShopPage = () => {
         product.price <= parseFloat(priceRangeTo));
     const matchesSearchQuery = product.name
       .toLowerCase()
-      .includes(searchQuery.toLowerCase());
+      .includes(searchQuery.trim().toLowerCase());
 
-    return isInStock && isInRange && matchesSearchQuery;
+    // Filter based on selected bean type
+    const matchesBeanType =
+      selectedBeanType === "" || product.beanType === selectedBeanType;
+
+    // Filter based on selected package option
+    const matchesPackageOption =
+      selectedPackage === "" || product.packageOption === selectedPackage;
+
+    // Filter based on selected roast profile
+    const matchesRoastProfile =
+      selectedRoastProfile === "" ||
+      product.roastProfile === selectedRoastProfile;
+
+    return (
+      isInStock &&
+      isInRange &&
+      matchesSearchQuery &&
+      matchesBeanType &&
+      matchesPackageOption &&
+      matchesRoastProfile
+    );
   });
 
   // sort on Asc & decs price
@@ -58,22 +110,55 @@ const ShopPage = () => {
           Shop
         </h1>
         <div className="lg:ml-20 md:ml-10 mt-10">
-          <div className="md:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 ">
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 ">
             <h1>Filters</h1>
           </div>
-          <div className="md:mb-1 text-left text-black font-medium text-sm font-Raleway">
+          <div className="mb-1 text-left text-black font-medium text-sm font-Raleway">
             <p>Availability</p>
           </div>
           {/* InStock filter */}
-          <div className="text-left md:pb-6">
+          <div className="text-left pb-4 md:pb-6">
             <InStockFilter
               products={products}
               onFilterChange={handleFilterChange}
             />
           </div>
-          <div className="md:mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          {/* beanType */}
+          <div>
+            <div className="text-left pb-4 md:pb-6">
+              <BeanType
+                beanTypes={beanTypes}
+                selectedBeanType={selectedBeanType}
+                onBeanTypeChange={handleBeanTypeChange}
+              />
+            </div>
+          </div>
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          {/* PackageOption */}
+          <div>
+            <div className="text-left pb-4 md:pb-6">
+              <PackageOption
+                packageOptions={packageOptions}
+                selectedPackage={selectedPackage}
+                onPackageChange={handlePackageChange}
+              />
+            </div>
+          </div>
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          {/* Roast Profile */}
+          <div>
+            <div className="text-left pb-4 md:pb-6">
+              <RoastProfile
+                roastProfiles={roastProfiles}
+                selectedRoastProfile={selectedRoastProfile}
+                onRoastProfileChange={handleRoastProfileChange}
+              />
+            </div>
+          </div>
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
           {/* Price range filter */}
-          <div className="md:mb-1 text-left text-black font-medium text-sm font-Raleway">
+          <div className="mb-2 text-left text-black font-medium text-sm font-Raleway">
             <p>Price</p>
           </div>
           <div className="flex flex-col space-y-2">
@@ -108,17 +193,16 @@ const ShopPage = () => {
       </div>
       <div className="col-span-12 md:col-span-9 bg-bg-h  p-8 md:pl-2">
         {/* search and Asc~Desc filter */}
-        <div className="col-span-2 md:col-start-12 pb-8 md:grid md:place-content-end">
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-            <div className="grid place-content-center">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={handleSearchQueryChange}
-                placeholder="Search"
-                className="bg-bg-h border outline-none "
-              />
-            </div>
+        <div className="flex flex-col sm:flex-row gap-4 pb-8 justify-between">
+          <div className="flex-grow order-2 sm:order-1">
+            {/* Search filter */}
+            <SearchFilter
+              searchQuery={searchQuery}
+              handleSearchQueryChange={handleSearchQueryChange}
+            />
+          </div>
+          <div className="flex-shrink-0 order-1 sm:order-2 pb-8 sm:pb-0">
+            {/* Asc~Desc filter */}
             <SortComponent sortBy={sortBy} setSortBy={setSortBy} />
           </div>
         </div>

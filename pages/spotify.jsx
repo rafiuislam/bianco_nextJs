@@ -28,12 +28,11 @@ const spotify = () => {
           {/* <div class="bg-black/20 col-span-3">Item 4</div>
           <div class="bg-red/20">Item 5</div> */}
         </div>
-        <div class="grid grid-cols-5 gap-2">
-          <div class="bg-primary/20">Item 1</div>
-          <div class="bg-secondary/20 col-span-2">Item 2</div>
-          <div class="bg-primary/20 col-span-2">Item 3</div>
-          <div class="bg-black/20 col-span-3">Item 4</div>
-          <div class="bg-red/20">Item 5</div>
+        ashfb
+        <div class="grid grid-cols-2 gap-2">
+          <div class="bg-primary/20 grid place-content-center">Item 1</div>
+
+          <div class="bg-primary/20 grid place-content-end">Item 3</div>
         </div>
       </h1>
     </div>

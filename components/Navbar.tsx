@@ -94,7 +94,8 @@ const Navbar = () => {
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 pl-6 sm:pl-0 ${
               navbar
-                ? "block animate-slideFromRight md:animate-none"
+                ? // improve the animate-slideFromRight animation
+                  "block animate- md:animate-none"
                 : "hidden "
             }`}
           >
