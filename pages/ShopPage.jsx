@@ -172,7 +172,7 @@ const ShopPage = () => {
                 value={priceRangeFrom}
                 onChange={(e) => setPriceRangeFrom(e.target.value)}
                 placeholder="From"
-                className="w-20 border border-black outline-none pl-1 "
+                className="w-20 border border-black outline-none pl-1"
               />
             </div>
             <div className="flex items-center">
@@ -192,9 +192,9 @@ const ShopPage = () => {
         </div>
       </div>
       <div className="col-span-12 md:col-span-9 bg-bg-h  p-8 md:pl-2">
-        {/* search and Asc~Desc filter */}
-        <div className="flex flex-col sm:flex-row gap-4 pb-8 justify-between">
-          <div className="flex-grow order-2 sm:order-1">
+        {/* search and Asc ~ Desc filter */}
+        <div className="flex flex-col sm:flex-row gap-4 pb-12 justify-between">
+          <div className="flex-grow order-2 sm:order-1 sm:w-full">
             {/* Search filter */}
             <SearchFilter
               searchQuery={searchQuery}
@@ -202,11 +202,11 @@ const ShopPage = () => {
             />
           </div>
           <div className="flex-shrink-0 order-1 sm:order-2 pb-8 sm:pb-0">
-            {/* Asc~Desc filter */}
+            {/* Asc ~ Desc filter */}
             <SortComponent sortBy={sortBy} setSortBy={setSortBy} />
           </div>
         </div>
-
+        {/* const functional component id="25tc" that gone */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sortedAndFilteredProducts.map((product) => (
             <div

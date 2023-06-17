@@ -11,7 +11,7 @@ const SearchFilter = ({ searchQuery, handleSearchQueryChange }) => {
       <input
         type="search"
         id="default-search"
-        className="bg-transparent outline-none block sm:w-1/3 p-1 pl-10 text-md text-black border border-secondary rounded-lg focus:border-primary"
+        className="bg-transparent outline-none block w-full sm:w-3/4 lg:w-1/3 p-1 pl-10 text-md text-black border border-secondary rounded-lg focus:border-primary"
         placeholder="Search..."
         value={searchQuery}
         onChange={handleSearchQueryChange}
