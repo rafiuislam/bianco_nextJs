@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
             {product.price}
           </p>
           <div className="flex justify-center items-center w-60 h-20">
-            <p className="text-secondary font-regular text-sm font-raleway ">
+            <p className="text-black font-regular text-sm font-raleway ">
               {product.desc}
             </p>
           </div>
@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
             {/* <button className="mt-4 bg-primary text-white font-semibold text-base font-raleway py-2 px-4 rounded hover:bg-secondary/75 ">
               Add to Cart
             </button> */}
-            <button class="mt-4 font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0">
+            <button className="mt-4 font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0">
               Add to Cart
             </button>
           </div>
