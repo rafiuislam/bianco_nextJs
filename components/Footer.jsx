@@ -191,7 +191,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="py-1 pl-4 pr-4 focus:outline-none placeholder-secondary"
+                className="bg-secondary/20 py-1 pl-4 pr-4 focus:outline-none placeholder-secondary"
               />
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
