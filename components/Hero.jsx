@@ -15,15 +15,15 @@ const Hero = ({ HeroImg, HeroPg }) => {
           data-speed="0.5"
         />
 
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 text-left ml-20 pl-4 flex flex-col justify-center items-start md:items-start">
-          <SlideUp offset="-300px 0px -300px 0px">
-            <p className="text-5xl text-white font-medium animate-slideUpCubiBezier">
-              {HeroPg}
-            </p>
-          </SlideUp>
+        <div className="h-full absolute inset-x-0 left-0 sm:text-left sm:ml-20 sm:pl-4 flex flex-col justify-center items-center md:items-start">
+          {/* <SlideUp offset="-300px 0px -300px 0px"> */}
+          <div className="text-5xl text-white font-medium animate-slideUpCubiBezier text-center">
+            <p>{HeroPg}</p>
+          </div>
+          {/* </SlideUp> */}
 
           <div className="">
-            <p className="text-white font-regular text-base font-raleway animate-fadeIn">
+            <p className="text-white font-regular text-base font-raleway animate-fadeIn text-center">
               Home {" >> "}
               <span> {HeroPg}</span>
             </p>

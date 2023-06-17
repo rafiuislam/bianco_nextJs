@@ -108,7 +108,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    passHref
+                    // passHref
                     className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                     onClick={() => setNavbar(!navbar)}
                   >
