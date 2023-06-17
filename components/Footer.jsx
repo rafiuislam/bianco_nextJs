@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
         <div className="p-5 mx-10 md:mx-0">
           <ul>
-            <p className="text-secondary font-regular text-xl font-title sm:pt-0 xs:pt-0 pt-6 pb-6 ">
+            <p className="text-secondary font-semi-bold text-xl font-title sm:pt-0 xs:pt-0 pt-6 pb-6 ">
               Quick Links
             </p>
 
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
         <div className="p-5 mx-10 md:mx-0">
           <ul>
-            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
+            <p className="text-secondary font-semi-bold text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Policies
             </p>
             {policies.map((policy) => (
@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
         <div className="p-5 mx-10 md:mx-0">
           <ul>
-            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
+            <p className="text-secondary font-semi-bold text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Connect With Us
             </p>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer ">
@@ -181,7 +181,7 @@ const Footer = () => {
         </div>
         <div className="p-5 mx-10 md:mx-0">
           <ul>
-            <p className="text-secondary font-regular text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
+            <p className="text-secondary font-semi-bold text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
               Newsletter
             </p>
             <li className="text-secondary font-light text-xs font-custom pb-2 ">

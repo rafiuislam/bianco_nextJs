@@ -149,18 +149,18 @@ const Slider = () => {
       </div>
       {index === 0 && (
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-          <SlideUp offset="-300px 0px -300px 0px">
-            <p className="text-5xl text-primary font-medium animate-slideUpCubiBezier">
-              Bianco Bangladesh
-            </p>
-          </SlideUp>
+          {/* <SlideUp offset="-300px 0px -300px 0px"> */}
+          <p className="text-5xl text-primary font-medium animate-slideUpCubiBezier">
+            Bianco Bangladesh
+          </p>
+          {/* </SlideUp> */}
 
           <div className="self-center">
-            <SlideDown offset="-300px 0px -300px 0px">
-              <p className="text-primary font-medium text-2xl font-raleway animate-fadeIn">
-                Making moments of coffee
-              </p>
-            </SlideDown>
+            {/* <SlideDown offset="-300px 0px -300px 0px"> */}
+            <p className="text-primary font-medium text-2xl font-raleway animate-fadeIn">
+              Making moments of coffee
+            </p>
+            {/* </SlideDown> */}
           </div>
         </div>
       )}
