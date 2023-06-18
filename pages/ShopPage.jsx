@@ -211,7 +211,7 @@ const ShopPage = () => {
           {sortedAndFilteredProducts.map((product) => (
             <div
               key={product.id}
-              className="col-span-1 sm:col-span-2 md:col-span-1 bg-secondary/20 p-8 shadow border border-secondary/20 hover:scale-105 transition-transform ease-in-out duration-500 hover:shadow-lg hover:border-primary"
+              className="col-span-1 sm:col-span-2 md:col-span-1 bg-secondary/20 p-8 shadow border border-secondary/20 hover:scale-105 transition-transform ease-in-out duration-500 hover:border-primary hover:bg-white/25 hover:shadow-2xl"
             >
               <ProductCard product={product} />
             </div>

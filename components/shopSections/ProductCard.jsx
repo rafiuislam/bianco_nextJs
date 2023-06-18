@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   return (
     <div key={product.id}>
       <div className="group relative flex flex-col justify-center items-center">
-        <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75 ">
+        <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75  ">
           <Image
             src={product.imageSrc}
             alt={product.imageAlt}
