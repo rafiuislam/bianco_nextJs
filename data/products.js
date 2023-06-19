@@ -9,7 +9,7 @@ export const products = [
   {
     id: 1,
     name: "Bianco N.1",
-    href: "#",
+    href: "/product/1",
     imageSrc: shopImg1,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3500",
@@ -22,7 +22,7 @@ export const products = [
   {
     id: 2,
     name: "Bianco N.2",
-    href: "#",
+    href: "/product/2",
     imageSrc: shopImg2,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3700",
@@ -35,7 +35,7 @@ export const products = [
   {
     id: 3,
     name: "Bianco N.Gourmet",
-    href: "#",
+    href: "/product/3",
     imageSrc: shopImg3,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3300",
@@ -48,7 +48,7 @@ export const products = [
   {
     id: 4,
     name: "Bianco N.Decaffeinato",
-    href: "#",
+    href: "/product/4",
     imageSrc: shopImg4,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3100",
@@ -61,7 +61,7 @@ export const products = [
   {
     id: 5,
     name: "Bianco N.2.Decaffeinato",
-    href: "#",
+    href: "/product/5",
     imageSrc: shopImg5,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3699",
@@ -74,7 +74,7 @@ export const products = [
   {
     id: 6,
     name: "Bianco N.2.Gourment",
-    href: "#",
+    href: "/product/6",
     imageSrc: shopImg6,
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3900",

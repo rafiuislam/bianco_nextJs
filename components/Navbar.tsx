@@ -61,8 +61,8 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
             <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
-            <span className="hidden sm:flex text-sm">|</span>
-            <span className="hidden sm:flex items-center">
+
+            <span className="hidden sm:flex items-center border-l-2 py-2">
               <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
               <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
               <FaLinkedinIn className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />

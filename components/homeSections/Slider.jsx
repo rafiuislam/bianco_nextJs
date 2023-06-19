@@ -8,6 +8,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import heroImg1 from "../../public/img_hero/Slider-1.jpg";
 import heroImg2 from "../../public/img_hero/Slider-2.jpg";
 import heroImg3 from "../../public/img_hero/Slider-3.jpg";
+import heroImg4 from "../../public/img_hero/Slider-4.jpg";
 import SlideUp from "../animate/SlideUp";
 import SlideDown from "../animate/SlideDown";
 
@@ -21,6 +22,9 @@ const Slider = () => {
     },
     {
       url: heroImg3,
+    },
+    {
+      url: heroImg4,
     },
   ];
 
@@ -71,7 +75,7 @@ const Slider = () => {
 
   const handleArrow = (direction) => {
     if (direction === "l") {
-      setIndex(index === 0 ? 2 : index - 1);
+      setIndex(index === 0 ? 3 : index - 1);
       const imageDiv = document.getElementById("image-div");
       imageDiv.classList.add("animate-slideFromLeft");
       setTimeout(() => {
@@ -79,7 +83,7 @@ const Slider = () => {
       }, 800);
     }
     if (direction === "r") {
-      setIndex(index === 2 ? 0 : index + 1);
+      setIndex(index === 3 ? 0 : index + 1);
       const imageDiv = document.getElementById("image-div");
       imageDiv.classList.add("animate-slideFromRight");
       setTimeout(() => {
@@ -91,7 +95,7 @@ const Slider = () => {
   // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+      setIndex((prevIndex) => (prevIndex === 3 ? 0 : prevIndex + 1));
       const imageDiv = document.getElementById("image-div");
       imageDiv.classList.add("animate-slideFromRight");
       setTimeout(() => {
@@ -176,7 +180,7 @@ const Slider = () => {
         >
           <MdKeyboardArrowDown
             size={40}
-            className="animate-bounce fill-primary cursor-pointer"
+            className="animate-bounce fill-secondary cursor-pointer"
           />
         </Link>
       </div>

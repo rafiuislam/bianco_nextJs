@@ -35,6 +35,7 @@ const spotify = () => {
           <div class="bg-primary/20 grid place-content-end">Item 3</div>
         </div>
       </h1>
+      ;
     </div>
   );
 };

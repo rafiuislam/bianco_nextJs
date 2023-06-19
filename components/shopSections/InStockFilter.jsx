@@ -34,20 +34,6 @@ const InStockFilter = ({ products, onFilterChange }) => {
           <span className="pl-2">In Stock ({"0" + inStockCount})</span>
         </label>
       </div>
-      {/* <div className="flex items-center">
-        <label className="mr-2">
-          <input
-            type="checkbox"
-            // checked={showInStockOnly}
-            onChange={toggleShowInStockOnly}
-            disabled
-          />
-          <span className="pl-2">
-            Out of Stock ({"0"}
-            {getTotalProductCount(products) - inStockCount})
-          </span>
-        </label>
-      </div> */}
     </div>
   );
 };
