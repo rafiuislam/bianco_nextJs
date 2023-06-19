@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import { GrFacebookOption } from "react-icons/gr";
 
 const Footer = () => {
+  const [currentYear] = useState(new Date().getFullYear());
+
   const links = [
     { id: 1, label: "Coffee Beans Online Bangladesh" },
     { id: 2, label: "Espresso Coffee Beans" },
@@ -204,7 +206,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col justify-center items-center text-center p-5 ">
         <h1 className="text-secondary font-light text-xs font-custom pb-3">
-          COPYRIGHT 2023 BIANCO BANGLADESH
+          COPYRIGHT {currentYear} BIANCO BANGLADESH
         </h1>
       </div>
     </section>
