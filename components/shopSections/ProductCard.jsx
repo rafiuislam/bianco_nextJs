@@ -1,12 +1,19 @@
 // "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // import SlideUp from "../animate/SlideUp";
 // import SlideDown from "../animate/SlideDown";
+import { motion } from "framer-motion";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, index }) => {
   return (
-    <div key={product.id}>
+    <motion.div
+      key={product.id}
+      initial={{ x: 1000 }} // Initial x position (off-screen to the left)
+      animate={{ x: 0 }} // Animation state (move to original position)
+      transition={{ duration: 0.3, delay: index * 0.2 }} // Animation duration and delay
+    >
       <div className="group relative flex flex-col justify-center items-center">
         <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75  ">
           <Image
@@ -20,13 +27,13 @@ const ProductCard = ({ product }) => {
 
         <div className="mt-4 text-center">
           <h3 className="text-primary font-semi-bold text-lg font-custom">
-            <a href={product.href}>
+            <Link href={product.href}>
               <span aria-hidden="true" className="absolute inset-0" />
               {product.name}
-            </a>
+            </Link>
           </h3>
           <p className="py-2 text-black font-light text-lg font-custom">
-            {product.price}
+            Tk {product.price}
           </p>
           <div className="flex justify-center items-center w-60 h-20">
             <p className="text-black font-regular text-sm font-raleway ">
@@ -40,7 +47,7 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

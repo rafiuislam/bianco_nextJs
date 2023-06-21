@@ -13,7 +13,7 @@ const spotify = () => {
         ></iframe> */}
         <iframe
           // style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/05OkqemhVmD27zXfdnyNsy?utm_source=generator"
+          src="https://open.spotify.com/embed/playlist/46C8kZSKeZeViRFotyXrTE?utm_source=generator"
           width="400"
           height="352"
           // frameBorder="0"

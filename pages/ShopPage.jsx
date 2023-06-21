@@ -21,6 +21,8 @@ const ShopPage = () => {
 
   // Derive beanTypes from products
   const beanTypes = [...new Set(products.map((product) => product.beanType))];
+  // console.log(beanTypes);
+  // console.log(selectedBeanType);
 
   // Derive packageOptions from products
   const packageOptions = [
@@ -54,8 +56,14 @@ const ShopPage = () => {
     setSearchQuery(event.target.value);
   };
 
+  // // Apply debounce to the search filter function
+  // const debouncedFilter = debounce((query) => {
+  //   setSearchQuery(query);
+  // }, 300); // Debounce delay for search in milliseconds
+
   const filteredProducts = products.filter((product) => {
     const isInStock = !showInStockOnly || product.inStock;
+    // !false || false => true || false / true  true
     const isInRange =
       (priceRangeFrom === "" && priceRangeTo === "") ||
       (priceRangeFrom !== "" &&
@@ -207,13 +215,12 @@ const ShopPage = () => {
         </div>
         {/* const functional component id="25tc" that gone */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sortedAndFilteredProducts.map((product) => (
+          {sortedAndFilteredProducts.map((product, index) => (
             <div
               key={product.id}
               className="col-span-1 sm:col-span-2 md:col-span-1 bg-secondary/20 p-8 shadow border border-secondary/20 hover:scale-105 transition-transform ease-in-out duration-500 hover:border-primary hover:bg-white/25 hover:shadow-2xl"
             >
-              {/* <Link href={`/products/${product.id}`}></Link> */}
-              <ProductCard product={product} />
+              <ProductCard product={product} index={index} />
             </div>
           ))}
         </div>

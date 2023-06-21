@@ -1,9 +1,9 @@
 // use client"; // this is a client component
 import React, { useState } from "react";
-
 import Link from "next/link";
 // import { useTheme } from "next-themes";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsCartDash, BsSearch } from "react-icons/bs";
@@ -50,17 +50,47 @@ const Navbar = () => {
       <div>
         <div className="flex items-center justify-between">
           <div className="md:mx-auto md:py-5 md:block">
-            <Image
-              src="/img/Bianco-Logo-Black.png"
-              alt="Logo"
-              width={200}
-              height={50}
-              className="md:ml-[50%]"
-            />
+            <Link href="/">
+              <Image
+                src="/img/Bianco-Logo-Black.png"
+                alt="Logo"
+                width={200}
+                height={50}
+                className="md:ml-[50%]"
+              />
+            </Link>
           </div>
           <div className="flex items-center justify-between">
-            <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
-            <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
+            <span className="flex items-center pr-2">
+              <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
+              <Link href="/cart">
+                {/* <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" /> */}
+
+                <div className="relative mr-4 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300">
+                  <MdOutlineShoppingCart
+                    className=" hover:fill-primary"
+                    size={25}
+                  />
+                  {/* <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="h-8 w-8 text-gray-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                  />
+                </svg> */}
+                  <span className="absolute -top-2 left-4 rounded-full bg-primary/80 p-0.5 px-2 text-xs text-white">
+                    2
+                  </span>
+                </div>
+              </Link>
+            </span>
 
             <span className="hidden sm:flex items-center border-l-2 py-2">
               <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
@@ -96,7 +126,7 @@ const Navbar = () => {
               navbar
                 ? // improve the animate-slideFromRight animation
                   "block animate- md:animate-none"
-                : "hidden "
+                : "hidden"
             }`}
           >
             <div className="md:flex md:space-x-6 items-center justify-center space-y-6 md:pb-6 md:space-y-0">

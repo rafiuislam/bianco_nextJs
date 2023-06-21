@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link";
+
 import SlideUp from "../animate/SlideUp";
 // import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
@@ -29,6 +29,7 @@ const responsive = {
 
 const Shop = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  console.log(activeIndex);
 
   return (
     <section id="homeshop" className="relative">

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { products } from "../data/products";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -41,7 +42,11 @@ const ProductDetails = () => {
     <section className="text-gray-700 overflow-hidden bg-bg-h">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap justify-around">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <Image
               src={product.imageSrc}
               alt={product.imageAlt}
@@ -49,8 +54,13 @@ const ProductDetails = () => {
               width={250}
               height={75}
             />
-          </div>
-          <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          </motion.div>
+          <motion.div
+            className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <h2 className="text-sm title-font text-secondary tracking-widest">
               Bianco
             </h2>
@@ -124,7 +134,7 @@ const ProductDetails = () => {
               </span> */}
               <span class="flex py-2">
                 <a class="text-gray-500">
-                  <GrFacebookOption className="mr-4  text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                  <GrFacebookOption className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
                 </a>
                 <a class="ml-2 text-gray-500">
                   <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
@@ -184,7 +194,7 @@ const ProductDetails = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

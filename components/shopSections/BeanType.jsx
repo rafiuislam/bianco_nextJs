@@ -3,8 +3,6 @@ import React from "react";
 const BeanType = ({ beanTypes, selectedBeanType, onBeanTypeChange }) => {
   const handleBeanTypeChange = (value) => {
     if (selectedBeanType === value) {
-      // Deselect the bean type if it is already selected
-      onBeanTypeChange("");
     } else {
       // Select the clicked bean type
       onBeanTypeChange(value);
