@@ -181,7 +181,7 @@ const Navbar = () => {
                           menubar && navbar && smallscreendetect
                             ? // sm screen
                               ""
-                            : "md:absolute md:left-[-20%] md:right-0 right-0 md:mt-1.5 md:w-40 w-fit hidden md:bg-white lg:shadow-md rounded-md py-2 group-hover:md:block"
+                            : "md:absolute md:left-[-20%] md:right-0 right-0 md:mt-1 md:w-40 w-fit hidden md:bg-white lg:shadow-md rounded-md py-2 group-hover:md:block"
                           // lg screen
                         }`}
                       >
