@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import SlideUp from "../animate/SlideUp";
 // import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Carousel from "react-multi-carousel";

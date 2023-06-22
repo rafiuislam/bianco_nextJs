@@ -45,8 +45,7 @@ module.exports = {
         // slideFromLeft:
         //   "slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
         slideFromLeft: "slideFromLeft 0.8s cubic-bezier(0.25, 0.1, 0.75, 0.9)",
-        slideDownCubiBezier:
-          "slideDown 1.5s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        slideDownCubiBezier: "slideDown 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
         fadeAndScale: "fadeAndScale 1s ease-in-out",
       },
       animationDelay: {

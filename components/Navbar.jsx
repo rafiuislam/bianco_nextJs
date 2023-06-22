@@ -1,13 +1,12 @@
-// use client"; // this is a client component
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-// import { useTheme } from "next-themes";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsCartDash, BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
   {
@@ -29,6 +28,28 @@ const NAV_ITEMS = [
   {
     label: "LEARN",
     page: "learn",
+    subMenu: [
+      {
+        label: "About Bianco",
+        page: "about-bianco",
+      },
+      {
+        label: "Our Beans",
+        page: "our-beans",
+      },
+      {
+        label: "Roasting Guide",
+        page: "roasting-guide",
+      },
+      {
+        label: "Brewing Guide",
+        page: "brewing-guide",
+      },
+      {
+        label: "Blog",
+        page: "blog",
+      },
+    ],
   },
   {
     label: "CONTACT US",
@@ -37,13 +58,36 @@ const NAV_ITEMS = [
 ];
 
 const Navbar = () => {
-  // const { systemTheme, theme, setTheme } = useTheme();
-  // const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
+  const [menubar, setMenubar] = useState(false);
+  const [smallscreendetect, setSmallscreendetect] = useState(false);
 
   const toggleNavbar = () => {
     setNavbar(!navbar);
   };
+
+  // Function to detect small screen
+  const detectSmallScreen = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 768) {
+      setSmallscreendetect(true);
+    } else {
+      setSmallscreendetect(false);
+    }
+  };
+
+  // Run the function on component mount
+  useEffect(() => {
+    detectSmallScreen();
+  }, []);
+
+  // Run the function on window resize
+  useEffect(() => {
+    window.addEventListener("resize", detectSmallScreen);
+    return () => {
+      window.removeEventListener("resize", detectSmallScreen);
+    };
+  }, []);
 
   return (
     <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:border-b dark:border-stone-600">
@@ -64,27 +108,12 @@ const Navbar = () => {
             <span className="flex items-center pr-2">
               <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
               <Link href="/cart">
-                {/* <BsCartDash className="mr-2 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" /> */}
-
                 <div className="relative mr-4 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300">
                   <MdOutlineShoppingCart
                     className=" hover:fill-primary"
                     size={25}
                   />
-                  {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="h-8 w-8 text-gray-600"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                  />
-                </svg> */}
+
                   <span className="absolute -top-2 left-4 rounded-full bg-primary/80 p-0.5 px-2 text-xs text-white">
                     2
                   </span>
@@ -125,7 +154,7 @@ const Navbar = () => {
             className={`flex-1 justify-self-center pb-3 mt-8 mb-0 md:block md:pb-0 md:mt-0 pl-6 sm:pl-0 ${
               navbar
                 ? // improve the animate-slideFromRight animation
-                  "block animate- md:animate-none"
+                  "block animate-showMenu md:animate-none"
                 : "hidden"
             }`}
           >
@@ -133,6 +162,50 @@ const Navbar = () => {
               {NAV_ITEMS.map((item, idx) => {
                 const linkClassName =
                   item.label === "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
+
+                // Learn submenu
+                if (item.subMenu) {
+                  return (
+                    <div
+                      key={idx}
+                      className="relative text-base font-raleway font-sans font-semi-bold inline-block group cursor-pointer z-10"
+                    >
+                      <span
+                        className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
+                        onClick={() => setMenubar(!menubar)}
+                      >
+                        {item.label}
+                      </span>
+                      <div
+                        className={`${
+                          menubar && navbar && smallscreendetect
+                            ? // sm screen
+                              ""
+                            : "md:absolute md:left-[-20%] md:right-0 right-0 md:mt-1.5 md:w-40 w-fit hidden md:bg-white lg:shadow-md rounded-md py-2 group-hover:md:block"
+                          // lg screen
+                        }`}
+                      >
+                        {item.subMenu.map((subItem, subIdx) => (
+                          <Link
+                            key={subIdx}
+                            href={`/${subItem.page}`}
+                            // className="block lg:px-4 px-6 lg:py-2 py-2 text-sm hover:bg-secondary/20"
+                            className={`${
+                              menubar && navbar && smallscreendetect
+                                ? // sm screen
+                                  "block lg:px-4 px-6 lg:py-2 py-2 text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300"
+                                : "block lg:px-4 px-6 lg:py-2 py-2 text-sm font-raleway font-sansfont-raleway font-sans hover:bg-secondary/20"
+                              // lg screen
+                            }`}
+                            onClick={() => setNavbar(!navbar)}
+                          >
+                            {subItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
 
                 return (
                   <Link
@@ -142,7 +215,8 @@ const Navbar = () => {
                     className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                     onClick={() => setNavbar(!navbar)}
                   >
-                    {item.label}
+                    {" "}
+                    <div>{item.label}</div>
                   </Link>
                 );
               })}

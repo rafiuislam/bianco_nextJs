@@ -8,20 +8,20 @@ const Footer = () => {
   const [currentYear] = useState(new Date().getFullYear());
 
   const links = [
-    { id: 1, label: "Coffee Beans Online Bangladesh" },
-    { id: 2, label: "Espresso Coffee Beans" },
-    { id: 3, label: "Coffee Beans Suppliers" },
-    { id: 4, label: "South Indian Filter Coffee Online" },
-    { id: 5, label: "Green Coffee" },
-    { id: 6, label: "Decafe Coffee" },
-    { id: 7, label: "Speciality Coffee" },
-    { id: 8, label: "Coffee Roasters" },
-    { id: 9, label: "Our Approach" },
-    { id: 10, label: "Roast Profiles" },
-    { id: 11, label: "Brew Guides" },
-    { id: 12, label: "For Business" },
-    { id: 13, label: "Sitemap" },
-    { id: 14, label: "Blogs" },
+    { id: 1, label: "About Bianco" },
+    { id: 2, label: "Our Beans" },
+    { id: 3, label: "Roasting Guide" },
+    { id: 4, label: "Brewing Guide" },
+    { id: 5, label: "Blog" },
+    // { id: 6, label: "Decafe Coffee" },
+    // { id: 7, label: "Speciality Coffee" },
+    // { id: 8, label: "Coffee Roasters" },
+    // { id: 9, label: "Our Approach" },
+    // { id: 10, label: "Roast Profiles" },
+    // { id: 11, label: "Brew Guides" },
+    // { id: 12, label: "For Business" },
+    // { id: 13, label: "Sitemap" },
+    // { id: 14, label: "Blogs" },
   ];
 
   const policies = [

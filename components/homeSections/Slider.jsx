@@ -107,10 +107,10 @@ const Slider = () => {
   }, [index]);
 
   const goToSlide = (index) => {
-    setIndex(index);
+    // setIndex(index);
   };
 
-  console.log(index);
+  // console.log(index);
 
   return (
     <section

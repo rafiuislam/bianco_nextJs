@@ -29,7 +29,7 @@
     transform: translateZ(-1px) scale(3);
   }
 }
-
+/* 
 .parallax {
   transform-style: preserve-3d;
   perspective: 1px;
@@ -50,7 +50,7 @@
   transform: translateZ(-1px) scale(2);
   background: url("/img/Take-Your-Time-bg.jpg") center/cover fixed no-repeat;
   animation: parallax 10s infinite linear;
-}
+} */
 
 .react-multiple-carousel__arrow--right {
   right: calc(4% + -45px);

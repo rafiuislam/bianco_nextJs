@@ -24,7 +24,9 @@
     "**/*.tsx",
     "pages/_app.js",
     "pages/index.jsx",
-    "components/SlideUp.jsx"
+    "components/SlideUp.jsx",
+    "components/Navbar.jsx",
+    "components/Navbar.jsx"
   ],
   "exclude": ["node_modules"]
 }
