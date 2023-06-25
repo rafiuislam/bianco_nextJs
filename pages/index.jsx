@@ -8,10 +8,10 @@ import Biancaffe from "../components/homeSections/Biancaffe";
 //HomePage
 export default function Home() {
   return (
-    <div className="bg-bg-h">
+    <div className="bg-bg-h overflow-y-hidden">
       <Slider />
 
-      <Biancaffe />
+      {/* <Biancaffe /> */}
       <Shop />
 
       <About />

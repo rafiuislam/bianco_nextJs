@@ -6,7 +6,8 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsCartDash, BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
-import { motion } from "framer-motion";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+// import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
   {
@@ -61,6 +62,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [menubar, setMenubar] = useState(false);
   const [smallscreendetect, setSmallscreendetect] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleNavbar = () => {
     setNavbar(!navbar);
@@ -158,7 +160,7 @@ const Navbar = () => {
                 : "hidden"
             }`}
           >
-            <div className="md:flex md:space-x-6 items-center justify-center space-y-6 md:pb-6 md:space-y-0">
+            <div className="md:flex md:space-x-6 items-center justify-center space-y-6  md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
                 const linkClassName =
                   item.label === "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
@@ -168,20 +170,33 @@ const Navbar = () => {
                   return (
                     <div
                       key={idx}
-                      className="relative text-base font-raleway font-sans font-semi-bold inline-block group cursor-pointer z-10"
+                      className="relative md:pb-4 text-base font-raleway font-sans font-semi-bold inline-block group cursor-pointer z-10"
                     >
                       <span
-                        className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
+                        className={`inline-block ${linkClassName} flex items-center text-base font-raleway font-sans font-semibold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                         onClick={() => setMenubar(!menubar)}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
                       >
-                        {item.label}
+                        <span className="mr-1">{item.label}</span>
+                        {isHovered ? (
+                          <AiFillCaretUp
+                            className="text-secondary "
+                            size={15}
+                          />
+                        ) : (
+                          <AiFillCaretDown
+                            className="text-secondary "
+                            size={15}
+                          />
+                        )}
                       </span>
                       <div
                         className={`${
                           menubar && navbar && smallscreendetect
                             ? // sm screen
                               ""
-                            : "md:absolute md:left-[-20%] md:right-0 right-0 md:mt-1 md:w-40 w-fit hidden md:bg-white lg:shadow-md rounded-md py-2 group-hover:md:block"
+                            : "md:absolute md:left-[-20%] md:right-0 right-0 md:mt-4 md:w-40 w-fit hidden md:bg-white lg:shadow-md rounded-md py-2 group-hover:md:block"
                           // lg screen
                         }`}
                       >
@@ -212,7 +227,7 @@ const Navbar = () => {
                     key={idx}
                     href={`/${item.page}`}
                     // passHref
-                    className={`block lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
+                    className={`block md:pb-4 lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {" "}

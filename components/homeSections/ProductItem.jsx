@@ -5,6 +5,7 @@ import SlideDown from "../animate/SlideDown";
 // import { motion } from "framer-motion";
 
 const ProductItem = ({ product }) => {
+  console.log(product.id);
   return (
     <div key={product.id}>
       <div className="group relative flex flex-col justify-center items-center ">

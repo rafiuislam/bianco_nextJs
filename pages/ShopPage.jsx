@@ -111,7 +111,7 @@ const ShopPage = () => {
   const sortedAndFilteredProducts = sortProducts(filteredProducts);
 
   return (
-    <div className="grid grid-cols-12 h-full">
+    <div className="grid grid-cols-12 h-full overflow-y-hidden ">
       <div className="col-span-12 md:col-span-3 md:row-span-full bg-bg-h p-6 md:pb-20 h-full">
         <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
           Shop
