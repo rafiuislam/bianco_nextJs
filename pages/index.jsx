@@ -11,7 +11,7 @@ export default function Home() {
     <div className="bg-bg-h overflow-y-hidden">
       <Slider />
 
-      {/* <Biancaffe /> */}
+      <Biancaffe />
       <Shop />
 
       <About />
