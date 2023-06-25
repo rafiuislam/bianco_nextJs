@@ -15,6 +15,7 @@ const Cart = () => {
           Cart Items
         </h1>
       </SlideUp>
+
       <div className="mx-auto max-w-6xl justify-center px-6 md:flex md:space-x-16 xl:px-0">
         <div className="rounded-lg md:w-2/3">
           {/* cartItem-1 */}

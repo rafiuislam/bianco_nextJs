@@ -28,49 +28,6 @@ const Slider = () => {
     },
   ];
 
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const prevSlide = useCallback(() => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-  //   );
-  // }, [slides.length]);
-
-  // const nextSlide = useCallback(() => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-  //   );
-  //   const imageDiv = document.getElementById("image-div");
-  //   imageDiv.classList.add("animate-slideFromRight");
-  //   setTimeout(() => {
-  //     imageDiv.classList.remove("animate-slideFromRight");
-  //   }, 1000);
-  // }, [slides.length]);
-
-  // useEffect(() => {
-  //   const interval = setInterval(nextSlide, 5000);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [nextSlide, currentIndex]);
-
-  // const handleLeftArrowClick = useCallback(() => {
-  //   prevSlide();
-  //   const imageDiv = document.getElementById("image-div");
-  //   imageDiv.classList.add("animate-slideFromLeft");
-  //   setTimeout(() => {
-  //     imageDiv.classList.remove("animate-slideFromLeft");
-  //   }, 1000);
-  // }, [prevSlide]);
-
-  // // const handleRightArrowClick = useCallback(() => {
-  // //   nextSlide();
-  // // }, [nextSlide]);
-
-  // const goToSlide = (slideIndex) => {
-  //   setCurrentIndex(slideIndex);
-  // };
-
   const [index, setIndex] = useState(0);
 
   const handleArrow = (direction) => {

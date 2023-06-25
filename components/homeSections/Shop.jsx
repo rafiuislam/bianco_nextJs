@@ -28,7 +28,6 @@ const responsive = {
 
 const Shop = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  console.log(activeIndex);
 
   return (
     <section id="homeshop" className="relative">
@@ -43,10 +42,11 @@ const Shop = () => {
           <Carousel
             responsive={responsive}
             autoPlay={true}
+            autoPlaySpeed={2000}
             swipeable={true}
             draggable={true}
             showDots={false}
-            infinite={true}
+            infinite
             containerClass="carousel-container"
             itemClass="carousel-item"
             beforeChange={(previousSlide, nextSlide) => {
