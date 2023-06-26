@@ -40,7 +40,13 @@ const About = () => {
           </SlideFromLeft>
           <div className="mt-6 overflow-y-hidden md:mt-4 mb-4 text-center md:text-start">
             <SlideFromLeft offset="-300px 0px -300px 0px">
-              <button className="bg-primary text-white font-regular text-base font-raleway py-2 px-4 rounded hover:scale-110 transition-transform duration-300 hover:bg-opacity-80">
+              {/* <button className="bg-primary text-white font-regular text-base font-raleway py-2 px-4 rounded hover:scale-110 transition-transform duration-300 hover:bg-opacity-80">
+                Learn More
+              </button>
+              <button className="relative border-2 border-secondary bg-transparent py-2.5 px-5 font-medium uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
+                Learn More
+              </button> */}
+              <button className=" font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
                 Learn More
               </button>
             </SlideFromLeft>

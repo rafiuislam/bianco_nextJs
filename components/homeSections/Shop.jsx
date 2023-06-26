@@ -37,7 +37,7 @@ const Shop = () => {
           </h1>
         </SlideUp>
 
-        <div className="mt-6 relative ">
+        <div className="mt-6 relative">
           <Carousel
             responsive={responsive}
             autoPlay={true}
@@ -46,16 +46,8 @@ const Shop = () => {
             draggable={true}
             showDots={false}
             infinite
-            rtl={false}
             containerClass="carousel-container"
             itemClass="carousel-item"
-            beforeChange={(previousSlide, nextSlide) => {
-              if (nextSlide === products.length - 1) {
-                // If the next slide is the last product, update the active index
-                setActiveIndex(nextSlide);
-                // console.log(nextSlide);
-              }
-            }}
             customLeftArrow={
               <BsChevronCompactLeft
                 size={30}
