@@ -13,7 +13,6 @@ export default function Home() {
       <Hero />
       <Biancaffe />
       <Shop />
-
       <About />
       <Instagram />
       <Popular />
