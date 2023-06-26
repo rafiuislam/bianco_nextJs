@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SlideUp from "../animate/SlideUp";
-// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductItem from "./ProductItem";
@@ -47,6 +46,7 @@ const Shop = () => {
             draggable={true}
             showDots={false}
             infinite
+            rtl={false}
             containerClass="carousel-container"
             itemClass="carousel-item"
             beforeChange={(previousSlide, nextSlide) => {

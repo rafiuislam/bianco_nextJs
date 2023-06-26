@@ -8,6 +8,25 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Hero = () => {
+  const slider = [
+    {
+      id: 1,
+      url: "/img_hero/Slider-1.jpg",
+    },
+    {
+      id: 2,
+      url: "/img_hero/Slider-2.jpg",
+    },
+    {
+      id: 3,
+      url: "/img_hero/Slider-3.jpg",
+    },
+    {
+      id: 4,
+      url: "/img_hero/Slider-4.jpg",
+    },
+  ];
+
   return (
     <section id="carousel">
       <Carousel
@@ -61,36 +80,31 @@ const Hero = () => {
         slidesToSlide={1}
         swipeable
       >
-        <div>
-          <Image
-            src={heroImg1}
-            className="w-full h-full object-cover "
-            alt="Slider Image"
-          />
-        </div>
-        <div>
-          <Image
-            src={heroImg2}
-            className="w-full h-full object-cover"
-            alt="Slider Image"
-          />
-        </div>
-        <div>
-          <Image
-            src={heroImg3}
-            className="w-full h-full object-cover"
-            objectFit="cover"
-            alt="Slider Image"
-          />
-        </div>
-        <div>
-          <Image
-            src={heroImg4}
-            className="w-full h-full object-cover"
-            objectFit="cover"
-            alt="Slider Image"
-          />
-        </div>
+        {slider.map((slide) => (
+          <div key={slide.id}>
+            <Image
+              src={slide.url}
+              className="w-full h-full object-cover"
+              layout="responsive"
+              alt="Slider Image"
+              width={1200}
+              height={800}
+              priority
+            />
+            {slide.id === 1 && (
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+                <p className="text-5xl text-primary font-medium animate-slideUpCubiBezier">
+                  Bianco Bangladesh
+                </p>
+                <div className="self-center">
+                  <p className="text-primary font-medium text-2xl font-raleway animate-fadeIn">
+                    Making moments of coffee
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </Carousel>
     </section>
   );
