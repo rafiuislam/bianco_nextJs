@@ -88,7 +88,10 @@ const ContactUs = () => {
           </p>
           <div className="flex items-center justify-center w-full">
             <FadeAndScale offset="-300px 0px -300px 0px">
-              <button className="bg-black text-white text-base font-semibold mt-9 leading-none py-4 px-10 rounded hover:bg-primary hover:scale-110 transition-transform duration-300 hover:bg-opacity-80 focus:outline-none animate-fadeIn">
+              {/* <button className="bg-black text-white text-base font-semibold mt-9 leading-none py-4 px-10 rounded hover:bg-primary hover:scale-110 transition-transform duration-300 hover:bg-opacity-80 focus:outline-none animate-fadeIn">
+                SUBMIT
+              </button> */}
+              <button className="font-semibold text-base font-raleway mt-9 relative bg-black py-3 px-10 rounded uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
                 SUBMIT
               </button>
             </FadeAndScale>

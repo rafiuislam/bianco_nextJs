@@ -6,6 +6,8 @@ import heroImg3 from "../../public/img_hero/Slider-3.jpg";
 import heroImg4 from "../../public/img_hero/Slider-4.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-scroll/modules";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Hero = () => {
   const slider = [
@@ -33,7 +35,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={3000}
+        autoPlaySpeed={30000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -92,12 +94,12 @@ const Hero = () => {
               priority
             />
             {slide.id === 1 && (
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-5xl text-primary font-medium animate-slideUpCubiBezier">
+              <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+                <p className="text-base sm:text-5xl text-primary font-medium animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
                 <div className="self-center">
-                  <p className="text-primary font-medium text-2xl font-raleway animate-fadeIn">
+                  <p className="text-primary font-medium text-sm sm:text-2xl font-raleway animate-fadeIn">
                     Making moments of coffee
                   </p>
                 </div>
@@ -106,6 +108,21 @@ const Hero = () => {
           </div>
         ))}
       </Carousel>
+      <div className="flex flex-row items-center text-center justify-center pt-2">
+        <Link
+          to="biancaffe"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <MdKeyboardArrowDown
+            size={40}
+            className="animate-bounce fill-primary cursor-pointer"
+          />
+        </Link>
+      </div>
     </section>
   );
 };
