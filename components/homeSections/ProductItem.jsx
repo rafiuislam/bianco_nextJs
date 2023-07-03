@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SlideUp from "../animate/SlideUp";
 import SlideDown from "../animate/SlideDown";
 // import { motion } from "framer-motion";
@@ -31,10 +32,10 @@ const ProductItem = ({ product }) => {
         {/* <SlideUp offset=""> */}
         <div className="mt-4 text-center">
           <h3 className="text-primary font-semi-bold text-lg font-custom animate-slideUpCubiBezier">
-            <a href={product.href}>
+            <Link href={product.href}>
               <span aria-hidden="true" className="absolute inset-0" />
               {product.name}
-            </a>
+            </Link>
           </h3>
           <p className="py-2 text-black font-light text-lg font-custom">
             Tk {product.price}
