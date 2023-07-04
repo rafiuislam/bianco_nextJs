@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import SlideUp from "../animate/SlideUp";
 import SlideDown from "../animate/SlideDown";
 // import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 const ProductItem = ({ product }) => {
+  const dispatch = useDispatch();
+
   return (
     <div key={product.id}>
       <div className="group relative flex flex-col justify-center items-center ">
@@ -27,10 +32,10 @@ const ProductItem = ({ product }) => {
         {/* <SlideUp offset=""> */}
         <div className="mt-4 text-center">
           <h3 className="text-primary font-semi-bold text-lg font-custom animate-slideUpCubiBezier">
-            <a href={product.href}>
+            <Link href={product.href}>
               <span aria-hidden="true" className="absolute inset-0" />
               {product.name}
-            </a>
+            </Link>
           </h3>
           <p className="py-2 text-black font-light text-lg font-custom">
             Tk {product.price}
@@ -41,7 +46,10 @@ const ProductItem = ({ product }) => {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <button className="mt-4 font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0">
+            <button
+              onClick={() => dispatch(addToCart(product))}
+              className="mt-4 font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0"
+            >
               Add to Cart
             </button>
           </div>
