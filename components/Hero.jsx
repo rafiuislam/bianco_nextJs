@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 
-const Hero = ({ HeroImg, HeroPg }) => {
+const Hero = ({ HeroImg, HeroPg, Herost }) => {
   return (
     <section id="hero" className="w-full m-auto">
       <div className="relative h-[300px] ">
@@ -24,7 +24,7 @@ const Hero = ({ HeroImg, HeroPg }) => {
 
           <div className="">
             <p className="text-white font-regular text-base font-raleway animate-fadeIn text-center">
-              Home {" >> "}
+              {Herost} {" >> "}
               <span> {HeroPg}</span>
             </p>
           </div>

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 // import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 // Importing actions from  cart.slice.js
 import {
+  addToCart,
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
@@ -18,6 +19,12 @@ import {
 const Cart = () => {
   // Extracting cart state from redux store
   const cart = useSelector((state) => state.cart);
+
+  // Saving cart to local storage
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+  // console.log(cart);
 
   // Reference to the dispatch function from redux store
   const dispatch = useDispatch();

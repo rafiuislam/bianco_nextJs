@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // import SlideFromRight from "../animate/SlideFromRight";
 import SlideFromLeft from "../animate/SlideFromLeft";
 import SlideUp from "../animate/SlideUp";
 import FadeAndScale from "../animate/FadeAndScale";
-import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -18,15 +18,13 @@ const About = () => {
         </h1>
       </SlideUp>
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 p-4 px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
+        <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
           <SlideFromLeft offset="-300px 0px -300px 0px">
             <p className="mt-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
               <span className="relative z-10">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using Content
-                here, content here, making it look like readable English.
+                Bianco Bangladesh is here to introduce the same rich taste,
+                divine warmth and proud lineage of Bianco Coffee beans to the
+                coffee connoisseurs of Bangladesh.
               </span>
               <span className="absolute inset-0 flex items-center justify-center z-0">
                 <Image
@@ -46,9 +44,11 @@ const About = () => {
               <button className="relative border-2 border-secondary bg-transparent py-2.5 px-5 font-medium uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
                 Learn More
               </button> */}
-              <button className=" font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
-                Learn More
-              </button>
+              <Link href={`about-bianco`}>
+                <button className=" font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
+                  Learn More
+                </button>
+              </Link>
             </SlideFromLeft>
           </div>
         </div>
