@@ -8,6 +8,7 @@ import { BsCartDash, BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 // import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const NAV_ITEMS = [
   {
@@ -59,6 +60,14 @@ const NAV_ITEMS = [
 ];
 
 const Navbar = () => {
+  // Selecting cart from global state
+  const cart = useSelector((state) => state.cart);
+
+  // Getting the count of items
+  const getItemsCount = () => {
+    return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
+  };
+
   const [navbar, setNavbar] = useState(false);
   const [menubar, setMenubar] = useState(false);
   const [smallscreendetect, setSmallscreendetect] = useState(false);
@@ -117,7 +126,7 @@ const Navbar = () => {
                   />
 
                   <span className="absolute -top-2 left-4 rounded-full bg-primary/80 p-0.5 px-2 text-xs text-white">
-                    2
+                    {getItemsCount()}
                   </span>
                 </div>
               </Link>
