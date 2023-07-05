@@ -21,9 +21,10 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
 
   // Saving cart to local storage
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+  // useEffect(() => {
+  //   localStorage.setItem("cart", JSON.stringify(cart));
+  // });
+  localStorage.setItem("cart", JSON.stringify(cart));
   // console.log(cart);
 
   // Reference to the dispatch function from redux store

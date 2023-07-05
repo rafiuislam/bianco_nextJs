@@ -10,6 +10,7 @@ import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import RoastingTypes from "../components/learn/roastingGuide/roastingTypes";
 import RoastingProcesses from "../components/learn/roastingGuide/RoastingProcesses";
+import Popular from "../components/homeSections/Popular";
 
 const roastingGuide = () => {
   return (
@@ -123,6 +124,7 @@ const roastingGuide = () => {
             </div>
           </div>
         </section>
+        <Popular />
       </div>
     </div>
   );
