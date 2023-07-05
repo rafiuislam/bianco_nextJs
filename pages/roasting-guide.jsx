@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img/Take-Your-Time-bg.jpg";
+import HeroImg from "../public/img_learn/Cover-roast.jpg";
 import Image from "next/image";
 import Link from "next/link";
 // import SlideFromRight from "../animate/SlideFromRight";
@@ -24,7 +24,7 @@ const roastingGuide = () => {
         <RoastingTypes />
         <RoastingProcesses />
 
-        <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 order-1 lg:order-2">
               <FadeAndScale offset="-300px 0px -300px 0px">
@@ -34,11 +34,12 @@ const roastingGuide = () => {
                   alt="Image 1"
                   width={200}
                   height={50}
+                  loading="lazy"
                 />
               </FadeAndScale>
             </div>
 
-            <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1">
+            <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1">
               <SlideFromLeft offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
@@ -88,7 +89,7 @@ const roastingGuide = () => {
               </FadeAndScale>
             </div>
 
-            <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative">
+            <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
               <SlideFromRight offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">

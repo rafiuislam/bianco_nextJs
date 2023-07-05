@@ -6,19 +6,6 @@ import SlideUp from "../animate/SlideUp";
 import SlideDown from "../animate/SlideDown";
 import imgBian from "../../public/img/Take-Your-Time-bg.jpg";
 import imgBian2 from "../../public/img_hero/Slider-4.jpg";
-// import { motion } from "framer-motion";
-
-// const slides = [
-//   {
-//     url: imgBian,
-//   },
-//   {
-//     url: imgBian,
-//   },
-//   {
-//     url: imgBian,
-//   },
-// ];
 
 const Biancaffe = () => {
   return (
@@ -59,9 +46,6 @@ const Biancaffe = () => {
                     See More
                   </button>
                 </div>
-                {/* <button className="rounded-full bg-primary text-white font-raleway font-medium text-sm py-2 px-3.5 shadow shadow-black/60">
-                See More
-              </button> */}
               </div>
             </div>
           </SlideDown>
@@ -69,7 +53,7 @@ const Biancaffe = () => {
             <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
               <div className="h-98 w-98">
                 <Image
-                  className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 group-hover:scale-125"
+                  className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 scale-125 group-hover:scale-100"
                   src={imgBian2}
                   alt=""
                 />

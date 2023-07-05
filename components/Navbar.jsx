@@ -23,10 +23,10 @@ const NAV_ITEMS = [
     label: "SHOP",
     page: "ShopPage",
   },
-  {
-    label: "FOR BUSINESS",
-    page: "business",
-  },
+  // {
+  //   label: "FOR BUSINESS",
+  //   page: "business",
+  // },
   {
     label: "LEARN",
     page: "learn",

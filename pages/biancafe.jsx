@@ -14,7 +14,7 @@ const biancafe = () => {
   return (
     <div className="bg-bg-h">
       <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"BIANCAFFE"} />
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
         <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
           <span className="relative z-10">
             Coffee is not meant to be ‘just’ drunk. It is meant to be
@@ -61,7 +61,7 @@ const biancafe = () => {
             </FadeAndScale>
           </div>
 
-          <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1">
+          <div className="lg:w-1/2 pr-0 lg:pr-8 flex flex-col justify-center relative order-2 lg:order-1">
             <SlideFromLeft offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
@@ -114,7 +114,7 @@ const biancafe = () => {
             </FadeAndScale>
           </div>
 
-          <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative">
+          <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
             <SlideFromRight offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">

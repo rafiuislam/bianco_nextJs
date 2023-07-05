@@ -26,7 +26,7 @@ const RoastingProcesses = () => {
           </FadeAndScale>
         </div>
 
-        <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative">
+        <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
           <SlideFromRight offset="-300px 0px -300px 0px">
             {/* type01 */}
             <div className="">

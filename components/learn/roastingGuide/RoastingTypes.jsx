@@ -9,12 +9,12 @@ const RoastingTypes = () => {
   return (
     <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
       <SlideUp offset="-300px 0px -300px 0px">
-        <h1 className="lg:mb-6  text-center text-primary font-medium text-5xl font-title">
+        <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
           Roasting Types
         </h1>
       </SlideUp>
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
+        <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1 ">
           <SlideFromLeft offset="-300px 0px -300px 0px">
             {/* type01   */}
             <div className="">
