@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img/Take-Your-Time-bg.jpg";
+import HeroImg from "../public/img_biancaffe/Cover-biancafe.jpg";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import SlideFromRight from "../components/animate/SlideFromRight";
 import Popular from "../components/homeSections/Popular";
@@ -53,10 +53,11 @@ const biancafe = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img/about.png"
+                src="/img_biancaffe/Our-Cafe-Gulshan.jpg"
                 alt="Image 1"
                 width={200}
-                height={50}
+                height={100}
+                loading="lazy"
               />
             </FadeAndScale>
           </div>
@@ -106,10 +107,11 @@ const biancafe = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img/about.png"
+                src="/img_biancaffe/Our-Cafe-Uttara.jpg"
                 alt="Image 1"
                 width={200}
-                height={50}
+                height={150}
+                loading="lazy"
               />
             </FadeAndScale>
           </div>
