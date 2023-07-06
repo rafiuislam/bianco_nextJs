@@ -3,11 +3,10 @@ import Link from "next/link";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { BsCartDash, BsSearch } from "react-icons/bs";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
-// import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
 const NAV_ITEMS = [
@@ -112,6 +111,7 @@ const Navbar = () => {
                 width={200}
                 height={50}
                 className="md:ml-[50%]"
+                style={{ width: "auto", height: "auto" }}
               />
             </Link>
           </div>

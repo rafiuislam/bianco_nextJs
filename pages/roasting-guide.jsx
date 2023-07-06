@@ -2,10 +2,6 @@ import React from "react";
 import Hero from "../components/Hero";
 import HeroImg from "../public/img_learn/Cover-roast.jpg";
 import Image from "next/image";
-import Link from "next/link";
-// import SlideFromRight from "../animate/SlideFromRight";
-import SlideFromLeft from "../components/animate/SlideFromLeft";
-import SlideFromRight from "../components/animate/SlideFromRight";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import RoastingTypes from "../components/learn/roastingGuide/roastingTypes";
@@ -40,13 +36,13 @@ const roastingGuide = () => {
             </div>
 
             <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1">
-              <SlideFromLeft offset="-300px 0px -300px 0px">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
                   <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                     Roast Time
                   </header>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
@@ -71,7 +67,7 @@ const roastingGuide = () => {
                     </span>{" "}
                   </p>
                 </div>
-              </SlideFromLeft>
+              </SlideUp>
             </div>
           </div>
         </section>
@@ -85,18 +81,19 @@ const roastingGuide = () => {
                   alt="Image 1"
                   width={500}
                   height={100}
+                  loading="lazy"
                 />
               </FadeAndScale>
             </div>
 
             <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
-              <SlideFromRight offset="-300px 0px -300px 0px">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
                   <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                     The Cooling Stage
                   </header>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
@@ -112,7 +109,7 @@ const roastingGuide = () => {
                   <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                     The Tasting Stage
                   </header>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
@@ -121,7 +118,7 @@ const roastingGuide = () => {
                     </span>{" "}
                   </p>
                 </div>
-              </SlideFromRight>
+              </SlideUp>
             </div>
           </div>
         </section>

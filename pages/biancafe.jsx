@@ -2,13 +2,12 @@ import React from "react";
 import Hero from "../components/Hero";
 import HeroImg from "../public/img_biancaffe/Cover-biancafe.jpg";
 import FadeAndScale from "../components/animate/FadeAndScale";
-import SlideFromRight from "../components/animate/SlideFromRight";
 import Popular from "../components/homeSections/Popular";
 import Image from "next/image";
 import Link from "next/link";
-import SlideFromLeft from "../components/animate/SlideFromLeft";
 import SlideUp from "../components/animate/SlideUp";
 import Instagram from "../components/homeSections/Instagram";
+import SectionTitle from "../components/SectionTitle";
 
 const biancafe = () => {
   return (
@@ -43,11 +42,7 @@ const biancafe = () => {
         </p>
       </section>
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
-        <SlideUp offset="-300px 0px -300px 0px">
-          <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
-            Our Cafes
-          </h1>
-        </SlideUp>
+        <SectionTitle title="Our Cafes" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -63,10 +58,10 @@ const biancafe = () => {
           </div>
 
           <div className="lg:w-1/2 pr-0 lg:pr-8 flex flex-col justify-center relative order-2 lg:order-1">
-            <SlideFromLeft offset="-300px 0px -300px 0px">
+            <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
-                <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-4xl font-raleway">
+                <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-3xl md:text-4xl font-raleway">
                   GULSHAN
                 </h1>
                 <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
@@ -97,7 +92,7 @@ const biancafe = () => {
                   </FadeAndScale>
                 </div>
               </div>
-            </SlideFromLeft>
+            </SlideUp>
           </div>
         </div>
       </section>
@@ -111,13 +106,13 @@ const biancafe = () => {
                 alt="Image 1"
                 width={200}
                 height={150}
-                loading="lazy"
+                priority
               />
             </FadeAndScale>
           </div>
 
           <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
-            <SlideFromRight offset="-300px 0px -300px 0px">
+            <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
                 <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-4xl font-raleway">
@@ -150,7 +145,7 @@ const biancafe = () => {
                   </FadeAndScale>
                 </div>
               </div>
-            </SlideFromRight>
+            </SlideUp>
           </div>
         </div>
       </section>

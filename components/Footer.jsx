@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import { GrFacebookOption } from "react-icons/gr";
@@ -63,6 +63,7 @@ const Footer = () => {
                 alt="Logo"
                 width={200}
                 height={50}
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
             <div className="md:pb-5 md:block">

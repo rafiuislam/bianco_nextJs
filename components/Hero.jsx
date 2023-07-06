@@ -14,6 +14,7 @@ const Hero = ({ HeroImg, HeroPg, Herost }) => {
           className="relative w-full h-auto"
           data-speed="0.5"
           loading="eager"
+          priority
         />
 
         <div className="h-full absolute inset-x-0 left-0 sm:text-left sm:ml-20 sm:pl-4 flex flex-col justify-center items-center md:items-start">

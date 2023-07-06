@@ -2,12 +2,10 @@ import React from "react";
 import Hero from "../components/Hero";
 import HeroImg from "../public/img_learn/Cover-bean.jpg";
 import Image from "next/image";
-import Link from "next/link";
-import SlideFromLeft from "../components/animate/SlideFromLeft";
-import SlideFromRight from "../components/animate/SlideFromRight";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import Popular from "../components/homeSections/Popular";
+import SectionTitle from "../components/SectionTitle";
 
 const ourBeans = () => {
   return (
@@ -19,26 +17,22 @@ const ourBeans = () => {
             <div className="lg:w-1/2 order-1 lg:order-2">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
-                  className="w-full h-auto animate-fadeIn"
+                  className="w-full h-auto animate-fadeIn pb-4"
                   src="/img_learn/Arabica-Info.jpg"
                   alt="Image 1"
                   width={500}
                   height={200}
-                  loading="lazy"
+                  priority
                 />
               </FadeAndScale>
             </div>
 
             <div className="lg:w-1/2 pr-0 lg:pr-8 flex flex-col justify-start relative order-2 lg:order-1">
-              <SlideFromLeft offset="-300px 0px -300px 0px">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <SlideUp offset="-300px 0px -300px 0px">
-                    <h1 className="md:text-start mx-auto text-center pb-2 md:pb-0 text-primary font-medium text-5xl font-title">
-                      Arabica Coffee Beans
-                    </h1>
-                  </SlideUp>
-                  <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <SectionTitle title="Arabica Coffee Beans" />
+                  <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
@@ -109,7 +103,7 @@ const ourBeans = () => {
                     </span>{" "}
                   </p>
                 </div>
-              </SlideFromLeft>
+              </SlideUp>
             </div>
           </div>
         </section>
@@ -118,7 +112,7 @@ const ourBeans = () => {
             <div className="lg:w-1/2 ">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
-                  className="w-full h-auto animate-fadeIn"
+                  className="w-full h-auto animate-fadeIn pb-4"
                   src="/img_learn/Robusta-Info.jpg"
                   alt="Image 1"
                   width={500}
@@ -129,15 +123,11 @@ const ourBeans = () => {
             </div>
 
             <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-start relative">
-              <SlideFromRight offset="-300px 0px -300px 0px">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <SlideUp offset="-300px 0px -300px 0px">
-                    <h1 className="md:text-start mx-auto text-center pb-2 md:pb-0 text-primary font-medium text-5xl font-title">
-                      Robusta Coffee Beans
-                    </h1>
-                  </SlideUp>
-                  <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <SectionTitle title="Robusta Coffee Beans" />
+                  <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
                       distracted by the readable content of a page when looking
@@ -173,13 +163,13 @@ const ourBeans = () => {
                       proper coffee beans. It is a long established fact that a
                       reader will be distracted by the readable. It is a long
                       established fact.
-                    </span>{" "}
+                    </span>
                   </p>
                 </div>
                 {/* type03 */}
                 <div className="mt-6">
                   <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Growing{" "}
+                    The Growing
                   </header>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
@@ -189,7 +179,7 @@ const ourBeans = () => {
                       proper coffee beans. It is a long established fact that a
                       reader will be distracted by the readable. It is a long
                       established fact.
-                    </span>{" "}
+                    </span>
                   </p>
                 </div>
                 {/* type04 */}
@@ -208,7 +198,7 @@ const ourBeans = () => {
                     </span>{" "}
                   </p>
                 </div>
-              </SlideFromRight>
+              </SlideUp>
             </div>
           </div>
         </section>
@@ -217,12 +207,8 @@ const ourBeans = () => {
             <div className="lg:w-1/2">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 {/* type01 */}
-                <div className="">
-                  <SlideUp offset="-300px 0px -300px 0px">
-                    <h1 className="mx-auto text-center pb-2 md:pb-0 text-primary font-medium text-5xl font-title">
-                      Decaffeinato
-                    </h1>
-                  </SlideUp>
+                <div className="pb-4 sm:pb-0">
+                  <SectionTitle title="Decaffeinato" />
                   <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be
@@ -250,11 +236,7 @@ const ourBeans = () => {
               <FadeAndScale offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <SlideUp offset="-300px 0px -300px 0px">
-                    <h1 className="mx-auto text-center pb-2 md:pb-0 text-primary font-medium text-5xl font-title">
-                      Gourmet
-                    </h1>
-                  </SlideUp>
+                  <SectionTitle title="Gourmet" />
                   <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
                     <span className="relative z-10">
                       It is a long established fact that a reader will be

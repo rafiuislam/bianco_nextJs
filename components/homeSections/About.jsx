@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import SlideFromRight from "../animate/SlideFromRight";
 import SlideFromLeft from "../animate/SlideFromLeft";
-import SlideUp from "../animate/SlideUp";
 import FadeAndScale from "../animate/FadeAndScale";
+import SectionTitle from "../SectionTitle";
 
 const About = () => {
   return (
@@ -12,11 +11,7 @@ const About = () => {
       id="about"
       className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12"
     >
-      <SlideUp offset="-300px 0px -300px 0px">
-        <h1 className="lg:mb-6  text-center text-primary font-medium text-5xl font-title">
-          About Bianco
-        </h1>
-      </SlideUp>
+      <SectionTitle title="About Bianco" />
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
           <SlideFromLeft offset="-300px 0px -300px 0px">
@@ -26,12 +21,13 @@ const About = () => {
                 divine warmth and proud lineage of Bianco Coffee beans to the
                 coffee connoisseurs of Bangladesh.
               </span>
-              <span className="absolute inset-0 flex items-center justify-center z-0">
+              <span className="absolute inset-0 flex items-center justify-center z-0 ">
                 <Image
                   src="/img/Abt-Bianco-Bean.png"
                   alt="Logo"
                   width={200}
                   height={100}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </span>
             </p>
