@@ -24,8 +24,7 @@ const Cart = () => {
   // useEffect(() => {
   //   localStorage.setItem("cart", JSON.stringify(cart));
   // });
-  localStorage.setItem("cart", JSON.stringify(cart));
-  // console.log(cart);
+  // // console.log(cart);
 
   // Reference to the dispatch function from redux store
   const dispatch = useDispatch();
