@@ -1,6 +1,5 @@
 import React from "react";
 import FadeAndScale from "../animate/FadeAndScale";
-import SlideUp from "../animate/SlideUp";
 import SectionTitle from "../SectionTitle";
 
 const Popular = () => {
@@ -29,7 +28,7 @@ const Popular = () => {
             return (
               <p
                 key={idx}
-                className="bg-secondary px-4 py-3 mr-2 mt-2  rounded-full text-white text-sm font-custom font-medium cursor-pointer animate-fadeAndScale hover:scale-105 transition-transform duration-300 hover:bg-opacity-80  animate-fadeIn"
+                className="bg-secondary px-4 py-3 mr-2 mt-2 rounded-full text-white font-custom text-base font-semi-bold cursor-pointer animate-fadeAndScale hover:scale-105 transition-transform duration-300 hover:bg-opacity-80 animate-fadeIn"
               >
                 {item.tag}
               </p>

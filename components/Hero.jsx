@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import SlideUp from "../components/animate/SlideUp";
 
 const Hero = ({ HeroImg, HeroPg, Herost }) => {
   return (

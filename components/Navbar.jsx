@@ -46,10 +46,10 @@ const NAV_ITEMS = [
         label: "Brewing Guide",
         page: "brewing-guide",
       },
-      {
-        label: "Blog",
-        page: "blog",
-      },
+      // {
+      //   label: "Blog",
+      //   page: "blog",
+      // },
     ],
   },
   {

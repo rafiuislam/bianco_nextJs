@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { GrFacebookOption } from "react-icons/gr";
 
 const Footer = () => {
   const [currentYear] = useState(new Date().getFullYear());
 
   const links = [
-    { id: 1, label: "About Bianco" },
-    { id: 2, label: "Our Beans" },
-    { id: 3, label: "Roasting Guide" },
-    { id: 4, label: "Brewing Guide" },
-    { id: 5, label: "Blog" },
+    { id: 1, label: "About Bianco", page: "about-bianco" },
+    { id: 2, label: "Our Beans", page: "our-beans" },
+    { id: 3, label: "Roasting Guide", page: "roasting-guide" },
+    { id: 4, label: "Brewing Guide", page: "brewing-guide" },
+    // { id: 5, label: "Blog" },
     // { id: 6, label: "Decafe Coffee" },
     // { id: 7, label: "Speciality Coffee" },
     // { id: 8, label: "Coffee Roasters" },
@@ -111,7 +112,7 @@ const Footer = () => {
                 hover:before:opacity-100
                 relative"
               >
-                {link.label}
+                <Link href={link.page}>{link.label}</Link>
               </li>
             ))}
           </ul>
