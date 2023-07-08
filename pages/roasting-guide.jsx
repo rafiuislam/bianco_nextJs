@@ -71,6 +71,7 @@ const roastingGuide = () => {
             </div>
           </div>
         </section>
+
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 ">

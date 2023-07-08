@@ -9,7 +9,7 @@ const aboutBianco = () => {
   return (
     <div className="bg-bg-h">
       <section id="hero" className="w-full m-auto">
-        <div className="relative h-[300px] ">
+        <div className="relative h-[400px] ">
           <Image
             src={HeroImg}
             alt="Logo"
