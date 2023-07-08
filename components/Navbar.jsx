@@ -111,7 +111,7 @@ const Navbar = () => {
                 width={200}
                 height={50}
                 className="md:ml-[50%]"
-                style={{ width: "auto", height: "auto" }}
+                // style={{ width: "auto", height: "auto" }}
               />
             </Link>
           </div>

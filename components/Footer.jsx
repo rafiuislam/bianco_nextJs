@@ -27,10 +27,10 @@ const Footer = () => {
   const policies = [
     { id: 1, label: "Privacy Policy" },
     { id: 2, label: "Terms and Use" },
-    { id: 3, label: "My Orders" },
-    { id: 4, label: "My Account" },
-    { id: 5, label: "Wishlist" },
-    { id: 6, label: "Shipment & Returns" },
+    // { id: 3, label: "My Orders" },
+    // { id: 4, label: "My Account" },
+    // { id: 5, label: "Wishlist" },
+    // { id: 6, label: "Shipment & Returns" },
   ];
 
   const contactInfo = [
@@ -63,12 +63,12 @@ const Footer = () => {
                 alt="Logo"
                 width={200}
                 height={50}
-                style={{ width: "auto", height: "auto" }}
+                // style={{ width: "auto", height: "auto" }}
               />
             </div>
             <div className="md:pb-5 md:block">
               <div className="w-60 h-65 text-justify mb-6">
-                <p className="text-secondary font-light text-sm font-custom ">
+                <p className="text-secondary font-light text-sm font-custom">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
