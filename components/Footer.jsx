@@ -112,7 +112,9 @@ const Footer = () => {
                 hover:before:opacity-100
                 relative"
               >
-                <Link href={link.page}>{link.label}</Link>
+                <Link href={link.page} key={link.id}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
