@@ -27,7 +27,7 @@ const Footer = () => {
 
   const policies = [
     { id: 1, label: "Privacy Policy" },
-    { id: 2, label: "Terms and Use" },
+    { id: 2, label: "Terms and Conditions" },
     // { id: 3, label: "My Orders" },
     // { id: 4, label: "My Account" },
     // { id: 5, label: "Wishlist" },
