@@ -9,16 +9,12 @@ import IgImg7 from "../../public/insta_img/Insta_7.jpg";
 import IgImg8 from "../../public/insta_img/Insta-8.jpg";
 import InstagramImg from "./InstagramImg";
 import SlideUp from "../animate/SlideUp";
+import SectionTitle from "../SectionTitle";
 
 const Instagram = () => {
   return (
     <section id="instagram" className="container mx-auto text-center py-4">
-      <SlideUp offset="-300px 0px -300px 0px">
-        <p className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
-          Follow me on Instagram
-        </p>
-      </SlideUp>
-      {/* <p className="pb-4">@Captur</p> */}
+      <SectionTitle title="Follow me on Instagram" />
       <SlideUp offset="-300px 0px -300px 0px">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 p-8 lg:px-24 animate-slideUpCubiBezier ">
           <InstagramImg socialImg={IgImg1} />

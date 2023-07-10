@@ -9,7 +9,7 @@ import HeroImg from "../public/img/Take-Your-Time-bg.jpg";
 const contact = () => {
   return (
     <div className="bg-bg-h">
-      <Hero HeroImg={HeroImg} HeroPg={"Contact Us"} />
+      <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"Contact Us"} />
       <ContactDetails />
       <Map />
       <ContactUs />

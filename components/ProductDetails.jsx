@@ -149,9 +149,9 @@ const ProductDetails = () => {
                 </a>
               </span>
             </div>
-            <div className="flex justify-center items-center w-100 h-20">
+            <div className="flex justify-center items-center w-100 h-auto">
               <p className="text-black font-regular text-md font-raleway leading-relaxed">
-                {product.desc}
+                {product.details}
               </p>
             </div>
 

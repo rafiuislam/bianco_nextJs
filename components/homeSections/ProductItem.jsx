@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SlideUp from "../animate/SlideUp";
-import SlideDown from "../animate/SlideDown";
-// import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 
@@ -13,13 +10,7 @@ const ProductItem = ({ product }) => {
   return (
     <div key={product.id}>
       <div className="group relative flex flex-col justify-center items-center ">
-        <div
-          className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75 "
-          // initial={{ opacity: 0, y: -100 }}
-          // animate={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          {/* <SlideDown offset=""> */}
+        <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75 ">
           <Image
             src={product.imageSrc}
             alt={product.imageAlt}

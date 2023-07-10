@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import heroImg1 from "../../public/img_hero/Slider-1.jpg";
-import heroImg2 from "../../public/img_hero/Slider-2.jpg";
-import heroImg3 from "../../public/img_hero/Slider-3.jpg";
-import heroImg4 from "../../public/img_hero/Slider-4.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-scroll/modules";
@@ -13,20 +9,20 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/Slider-1.jpg",
+      url: "/img_hero/SS219.jpg",
     },
-    {
-      id: 2,
-      url: "/img_hero/Slider-2.jpg",
-    },
-    {
-      id: 3,
-      url: "/img_hero/Slider-3.jpg",
-    },
-    {
-      id: 4,
-      url: "/img_hero/Slider-4.jpg",
-    },
+    // {
+    //   id: 2,
+    //   url: "/img_hero/Slider-2.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   url: "/img_hero/Slider-3.jpg",
+    // },
+    // {
+    //   id: 4,
+    //   url: "/img_hero/Slider-4.jpg",
+    // },
   ];
 
   return (
@@ -86,11 +82,11 @@ const Hero = () => {
           <div key={slide.id}>
             <Image
               src={slide.url}
-              className="w-full h-full object-cover"
-              layout="responsive"
+              className="w-full h-fit	object-fit"
+              // layout="responsive"
               alt="Slider Image"
               width={1200}
-              height={800}
+              height={500}
               priority
             />
             {slide.id === 1 && (

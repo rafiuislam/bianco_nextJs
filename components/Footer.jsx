@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import { GrFacebookOption } from "react-icons/gr";
 
 const Footer = () => {
   const [currentYear] = useState(new Date().getFullYear());
 
   const links = [
-    { id: 1, label: "About Bianco" },
-    { id: 2, label: "Our Beans" },
-    { id: 3, label: "Roasting Guide" },
-    { id: 4, label: "Brewing Guide" },
-    { id: 5, label: "Blog" },
+    { id: 1, label: "About Bianco", page: "about-bianco" },
+    { id: 2, label: "Our Beans", page: "our-beans" },
+    { id: 3, label: "Roasting Guide", page: "roasting-guide" },
+    { id: 4, label: "Brewing Guide", page: "brewing-guide" },
+    // { id: 5, label: "Blog" },
     // { id: 6, label: "Decafe Coffee" },
     // { id: 7, label: "Speciality Coffee" },
     // { id: 8, label: "Coffee Roasters" },
@@ -26,11 +27,11 @@ const Footer = () => {
 
   const policies = [
     { id: 1, label: "Privacy Policy" },
-    { id: 2, label: "Terms and Use" },
-    { id: 3, label: "My Orders" },
-    { id: 4, label: "My Account" },
-    { id: 5, label: "Wishlist" },
-    { id: 6, label: "Shipment & Returns" },
+    { id: 2, label: "Terms and Conditions" },
+    // { id: 3, label: "My Orders" },
+    // { id: 4, label: "My Account" },
+    // { id: 5, label: "Wishlist" },
+    // { id: 6, label: "Shipment & Returns" },
   ];
 
   const contactInfo = [
@@ -63,11 +64,12 @@ const Footer = () => {
                 alt="Logo"
                 width={200}
                 height={50}
+                // style={{ width: "auto", height: "auto" }}
               />
             </div>
             <div className="md:pb-5 md:block">
               <div className="w-60 h-65 text-justify mb-6">
-                <p className="text-secondary font-light text-sm font-custom ">
+                <p className="text-secondary font-light text-sm font-custom">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
@@ -110,7 +112,9 @@ const Footer = () => {
                 hover:before:opacity-100
                 relative"
               >
-                {link.label}
+                <Link href={link.page} key={link.id}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>

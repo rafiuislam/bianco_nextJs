@@ -1,18 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import SlideUp from "../components/animate/SlideUp";
 
-const Hero = ({ HeroImg, HeroPg }) => {
+const Hero = ({ HeroImg, HeroPg, Herost }) => {
   return (
     <section id="hero" className="w-full m-auto">
-      <div className="relative h-[300px] ">
+      <div className="relative h-[400px] ">
         <Image
           src={HeroImg}
           alt="Logo"
           layout="fill"
           objectFit="cover"
-          className="relative w-full h-full parallax"
+          className="relative w-full h-auto"
           data-speed="0.5"
+          loading="eager"
+          priority
         />
 
         <div className="h-full absolute inset-x-0 left-0 sm:text-left sm:ml-20 sm:pl-4 flex flex-col justify-center items-center md:items-start">
@@ -24,7 +25,7 @@ const Hero = ({ HeroImg, HeroPg }) => {
 
           <div className="">
             <p className="text-white font-regular text-base font-raleway animate-fadeIn text-center">
-              Home {" >> "}
+              {Herost} {" >> "}
               <span> {HeroPg}</span>
             </p>
           </div>
