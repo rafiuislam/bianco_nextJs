@@ -4,7 +4,7 @@ import HeroImg from "../public/img_learn/Cover-roast.jpg";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
-import RoastingTypes from "../components/learn/roastingGuide/roastingTypes";
+import RoastingTypes from "../components/learn/roastingGuide/RoastingTypes";
 import RoastingProcesses from "../components/learn/roastingGuide/RoastingProcesses";
 import Popular from "../components/homeSections/Popular";
 
