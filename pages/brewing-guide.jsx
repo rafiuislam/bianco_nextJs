@@ -284,7 +284,7 @@ const brewingGuide = () => {
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Drip coffee brewing uses automatic drip coffee makers that
-                    pour hot water over a filter containing coffee grounds. It's
+                    pour hot water over a filter containing coffee grounds. Its
                     convenient and produces a clean, balanced cup of coffee
                   </span>
                 </p>
