@@ -9,20 +9,20 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/Slider-1.jpg",
+      url: "/img_hero/SS219.jpg",
     },
-    {
-      id: 2,
-      url: "/img_hero/Slider-2.jpg",
-    },
-    {
-      id: 3,
-      url: "/img_hero/Slider-3.jpg",
-    },
-    {
-      id: 4,
-      url: "/img_hero/Slider-4.jpg",
-    },
+    // {
+    //   id: 2,
+    //   url: "/img_hero/Slider-2.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   url: "/img_hero/Slider-3.jpg",
+    // },
+    // {
+    //   id: 4,
+    //   url: "/img_hero/Slider-4.jpg",
+    // },
   ];
 
   return (
@@ -86,7 +86,7 @@ const Hero = () => {
               // layout="responsive"
               alt="Slider Image"
               width={1200}
-              height={800}
+              height={500}
               priority
             />
             {slide.id === 1 && (
