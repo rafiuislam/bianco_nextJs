@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import HeroImg from "../public/img_biancaffe/Cover-biancafe.jpg";
 import FadeAndScale from "../components/animate/FadeAndScale";
-import Popular from "../components/homeSections/Popular";
+// import Popular from "../components/homeSections/Popular";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "../components/animate/SlideUp";
@@ -13,7 +13,7 @@ const biancafe = () => {
   return (
     <div className="bg-bg-h">
       <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"BIANCAFFE"} />
-      <section className="container mx-auto mt-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
         <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
           <span className="relative z-10">
             Coffee is not meant to be ‘just’ drunk. It is meant to be
@@ -41,7 +41,7 @@ const biancafe = () => {
           </span>
         </p>
       </section>
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <SectionTitle title="Our Cafes" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">
@@ -96,7 +96,7 @@ const biancafe = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 ">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -150,7 +150,7 @@ const biancafe = () => {
         </div>
       </section>
       <Instagram />
-      <Popular />
+      {/* <Popular /> */}
     </div>
   );
 };

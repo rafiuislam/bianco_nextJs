@@ -6,7 +6,7 @@ import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import RoastingTypes from "../components/learn/roastingGuide/RoastingTypes";
 import RoastingProcesses from "../components/learn/roastingGuide/RoastingProcesses";
-import Popular from "../components/homeSections/Popular";
+// import Popular from "../components/homeSections/Popular";
 
 const roastingGuide = () => {
   return (
@@ -20,7 +20,7 @@ const roastingGuide = () => {
         <RoastingTypes />
         <RoastingProcesses />
 
-        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 order-1 lg:order-2">
               <FadeAndScale offset="-300px 0px -300px 0px">
@@ -44,12 +44,16 @@ const roastingGuide = () => {
                   </header>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution of letters, as
-                      opposed to using `{"Content here, content here"}`, making
-                      it look like readable English.
+                      Coffee roast time varies depending on the desired roast
+                      level, the specific coffee beans being roasted, and the
+                      preferences of the roaster. Light roast coffee is
+                      generally roasted for a shorter duration compared to
+                      darker roasts. The roast time typically ranges between 8
+                      to 10 minutes. The roast time of medium roast usually
+                      falls between 10 to 12 minutes. Dark roast coffee requires
+                      the longest roast time among the various roast levels. The
+                      beans are typically roasted for around 14 to 16 minutes,
+                      or sometimes even longer.
                     </span>
                   </p>
                 </div>
@@ -60,10 +64,9 @@ const roastingGuide = () => {
                   </header>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution.
+                      Coffee roast degree refers to the specific level of
+                      darkness to which coffee beans are roasted. Bianco coffee
+                      beans are roasted medium at 210° C - 219 ° C temperature.
                     </span>{" "}
                   </p>
                 </div>
@@ -72,7 +75,7 @@ const roastingGuide = () => {
           </div>
         </section>
 
-        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 ">
               <FadeAndScale offset="-300px 0px -300px 0px">
@@ -96,12 +99,14 @@ const roastingGuide = () => {
                   </header>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution of letters, as
-                      opposed to using `{"Content here, content here"}`, making
-                      it look like readable English.
+                      This stage is crucial in preventing the beans from
+                      continuing to roast and allows them to cool down rapidly
+                      to stabilize their flavours and aromas. By rapidly
+                      reducing the temperature, the coffee beans are preserved
+                      at their intended roast level, ensuring the desired
+                      flavour and aroma development. Cooling the beans
+                      effectively stops the internal chemical reactions that
+                      occur during roasting.
                     </span>
                   </p>
                 </div>
@@ -112,10 +117,8 @@ const roastingGuide = () => {
                   </header>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution.
+                      The primary purpose of the tasting stage is to understand
+                      and appreciate the unique characteristics of a coffee.
                     </span>{" "}
                   </p>
                 </div>
@@ -123,7 +126,7 @@ const roastingGuide = () => {
             </div>
           </div>
         </section>
-        <Popular />
+        {/* <Popular /> */}
       </div>
     </div>
   );

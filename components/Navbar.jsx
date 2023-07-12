@@ -132,11 +132,29 @@ const Navbar = () => {
               </Link>
             </span>
 
-            <span className="hidden sm:flex items-center border-l-2 py-2">
-              <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-              <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-              <FaLinkedinIn className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-            </span>
+            <div className="hidden sm:flex items-center border-l-2 py-2">
+              <a
+                href="https://www.facebook.com/BiancoBangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
+              <a
+                href="https://www.instagram.com/biancobangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/bianco-bangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
+            </div>
           </div>
 
           <div className="md:hidden">

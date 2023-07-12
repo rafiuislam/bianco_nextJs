@@ -45,7 +45,7 @@ const Shop = () => {
 
   return (
     <section id="homeshop" className="relative">
-      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:pt-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 py-2 sm:px-6 sm:pt-4 lg:max-w-7xl lg:px-8">
         <SectionTitle title="Shop" />
 
         <div className="mt-6 relative">

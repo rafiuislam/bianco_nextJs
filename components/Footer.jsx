@@ -26,8 +26,8 @@ const Footer = () => {
   ];
 
   const policies = [
-    { id: 1, label: "Privacy Policy" },
-    { id: 2, label: "Terms and Conditions" },
+    { id: 1, label: "Privacy Policy", page: "privacy-policy" },
+    { id: 2, label: "Terms and Conditions", page: "terms-conditions" },
     // { id: 3, label: "My Orders" },
     // { id: 4, label: "My Account" },
     // { id: 5, label: "Wishlist" },
@@ -147,7 +147,9 @@ const Footer = () => {
                 hover:before:opacity-100
                 relative"
               >
-                {policy.label}
+                <Link href={policy.page} key={policy.id}>
+                  {policy.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -201,16 +203,34 @@ const Footer = () => {
               />
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
-              <GrFacebookOption className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-              <FaInstagram className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-              <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              <a
+                href="https://www.facebook.com/BiancoBangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GrFacebookOption className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
+              <a
+                href="https://www.instagram.com/biancobangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/bianco-bangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center text-center p-5 ">
         <h1 className="text-secondary font-light text-xs font-custom pb-3">
-          COPYRIGHT {currentYear} BIANCO BANGLADESH
+          COPYRIGHT {currentYear} BIANCO BANGLADESH. ALL RIGHTS RESERVED.
         </h1>
       </div>
     </section>

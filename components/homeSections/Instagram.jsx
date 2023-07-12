@@ -14,7 +14,7 @@ import SectionTitle from "../SectionTitle";
 const Instagram = () => {
   return (
     <section id="instagram" className="container mx-auto text-center py-4">
-      <SectionTitle title="Follow me on Instagram" />
+      <SectionTitle title="Follow us on Instagram" />
       <SlideUp offset="-300px 0px -300px 0px">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 p-8 lg:px-24 animate-slideUpCubiBezier ">
           <InstagramImg socialImg={IgImg1} />

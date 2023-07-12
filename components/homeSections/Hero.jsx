@@ -9,7 +9,7 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/SS219.jpg",
+      url: "/img_hero/SS220.jpg",
     },
     // {
     //   id: 2,
@@ -82,11 +82,11 @@ const Hero = () => {
           <div key={slide.id}>
             <Image
               src={slide.url}
-              className="w-full h-fit	object-fit"
+              className="w-full object-fill"
               // layout="responsive"
               alt="Slider Image"
               width={1200}
-              height={500}
+              height={400}
               priority
             />
             {slide.id === 1 && (

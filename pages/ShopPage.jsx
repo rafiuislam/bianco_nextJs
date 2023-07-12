@@ -154,7 +154,7 @@ const ShopPage = () => {
           </div>
           <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
           {/* Roast Profile */}
-          <div>
+          {/* <div>
             <div className="text-left pb-4 md:pb-6">
               <RoastProfile
                 roastProfiles={roastProfiles}
@@ -162,8 +162,8 @@ const ShopPage = () => {
                 onRoastProfileChange={handleRoastProfileChange}
               />
             </div>
-          </div>
-          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div>
+          </div> */}
+          {/* <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 "></div> */}
           {/* Price range filter */}
           <div className="mb-2 text-left text-black font-medium text-sm font-Raleway">
             <p>Price</p>

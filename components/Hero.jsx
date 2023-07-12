@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero = ({ HeroImg, HeroPg, Herost }) => {
   return (
     <section id="hero" className="w-full m-auto">
-      <div className="relative h-[400px] ">
+      <div className="relative h-[400px]">
         <Image
           src={HeroImg}
           alt="Logo"

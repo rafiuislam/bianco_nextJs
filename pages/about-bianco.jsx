@@ -1,43 +1,17 @@
 import React from "react";
-import Popular from "../components/homeSections/Popular";
+// import Popular from "../components/homeSections/Popular";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 import HeroImg from "../public/img_about/Cover-about.jpg";
+import Hero from "../components/Hero";
 
 const aboutBianco = () => {
   return (
     <div className="bg-bg-h">
-      <section id="hero" className="w-full m-auto">
-        <div className="relative h-[400px] ">
-          <Image
-            src={HeroImg}
-            alt="Logo"
-            layout="fill"
-            objectFit="cover"
-            className="relative w-full h-auto"
-            data-speed="0.5"
-            loading="eager"
-            priority
-          />
+      <Hero HeroImg={HeroImg} Herost={"Home >> Learn"} HeroPg={"Bianco"} />
 
-          <div className="h-full absolute inset-x-0 left-0 sm:text-left sm:ml-20 sm:pl-4 flex flex-col justify-center items-center md:items-start">
-            {/* <SlideUp offset="-300px 0px -300px 0px"> */}
-            <div className="text-5xl text-white font-medium animate-slideUpCubiBezier text-center">
-              <p>BIANCAFFE</p>
-            </div>
-            {/* </SlideUp> */}
-
-            <div className="">
-              <p className="text-white font-regular text-base font-raleway animate-fadeIn text-center">
-                The Best Artisanal Italian Coffee since 1932
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 ">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -82,7 +56,7 @@ const aboutBianco = () => {
         </FadeAndScale>
       </section>
 
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -120,7 +94,7 @@ const aboutBianco = () => {
         </div>
       </section>
 
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:p-12">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 ">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -148,7 +122,10 @@ const aboutBianco = () => {
                     Naples. By using innovative methods that combine historical
                     knowledge and expertise with contemporary technology, Bianco
                     Coffee beans not only retain their original unique
-                    characteristics but are also enhanced in every way.
+                    characteristics but are also enhanced in every way.From
+                    aroma and flavour profile to the premium taste and
+                    invigorating warmth - no one does coffee beans better than
+                    Bianco!
                   </span>
                 </p>
               </div>
@@ -159,17 +136,7 @@ const aboutBianco = () => {
 
       <section>
         <FadeAndScale offset="-300px 0px -300px 0px">
-          <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-medium text-2xl sm:text-4xl font-title animate-fadeIn">
-            “From aroma and flavour profile to the premium taste and
-            invigorating <br />
-            warmth - no one does coffee beans better than Bianco!”
-          </h1>
-        </FadeAndScale>
-      </section>
-
-      <section>
-        <FadeAndScale offset="-300px 0px -300px 0px">
-          <h1 className="lg:mb-6 pb-2 md:pb-0 pt-6 sm:pt-12 text-center text-secondary font-regular text-sm sm:base font-title animate-fadeIn">
+          <h1 className="lg:mb-6 md:pb-12 text-center text-secondary font-medium text-2xl sm:text-4xl font-title animate-fadeIn">
             And Bianco Bangladesh is here to introduce the same rich taste,{" "}
             <br />
             divine warmth and proud lineage of Bianco Coffee beans to the coffee
@@ -178,7 +145,7 @@ const aboutBianco = () => {
         </FadeAndScale>
       </section>
 
-      <Popular />
+      {/* <Popular /> */}
     </div>
   );
 };

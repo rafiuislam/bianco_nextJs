@@ -1,10 +1,10 @@
 import Hero from "../components/homeSections/Hero";
 import About from "../components/homeSections/About";
-import Popular from "../components/homeSections/Popular";
+// import Popular from "../components/homeSections/Popular";
 import Instagram from "../components/homeSections/Instagram";
 import Shop from "../components/homeSections/Shop";
 import Biancaffe from "../components/homeSections/Biancaffe";
-import Biancaffe2 from "../components/homeSections/Biancaffe2";
+// import Biancaffe2 from "../components/homeSections/Biancaffe2";
 
 //HomePage
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Shop />
       <About />
       <Instagram />
-      <Popular />
+      {/* <Popular /> */}
     </div>
   );
 }

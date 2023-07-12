@@ -73,79 +73,27 @@ const ProductDetails = () => {
               {product.name}
             </h1>
             <div className="flex mb-4">
-              {/* <span class="flex items-center">
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
+              <span className="flex py-2">
+                <a
+                  href="https://www.facebook.com/BiancoBangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-                <span class="text-gray-600 ml-3">4 Reviews</span>
-              </span> */}
-              {/* social links */}
-              {/* <span className="hidden sm:flex items-center">
-                <GrFacebookOption className="mr-4 ml-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-                <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-                <FaLinkedinIn className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
-              </span> */}
-              <span class="flex py-2">
-                <a class="text-gray-500">
-                  <GrFacebookOption className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                  <GrFacebookOption className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
                 </a>
-                <a class="ml-2 text-gray-500">
-                  <FaInstagram className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                <a
+                  href="https://www.instagram.com/biancobangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
                 </a>
-                <a class="ml-2 text-gray-500">
-                  <FaLinkedinIn className="mr-4 text-base cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                <a
+                  href="https://www.linkedin.com/company/bianco-bangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
                 </a>
               </span>
             </div>

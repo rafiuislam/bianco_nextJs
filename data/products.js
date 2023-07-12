@@ -16,7 +16,7 @@ export const products = [
     desc: "Blend : 100% Arabica Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 1000 gr.",
     inStock: true,
     beanType: "Arabica",
-    packageOption: "500g",
+    packageOption: "1kg",
     roastProfile: "Medium",
     details:
       "This unique blend is made with only Arabica beans sourced from the finest cultivators of Central and South America. Arabica beans are noted for their fruity and chocolatey notes that provide a smooth, rich taste like no other. The Bianco N° 1 blend accentuates these flavour profiles and offers a refreshing fruity aroma and a pleasant cacao-like aftertaste.",
