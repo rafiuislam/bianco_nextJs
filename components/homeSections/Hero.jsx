@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from "react-scroll/modules";
-import { MdKeyboardArrowDown } from "react-icons/md";
+// import { Link } from "react-scroll/modules";
+// import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Hero = () => {
   const slider = [
@@ -104,7 +104,7 @@ const Hero = () => {
           </div>
         ))}
       </Carousel>
-      <div className="flex flex-row items-center text-center justify-center pt-2">
+      {/* <div className="flex flex-row items-center text-center justify-center pt-2">
         <Link
           to="biancaffe"
           activeClass="active"
@@ -118,7 +118,7 @@ const Hero = () => {
             className="animate-bounce fill-primary cursor-pointer"
           />
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };

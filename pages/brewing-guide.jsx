@@ -170,7 +170,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step-1.jpg"
+                src="/img_brewing/Step1.jpg"
                 alt="Image 1"
                 width={500}
                 height={500}
@@ -188,7 +188,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step-2.jpg"
+                src="/img_brewing/Step2.jpg"
                 alt="Image 2"
                 width={500}
                 height={100}
@@ -224,7 +224,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step-3.jpg"
+                src="/img_brewing/Step3.jpg"
                 alt="Image 3"
                 width={500}
                 height={100}
@@ -259,7 +259,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step-4.jpg"
+                src="/img_brewing/Step4.jpg"
                 alt="Image 4"
                 width={500}
                 height={100}
@@ -371,7 +371,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step-5.jpg"
+                src="/img_brewing/Step5.jpg"
                 alt="Image 3"
                 width={500}
                 height={100}

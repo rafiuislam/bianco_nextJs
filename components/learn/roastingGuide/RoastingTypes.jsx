@@ -81,7 +81,7 @@ const RoastingTypes = () => {
           <FadeAndScale offset="-300px 0px -300px 0px">
             <Image
               className="w-full h-auto animate-fadeIn"
-              src="/img_learn/Roasting-Types.jpg"
+              src="/img_roasting/RoastingType.jpg"
               alt="Image 1"
               width={500}
               height={500}

@@ -70,14 +70,16 @@ const Footer = () => {
             <div className="md:pb-5 md:block">
               <div className="w-60 h-65 text-justify mb-6">
                 <p className="text-secondary font-light text-sm font-custom">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using Content
-                  here, content here, making it look like readable English. Many
-                  desktop publishing packages and web page editors now use Lorem
-                  Ipsum as their default model text, and a search for lorem
-                  ipsum will uncover many web sites still in their infancy.
+                  Take your time; savour the moment and give in to the lush,
+                  velvety comfort of coffee! With this ethos, Bianco Coffee -
+                  the Salerno, Naples based roastery started its operations in
+                  1932, and over time, it has gone on to become{" "}
+                  {"‘il principale ambasciatore’"} of Italian coffee beans
+                  across the globe. The rich, warm taste of Bianco Coffee beans
+                  is now enjoyed in 30+ countries worldwide. With almost a
+                  century of history, experience and expertise, the Bianco
+                  Coffee moniker exudes prestige, heritage and legacy like no
+                  other in the already enriched Italian coffee lore.
                 </p>
               </div>
             </div>

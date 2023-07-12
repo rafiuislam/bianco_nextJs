@@ -30,31 +30,45 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
-                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
-                  <span className="relative z-10">
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Attimi Di Cafe
+                </header>
+                <div className="mt-1 mb-4 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <span className="relative z-10 text-justify">
                     As the steam from a freshly brewed coffee cup swirls, twirls
                     and dissipates, so do the wearies of the world as you take
                     in the comforting warmth, breathe in the invigorating aroma
-                    and savour the delicious taste of an impeccable brew
+                    and savor the delicious taste of an impeccable brew
                     extracted from expertly roasted coffee beans. In these
-                    moments, the world can wait. In these ‘attimi di cafe’, the
-                    coffee is to be relished and cherished.
+                    moments, the world can wait. In these {"‘attimi di cafe’"},
+                    the coffee is to be relished and cherished.
+                  </span>{" "}
+                  <br /> <br />
+                  <header className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-medium text-xl sm:text-2xl font-title animate-fadeIn">
+                    “Take your time; savour the moment and give in to the lush,
+                    velvety comfort of coffee!”
+                  </header>
+                  <span className="relative z-10 ">
+                    With this ethos, Bianco Coffee - the Salerno, Naples based
+                    roastery started its operations in 1932, and over time, it
+                    has gone on to become {"‘il principale ambasciatore’"} of
+                    Italian coffee beans across the globe.
                   </span>
-                </p>
+                </div>
               </div>
             </SlideUp>
           </div>
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <FadeAndScale offset="-300px 0px -300px 0px">
           <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-medium text-2xl sm:text-4xl font-title animate-fadeIn">
             “Take your time; savour the moment and give in to the lush, <br />{" "}
             velvety comfort of coffee!”
           </h1>
         </FadeAndScale>
-      </section>
+      </section> */}
 
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
@@ -75,17 +89,22 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  The Legacy
+                </header>
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
-                    With this ethos, Bianco Coffee - the Salerno, Naples based
-                    roastery started its operations in 1932, and over time, it
-                    has gone on to become ‘il principale ambasciatore’ of
-                    Italian coffee beans across the globe. <br /> <br /> The
-                    rich, warm taste of Bianco Coffee beans is now enjoyed in
-                    30+ countries worldwide. With almost a century of history,
-                    experience and expertise, the Bianco Coffee moniker exudes
-                    prestige, heritage and legacy like no other in the already
-                    enriched Italian coffee lore.
+                    Over the years, Bianco Coffee continued to flourish, gaining
+                    recognition not only within Italy but also internationally.
+                    The {"brand's"} unwavering commitment to sourcing the
+                    highest quality beans and adhering to time-honored roasting
+                    techniques attracted coffee enthusiasts and connoisseurs
+                    from around the globe.
+                    <br /> <br /> The rich, warm taste of Bianco Coffee beans is
+                    now enjoyed in 30+ countries worldwide. With almost a
+                    century of history, experience and expertise, the Bianco
+                    Coffee moniker exudes prestige, heritage and legacy like no
+                    other in the already enriched Italian coffee lore.
                   </span>
                 </p>
               </div>
@@ -100,7 +119,7 @@ const aboutBianco = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_about/3.jpg"
+                src="/img_about/About-Bianco.jpg"
                 alt="Image 3"
                 width={500}
                 height={100}
@@ -113,6 +132,9 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Artisanal Craftsmanship
+                </header>
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Sourcing coffee beans from the finest cultivators of the
@@ -135,14 +157,21 @@ const aboutBianco = () => {
       </section>
 
       <section>
-        <FadeAndScale offset="-300px 0px -300px 0px">
-          <h1 className="lg:mb-6 md:pb-12 text-center text-secondary font-medium text-2xl sm:text-4xl font-title animate-fadeIn">
-            And Bianco Bangladesh is here to introduce the same rich taste,{" "}
-            <br />
-            divine warmth and proud lineage of Bianco Coffee beans to the coffee
-            connoisseurs of Bangladesh
-          </h1>
-        </FadeAndScale>
+        {/* <FadeAndScale offset="-300px 0px -300px 0px"> */}
+        <header className="lg:mb-6 pb-4 md:pb-0 text-center text-secondary font-medium text-xl sm:text-2xl font-title animate-fadeIn">
+          <span className="text-justify font-semi-bold">
+            And Bianco Bangladesh is here,{" "}
+          </span>
+          to introduce the same rich taste, divine warmth and proud <br />{" "}
+          lineage of Bianco Coffee beans to the coffee connoisseurs of
+          Bangladesh.
+        </header>
+        <h1 className="lg:mb-6 pb-2 md:pb-8 text-center text-secondary font-medium text-xl sm:text-3xl font-title animate-fadeIn">
+          Mirsaige, the sole distributor of Bianco Coffee in Bangladesh,
+          <br /> aims to cultivate an authentic Italian coffee culture
+          throughout the country by offering the finest Italian coffee beans.
+        </h1>
+        {/* </FadeAndScale> */}
       </section>
 
       {/* <Popular /> */}

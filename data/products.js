@@ -2,8 +2,8 @@ import shopImg1 from "../public/img_shop/1.png";
 import shopImg2 from "../public/img_shop/2.png";
 import shopImg3 from "../public/img_shop/3.png";
 import shopImg4 from "../public/img_shop/4.png";
-import shopImg5 from "../public/img_shop/5.png";
-import shopImg6 from "../public/img_shop/6.png";
+// import shopImg5 from "../public/img_shop/5.png";
+// import shopImg6 from "../public/img_shop/6.png";
 
 export const products = [
   {
@@ -29,7 +29,7 @@ export const products = [
     imageAlt: "Front of men's Basic Tee in black.",
     price: "3700",
     desc: "Blend : 80% Arabica & 20% Robusta Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 1000 gr.",
-    inStock: false,
+    inStock: true,
     beanType: "Robusta",
     packageOption: "1kg",
     roastProfile: "Dark",
@@ -61,40 +61,40 @@ export const products = [
     desc: "Blend : 70% Arabica & 30% Robusta Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 500 gr",
     inStock: true,
     beanType: "Decaf",
-    packageOption: "1kg",
+    packageOption: "500g",
     roastProfile: "Extra dark",
     details:
       "Bianco decaffeinated is a caffeine-free coffee with a delightful fusion of chocolate and nut flavours. It is made from carefully selected beans, resulting in a delightful blend with subtle fruity notes. What makes it unique is the chemical-free aqueous decaffeination process.",
   },
-  {
-    id: 5,
-    name: "Bianco N.2.Decaffeinato",
-    href: "/product/5",
-    imageSrc: shopImg5,
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "3699",
-    desc: "Blend : 70% Arabica & 30% Robusta Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 500 gr",
-    inStock: false,
-    beanType: "Decaf",
-    packageOption: "500g",
-    roastProfile: "Medium",
-    details:
-      "Bianco decaffeinated is a caffeine-free coffee with a delightful fusion of chocolate and nut flavours. It is made from carefully selected beans, resulting in a delightful blend with subtle fruity notes. What makes it unique is the chemical-free aqueous decaffeination process.",
-  },
-  {
-    id: 6,
-    name: "Bianco N.2.Gourment",
-    href: "/product/6",
-    imageSrc: shopImg6,
-    imageAlt: "Front of men's Basic Tee in black.",
-    price: "3900",
-    desc: "Blend : 100% Arabica Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 500 gr.",
-    inStock: true,
-    beanType: "Gourmet Blend",
-    packageOption: "1kg",
-    roastProfile: "Dark",
-    details:
-      "This excellent coffee is sourced from the finest plantations across the globe. Through a slow roasting process, the beans preserve their distinctive qualities, reflecting the nuances of the soil, climate, and cultivation methods. True coffee connoisseurs can indulge in its unique properties.",
-  },
+  // {
+  //   id: 5,
+  //   name: "Bianco N.2.Decaffeinato",
+  //   href: "/product/5",
+  //   imageSrc: shopImg5,
+  //   imageAlt: "Front of men's Basic Tee in black.",
+  //   price: "3699",
+  //   desc: "Blend : 70% Arabica & 30% Robusta Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 500 gr",
+  //   inStock: false,
+  //   beanType: "Decaf",
+  //   packageOption: "500g",
+  //   roastProfile: "Medium",
+  //   details:
+  //     "Bianco decaffeinated is a caffeine-free coffee with a delightful fusion of chocolate and nut flavours. It is made from carefully selected beans, resulting in a delightful blend with subtle fruity notes. What makes it unique is the chemical-free aqueous decaffeination process.",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Bianco N.2.Gourment",
+  //   href: "/product/6",
+  //   imageSrc: shopImg6,
+  //   imageAlt: "Front of men's Basic Tee in black.",
+  //   price: "3900",
+  //   desc: "Blend : 100% Arabica Roast : Medium Roast (210° C - 219 ° C Temperature) Format: 500 gr.",
+  //   inStock: true,
+  //   beanType: "Gourmet Blend",
+  //   packageOption: "1kg",
+  //   roastProfile: "Dark",
+  //   details:
+  //     "This excellent coffee is sourced from the finest plantations across the globe. Through a slow roasting process, the beans preserve their distinctive qualities, reflecting the nuances of the soil, climate, and cultivation methods. True coffee connoisseurs can indulge in its unique properties.",
+  // },
   // More products...
 ];

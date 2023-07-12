@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img_learn/Cover-roast.jpg";
+import HeroImg from "../public/img_roasting/Cover-roast.jpg";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
@@ -26,7 +26,7 @@ const roastingGuide = () => {
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
-                  src="/img_learn/Roasting-Processes-2.jpg"
+                  src="/img_roasting/Roasting-2.jpg"
                   alt="Image 1"
                   width={500}
                   height={100}
@@ -81,7 +81,7 @@ const roastingGuide = () => {
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
-                  src="/img_learn/Roasting-Processes-3.jpg"
+                  src="/img_roasting/Roasting-3.jpg"
                   alt="Image 1"
                   width={500}
                   height={100}
