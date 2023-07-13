@@ -67,8 +67,8 @@ const Biancaffe = () => {
                 Shop
               </h1>
               <p className="sm:p-2 mb-0 text-xs sm:text-md font-custom text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                dolore adipisci placeat.
+                Explore our collection of exquisite Bianco Coffee blends for an
+                unparalleled coffee experience.
               </p>
               <div className="flex justify-center items-center">
                 <Link href={`ShopPage`}>
