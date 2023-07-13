@@ -17,9 +17,11 @@ const About = () => {
           <SlideUp offset="-300px 0px -300px 0px">
             <p className="mt-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
               <span className="relative z-10">
-                Bianco Bangladesh is here to introduce the same rich taste,
-                divine warmth and proud lineage of Bianco Coffee beans to the
-                coffee connoisseurs of Bangladesh.
+                Hailing from the famed Salerno region of Italy, Bianco Coffee is
+                one of the oldest and proudest names in coffee lore. Bianco
+                Bangladesh is here to introduce the same rich taste, divine
+                warmth and proud lineage of Bianco Coffee to the coffee
+                connoisseurs of Bangladesh.
               </span>
               <span className="absolute inset-0 flex items-center justify-center z-0 ">
                 <Image
@@ -47,7 +49,7 @@ const About = () => {
           <FadeAndScale offset="-300px 0px -300px 0px">
             <Image
               className="w-full h-auto animate-fadeIn"
-              src="/img/about.png"
+              src="/img_about/2.jpg"
               alt="Image 1"
               width={200}
               height={50}

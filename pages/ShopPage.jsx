@@ -7,7 +7,7 @@ import SortComponent from "../components/shopSections/SortComponent";
 import SearchFilter from "../components/shopSections/SearchFilter";
 import BeanType from "../components/shopSections/BeanType";
 import PackageOption from "../components/shopSections/PackageOption";
-import RoastProfile from "../components/shopSections/RoastProfile";
+// import RoastProfile from "../components/shopSections/RoastProfile";
 
 const ShopPage = () => {
   const [showInStockOnly, setShowInStockOnly] = useState(false);
@@ -200,20 +200,24 @@ const ShopPage = () => {
       </div>
       <div className="col-span-12 md:col-span-9 bg-bg-h  p-8 md:pl-2">
         {/* search and Asc ~ Desc filter */}
-        <div className="flex flex-col sm:flex-row gap-4 pb-12 justify-between">
+        <div className="flex flex-col sm:flex-row gap-4 pb-4 justify-between">
           <div className="flex-grow order-2 sm:order-1 sm:w-full">
             {/* Search filter */}
             <SearchFilter
               searchQuery={searchQuery}
               handleSearchQueryChange={handleSearchQueryChange}
             />
+            <div className="font-semi-bold text-lg text-center mt-4">
+              Please use our chat support temporarily to place your order.
+            </div>
           </div>
+
           <div className="flex-shrink-0 order-1 sm:order-2 pb-8 sm:pb-0">
             {/* Asc ~ Desc filter */}
             <SortComponent sortBy={sortBy} setSortBy={setSortBy} />
           </div>
         </div>
-        {/* const functional component id="25tc" that gone */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sortedAndFilteredProducts.map((product, index) => (
             <div

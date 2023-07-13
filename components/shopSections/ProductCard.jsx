@@ -2,23 +2,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import SlideUp from "../animate/SlideUp";
-// import SlideDown from "../animate/SlideDown";
-import { motion } from "framer-motion";
-
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
+import SlideUp from "../animate/SlideUp";
 
 const ProductCard = ({ product, index }) => {
   const dispatch = useDispatch();
 
   return (
-    <motion.div
-      key={product.id}
-      initial={{ y: 1000 }} // Initial x position (off-screen to the left)
-      animate={{ y: 0 }} // Animation state (move to original position)
-      transition={{ duration: 0.6, delay: index * 0.2 }} // Animation duration and delay
-    >
+    // <motion.div
+    //   key={product.id}
+    //   initial={{ y: 1000 }} // Initial x position (off-screen to the left)
+    //   animate={{ y: 0 }} // Animation state (move to original position)
+    //   transition={{ duration: 0.6, delay: index * 0.2 }} // Animation duration and delay
+    // >
+    <SlideUp offset="-300px 0px -300px 0px" duration={600} delay={index * 200}>
       <div className="group relative flex flex-col justify-center items-center">
         <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75  ">
           <Image
@@ -55,7 +53,7 @@ const ProductCard = ({ product, index }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 

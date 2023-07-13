@@ -405,7 +405,7 @@ const brewingGuide = () => {
           {tips.map((tip, index) => (
             <li
               key={index}
-              className="mb-6  text-secondary font-regular text-sm font-raleway bg-cover bg-center relative animate-fadeIn"
+              className="mb-6 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative animate-fadeIn"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {" "}

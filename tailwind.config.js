@@ -13,6 +13,8 @@ module.exports = {
       dancing: ["Dancing Script", "cursive"],
       custom: ["Raleway", "sans-serif"],
       title: ["Playfair Display", "serif"],
+      poppins: ["Poppins", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     colors: {
       // Configure your color palette here

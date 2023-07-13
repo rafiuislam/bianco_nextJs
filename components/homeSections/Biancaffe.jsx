@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import SlideUp from "../animate/SlideUp";
-import SlideDown from "../animate/SlideDown";
 import imgBian from "../../public/img/Take-Your-Time-bg.jpg";
 import imgBian2 from "../../public/img_hero/Slider-4.jpg";
 import Link from "next/link";
@@ -27,7 +25,7 @@ const Biancaffe = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-            <div className="absolute inset-0 flex translate-y-[65%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <div className="absolute inset-0 flex sm:translate-y-[60%] translate-y-[70%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-custom text-xl sm:text-3xl pb-2 font-medium sm:font-bold text-white">
                 Biancaffe
               </h1>
@@ -62,7 +60,7 @@ const Biancaffe = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-            <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <div className="absolute inset-0 flex translate-y-[55%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-custom text-xl sm:text-3xl pb-2 font-medium sm:font-bold text-white">
                 Shop
               </h1>

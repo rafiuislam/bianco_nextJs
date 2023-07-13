@@ -31,7 +31,7 @@ const aboutBianco = () => {
               {/* type01 */}
               <div className="">
                 <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Attimi Di Cafe
+                  Attimi Di Caffe
                 </header>
                 <div className="mt-1 mb-4 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10 text-justify">
@@ -40,7 +40,7 @@ const aboutBianco = () => {
                     in the comforting warmth, breathe in the invigorating aroma
                     and savor the delicious taste of an impeccable brew
                     extracted from expertly roasted coffee beans. In these
-                    moments, the world can wait. In these {"‘attimi di cafe’"},
+                    moments, the world can wait. In these {"‘attimi di caffe’"},
                     the coffee is to be relished and cherished.
                   </span>{" "}
                   <br /> <br />

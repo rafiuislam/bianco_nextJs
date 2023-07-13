@@ -17,14 +17,69 @@ const Instagram = () => {
       <SectionTitle title="Follow us on Instagram" />
       <SlideUp offset="-300px 0px -300px 0px">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 p-8 lg:px-24 animate-slideUpCubiBezier ">
-          <InstagramImg socialImg={IgImg1} />
-          <InstagramImg socialImg={IgImg2} />
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg1} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg2} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg3} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg4} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg5} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg6} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg7} />
+          </a>
+          <a
+            href="https://www.instagram.com/biancobangladesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramImg socialImg={IgImg8} />
+          </a>
+          {/* <InstagramImg socialImg={IgImg2} />
           <InstagramImg socialImg={IgImg3} />
           <InstagramImg socialImg={IgImg4} />
           <InstagramImg socialImg={IgImg5} />
           <InstagramImg socialImg={IgImg6} />
           <InstagramImg socialImg={IgImg7} />
-          <InstagramImg socialImg={IgImg8} />
+          <InstagramImg socialImg={IgImg8} /> */}
         </div>
       </SlideUp>
     </section>

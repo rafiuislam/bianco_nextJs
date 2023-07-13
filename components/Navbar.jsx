@@ -117,18 +117,8 @@ const Navbar = () => {
           </div>
           <div className="flex items-center justify-between">
             <span className="flex items-center pr-2">
-              <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
-              <Link href="/cart">
-                <div className="relative mr-4 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300">
-                  <MdOutlineShoppingCart
-                    className=" hover:fill-primary"
-                    size={25}
-                  />
-
-                  <span className="absolute -top-2 left-4 rounded-full bg-primary/80 p-0.5 px-2 text-xs text-white">
-                    {getItemsCount()}
-                  </span>
-                </div>
+              <Link href={`ShopPage`}>
+                <BsSearch className="m-6 sm:mr-4 text-lg cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
               </Link>
             </span>
 
@@ -231,7 +221,6 @@ const Navbar = () => {
                           <Link
                             key={subIdx}
                             href={`/${subItem.page}`}
-                            // className="block lg:px-4 px-6 lg:py-2 py-2 text-sm hover:bg-secondary/20"
                             className={`${
                               menubar && navbar && smallscreendetect
                                 ? // sm screen
@@ -253,8 +242,8 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    // passHref
                     className={`block md:pb-4 lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
+                    // passHref
                     onClick={() => setNavbar(!navbar)}
                   >
                     {" "}

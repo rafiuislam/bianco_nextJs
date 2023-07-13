@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -9,7 +9,8 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/SS220.jpg",
+      url: "/img_hero/SliderLg-1.jpg",
+      urlSmall: "/img_hero/SliderSm-1.jpg",
     },
     // {
     //   id: 2,
@@ -24,6 +25,22 @@ const Hero = () => {
     //   url: "/img_hero/Slider-4.jpg",
     // },
   ];
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <section id="carousel">
@@ -81,21 +98,21 @@ const Hero = () => {
         {slider.map((slide) => (
           <div key={slide.id}>
             <Image
-              src={slide.url}
+              src={isSmallScreen ? slide.urlSmall : slide.url}
               className="w-full object-fill"
               // layout="responsive"
               alt="Slider Image"
-              width={1200}
-              height={400}
+              width={1920}
+              height={562}
               priority
             />
             {slide.id === 1 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl text-primary font-medium animate-slideUpCubiBezier">
+                <p className="text-base sm:text-5xl font-poppins text-primary font-medium animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
                 <div className="self-center">
-                  <p className="text-primary font-medium text-sm sm:text-2xl font-raleway animate-fadeIn">
+                  <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
                     Making moments of coffee
                   </p>
                 </div>

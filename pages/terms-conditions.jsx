@@ -7,7 +7,7 @@ const termsConditions = () => {
         Terms & Conditions
       </h1>
       <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
-        <span className="relative z-10">
+        <span className="relative">
           Welcome to our terms and conditions. Throughout this document, the
           terms {"'we', 'our', and 'us'"} refer to the company
           {"‘Bianco Bangladesh’"} and the platforms provided by Bianco
