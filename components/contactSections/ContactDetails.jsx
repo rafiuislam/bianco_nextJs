@@ -4,6 +4,12 @@ import SlideUp from "../animate/SlideUp";
 import Map from "../contactSections/Map";
 
 const ContactDetails = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   //   const contactInfo = [
   //     {
   //       icon: <FaMapMarkerAlt />,
@@ -32,7 +38,11 @@ const ContactDetails = () => {
 
       {/* new */}
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 pl-0 lg:pl-24 pb-4 lg:pb-0 flex flex-col justify-center items-center relative">
+        <div
+          className={`lg:w-1/2 pl-0 lg:pl-24 pb-4 lg:pb-0 flex flex-col justify-center items-center relative ${
+            isMounted ? "border" : ""
+          }`}
+        >
           <SlideUp offset="-300px 0px -300px 0px">
             <div className="flex flex-col md:flex-row justify-between md:items-baseline">
               {/* First Div */}
@@ -61,7 +71,7 @@ const ContactDetails = () => {
               </div>
 
               {/* Second Div */}
-              <div className="flex flex-col mb-4 px-8 justify-center items-center ">
+              <div className="flex flex-col mb-4 px-8 justify-center items-center">
                 <div className="mb-2 p-4">
                   <a href="tel:+88 017 9444 8555">
                     <FaPhone className="text-4xl text-secondary cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-primary" />
