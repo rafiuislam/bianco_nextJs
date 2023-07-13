@@ -23,19 +23,19 @@ const brewingGuide = () => {
         HeroPg={"Brewing Guide"}
       />
       <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
-        <p className="text-center text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
+        <p className="sm:text-center px-0 lg:px-56 text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
           <span className="relative z-10">
             Brewing coffee is both an art and a science, and with a little
-            knowledge and practice, you can unlock the hidden aromas
-            <br /> and flavours trapped within those humble coffee beans. Its a
-            nuanced process that can greatly influence the taste,
-            <br /> aroma, and overall enjoyment of your coffee.
+            knowledge and practice, you can unlock the hidden aromas and
+            flavours trapped within those humble coffee beans. Its a nuanced
+            process that can greatly influence the taste, aroma, and overall
+            enjoyment of your coffee.
           </span>
         </p>
       </section>
       {/* 1 */}
       <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
-        <SectionTitle title="Know Your Equipments" />
+        <SectionTitle title="Know Your Equipment" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1 ">
             <SlideUp offset="-300px 0px -300px 0px">
@@ -401,7 +401,7 @@ const brewingGuide = () => {
       {/* 6 */}
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
         <SectionTitle title="Good Coffee Brewing Habits" />
-        <ul className="text-center">
+        <ul className="sm:text-center text-left">
           {tips.map((tip, index) => (
             <li
               key={index}

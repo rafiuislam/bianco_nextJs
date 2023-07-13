@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { MdOutlineShoppingCart } from "react-icons/md";
+// import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
 const NAV_ITEMS = [
   {
@@ -58,7 +59,21 @@ const NAV_ITEMS = [
   },
 ];
 
+const SUB_MENU_PAGES = NAV_ITEMS.find(
+  (item) => item.label === "LEARN"
+).subMenu.map((subItem) => subItem.page);
+
+console.log(NAV_ITEMS[3].subMenu[0].page);
+
 const Navbar = () => {
+  const router = useRouter();
+
+  const [activeSubMenu, setActiveSubMenu] = useState(false);
+
+  useEffect(() => {
+    setActiveSubMenu(SUB_MENU_PAGES.includes(router.pathname.replace("/", "")));
+  }, [router.pathname]);
+
   // Selecting cart from global state
   const cart = useSelector((state) => state.cart);
 
@@ -100,7 +115,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 shadow bg-bg-h dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-20 top-0 z-50 bg-bg-h">
       <div>
         <div className="flex items-center justify-between">
           <div className="md:mx-auto md:py-5 md:block">
@@ -179,15 +194,20 @@ const Navbar = () => {
           >
             <div className="md:flex md:space-x-6 items-center justify-center space-y-6  md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
+                const isActive = router.pathname === `/${item.page}`;
                 const linkClassName =
-                  item.label === "BIANCAFFE" ? "text-[#007A4C]" : "text-black";
+                  item.label === "BIANCAFFE" ? "text-primary" : "text-black";
+                const linkPageName =
+                  isActive || (activeSubMenu && item.label === "LEARN")
+                    ? "underline underline-offset-4 decoration-2 decoration-primary"
+                    : "text-black";
 
                 // Learn submenu
                 if (item.subMenu) {
                   return (
                     <div
                       key={idx}
-                      className="relative md:pb-4 text-base font-raleway font-sans font-semi-bold inline-block group cursor-pointer z-10"
+                      className={`relative md:pb-4 text-base font-raleway font-sans font-semi-bold inline-block group cursor-pointer z-10`}
                     >
                       <span
                         className={`inline-block ${linkClassName} flex items-center text-base font-raleway font-sans font-semibold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
@@ -195,7 +215,10 @@ const Navbar = () => {
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                       >
-                        <span className="mr-1">{item.label}</span>
+                        {/* Learn */}
+                        <span className={`mr-1 ${linkPageName}`}>
+                          {item.label}
+                        </span>
                         {isHovered ? (
                           <AiFillCaretUp
                             className="text-secondary "
@@ -242,8 +265,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    className={`block md:pb-4 lg:inline-block ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
-                    // passHref
+                    className={`block md:pb-4 lg:inline-block ${linkPageName} ${linkClassName} text-base font-raleway font-sans font-semi-bold cursor-pointer hover:text-secondary md:hover:scale-125 hover:scale-105 ease-in-out duration-300`}
                     onClick={() => setNavbar(!navbar)}
                   >
                     {" "}

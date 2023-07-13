@@ -3,7 +3,6 @@ import React from "react";
 import Hero from "../components/Hero";
 import ContactDetails from "../components/contactSections/ContactDetails";
 import ContactUs from "../components/contactSections/ContactUs";
-
 import HeroImg from "../public/img/Take-Your-Time-bg.jpg";
 
 const contact = () => {

@@ -113,7 +113,7 @@ const aboutBianco = () => {
         </div>
       </section>
 
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 ">
             <FadeAndScale offset="-300px 0px -300px 0px">
@@ -122,7 +122,7 @@ const aboutBianco = () => {
                 src="/img_about/About-Bianco.jpg"
                 alt="Image 3"
                 width={500}
-                height={100}
+                height={500}
                 loading="lazy"
               />
             </FadeAndScale>
@@ -131,11 +131,11 @@ const aboutBianco = () => {
           <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
-              <div className="">
+              <div className="pb-2">
                 <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                   Artisanal Craftsmanship
                 </header>
-                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Sourcing coffee beans from the finest cultivators of the
                     famed Central and South American coffee belt as well as
@@ -151,27 +151,29 @@ const aboutBianco = () => {
                   </span>
                 </p>
               </div>
+              <div className="">
+                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    {" "}
+                    And Bianco Bangladesh is here,{" "}
+                  </span>
+                  <span className="relative">
+                    to introduce the same rich taste, divine warmth and proud
+                    lineage of Bianco Coffee beans to the coffee connoisseurs of
+                    Bangladesh.
+                  </span>
+                  <br /> <br />
+                  <span className="relative ">
+                    Mirsaige, the sole distributor of Bianco Coffee in
+                    Bangladesh, aims to cultivate an authentic Italian coffee
+                    culture throughout the country by offering the finest
+                    Italian coffee beans.
+                  </span>
+                </p>
+              </div>
             </SlideUp>
           </div>
         </div>
-      </section>
-
-      <section>
-        {/* <FadeAndScale offset="-300px 0px -300px 0px"> */}
-        <header className="lg:mb-6 pb-4 md:pb-0 text-center text-secondary font-medium text-xl sm:text-2xl font-title animate-fadeIn">
-          <span className="text-justify font-semi-bold">
-            And Bianco Bangladesh is here,{" "}
-          </span>
-          to introduce the same rich taste, divine warmth and proud <br />{" "}
-          lineage of Bianco Coffee beans to the coffee connoisseurs of
-          Bangladesh.
-        </header>
-        <h1 className="lg:mb-6 pb-2 md:pb-8 text-center text-secondary font-medium text-xl sm:text-3xl font-title animate-fadeIn">
-          Mirsaige, the sole distributor of Bianco Coffee in Bangladesh,
-          <br /> aims to cultivate an authentic Italian coffee culture
-          throughout the country by offering the finest Italian coffee beans.
-        </h1>
-        {/* </FadeAndScale> */}
       </section>
 
       {/* <Popular /> */}

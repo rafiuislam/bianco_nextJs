@@ -40,7 +40,7 @@ const ContactDetails = () => {
       <div className="flex flex-col lg:flex-row">
         <div
           className={`lg:w-1/2 pl-0 lg:pl-24 pb-4 lg:pb-0 flex flex-col justify-center items-center relative ${
-            isMounted ? "border" : ""
+            isMounted ? "" : ""
           }`}
         >
           <SlideUp offset="-300px 0px -300px 0px">

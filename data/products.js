@@ -53,7 +53,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "Bianco Decaffeinated",
+    name: "Bianco Decaffeinato",
     href: "/product/4",
     imageSrc: shopImg4,
     imageAlt: "Front of men's Basic Tee in black.",

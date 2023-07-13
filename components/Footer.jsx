@@ -55,8 +55,8 @@ const Footer = () => {
 
   return (
     <section>
-      <div className="flex flex-wrap flex-none md:justify-center lg:justify-evenly">
-        <div className="p-5 flex-col mx-auto md:mx-0  md:pb-5">
+      <div className="flex flex-wrap flex-none pt-4 md:justify-center lg:justify-evenly">
+        <div className="p-5 flex-col mx-auto md:mx-0 md:pb-5">
           <ul>
             <div className="flex items-center mr-50% justify-center">
               <Image
@@ -171,6 +171,7 @@ const Footer = () => {
                 <br /> Bangladesh
               </span>
             </li>
+
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer  ">
               <div className="flex items-center justify-center mr-2">
                 <FaPhone />
@@ -188,6 +189,34 @@ const Footer = () => {
               <span className="ml-2">Coffee@bianco-bd.com</span>
             </li>
           </ul>
+
+          <div className="p-8 pt-4 pl-0 mx-10 md:mx-0">
+            <ul>
+              <li className="flex items-center text-secondary font-light text-base font-custom pb-2 ">
+                <a
+                  href="https://www.facebook.com/BiancoBangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GrFacebookOption className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                </a>
+                <a
+                  href="https://www.instagram.com/biancobangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/bianco-bangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="p-5 mx-10 md:mx-0">
           <ul>
@@ -204,7 +233,7 @@ const Footer = () => {
                 className="bg-secondary/20 py-1 pl-4 pr-4 focus:outline-none placeholder-secondary"
               />
             </li>
-            <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
+            {/* <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 ">
               <a
                 href="https://www.facebook.com/BiancoBangladesh"
                 target="_blank"
@@ -226,7 +255,7 @@ const Footer = () => {
               >
                 <FaLinkedinIn className="mr-4 cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-secondary" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

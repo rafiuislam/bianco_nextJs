@@ -200,16 +200,16 @@ const ShopPage = () => {
       </div>
       <div className="col-span-12 md:col-span-9 bg-bg-h  p-8 md:pl-2">
         {/* search and Asc ~ Desc filter */}
-        <div className="flex flex-col sm:flex-row gap-4 pb-4 justify-between">
+        <div className="flex flex-col sm:flex-row gap-4 pb-12 justify-between">
           <div className="flex-grow order-2 sm:order-1 sm:w-full">
             {/* Search filter */}
             <SearchFilter
               searchQuery={searchQuery}
               handleSearchQueryChange={handleSearchQueryChange}
             />
-            <div className="font-semi-bold text-lg text-center mt-4">
+            {/* <div className="font-semi-bold text-lg text-center mt-4">
               Please use our chat support temporarily to place your order.
-            </div>
+            </div> */}
           </div>
 
           <div className="flex-shrink-0 order-1 sm:order-2 pb-8 sm:pb-0">

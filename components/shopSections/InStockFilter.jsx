@@ -31,7 +31,8 @@ const InStockFilter = ({ products, onFilterChange }) => {
             checked={showInStockOnly}
             onChange={toggleShowInStockOnly}
           />
-          <span className="pl-2">In Stock ({"0" + inStockCount})</span>
+          <span className="pl-2">In Stock </span>
+          {/* ({"0" + inStockCount}) */}
         </label>
       </div>
     </div>

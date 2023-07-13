@@ -8,9 +8,20 @@ import FadeAndScale from "../components/animate/FadeAndScale";
 import SectionTitle from "../components/SectionTitle";
 
 const coffeeTypes = [
-  ["Arabica Brazil", "Arabica Salvador", "Robusta Uganda"],
-  ["Arabica Ethiopia", "Arabica Honduras", "Robusta VietnamClean"],
-  ["Certificate", "Arabica ColombiaSupremo", "Robusta India"],
+  ["Arabica Brazil", "Arabica Ethiopia", " Colombian Supremo"],
+  ["Arabica Salvador", "Arabica Honduras", "Robusta India"],
+  ["Robusta Uganda", "Robusta Vietnam", "Robusta India-Kaapi Royale"],
+];
+const CoffeeType = [
+  "Arabica Brazil",
+  "Arabica Ethiopia",
+  "Colombian Supremo",
+  "Arabica Salvador",
+  "Arabica Honduras",
+  "Robusta India",
+  "Robusta Uganda",
+  "Robusta Vietnam",
+  "Robusta India - Kaapi Royale",
 ];
 
 // src="/img_learn/Arabica-Info.jpg"

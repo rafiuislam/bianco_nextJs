@@ -28,7 +28,7 @@ const privacyPolicy = () => {
           websites (collectively referred to as the {"'Websites'"}). The Policy
           aligns with the principles established in the Data Protection Act
           (DPA) of the
-          {"People's"} Republic of Bangladesh and other jurisdictions where the
+          {" People's"} Republic of Bangladesh and other jurisdictions where the
           Websites are accessible.
           <br />
           <br />
