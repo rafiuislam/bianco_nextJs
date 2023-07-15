@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import imgBian from "../../public/img/Take-Your-Time-bg.jpg";
-import imgBian2 from "../../public/img_hero/Slider-4.jpg";
+import imgBian2 from "../../public/img/sliderShop.jpg";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle";
 

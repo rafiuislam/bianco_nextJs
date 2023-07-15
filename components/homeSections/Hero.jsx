@@ -9,7 +9,7 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/Slider01.jpg",
+      url: "/img_hero/Slider1.jpg",
       urlSmall: "/img_hero/Slider-Mobile-1.jpg",
     },
     {
