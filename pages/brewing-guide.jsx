@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img_brewing/Cover-brewing.jpg";
+import HeroImg from "../public/img_brewing/Cover-brewing-min.jpg";
 // import Popular from "../components/homeSections/Popular";
 import SectionTitle from "../components/SectionTitle";
 import FadeAndScale from "../components/animate/FadeAndScale";

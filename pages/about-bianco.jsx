@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
-import HeroImg from "../public/img_about/Cover-about.jpg";
+import HeroImg from "../public/img_about/Cover-about-min.jpg";
 import Hero from "../components/Hero";
 
 const aboutBianco = () => {

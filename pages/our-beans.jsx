@@ -1,17 +1,17 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img_bean/Cover-bean.jpg";
+import HeroImg from "../public/img_bean/Cover-bean-min.jpg";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
 // import Popular from "../components/homeSections/Popular";
 import SectionTitle from "../components/SectionTitle";
 
-const coffeeTypes = [
-  ["Arabica Brazil", "Arabica Ethiopia", " Colombian Supremo"],
-  ["Arabica Salvador", "Arabica Honduras", "Robusta India"],
-  ["Robusta Uganda", "Robusta Vietnam", "Robusta India-Kaapi Royale"],
-];
+// const coffeeTypes = [
+//   ["Arabica Brazil", "Arabica Ethiopia", " Colombian Supremo"],
+//   ["Arabica Salvador", "Arabica Honduras", "Robusta India"],
+//   ["Robusta Uganda", "Robusta Vietnam", "Robusta India-Kaapi Royale"],
+// ];
 const CoffeeType = [
   "Arabica Brazil",
   "Arabica Ethiopia",
@@ -33,24 +33,19 @@ const ourBeans = () => {
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <SectionTitle title="Bianco Beans Origins" />
           <div className="flex justify-center">
-            <div className="grid grid-cols-3 gap-4 text-secondary font-regular text-md font-raleway">
-              {coffeeTypes.map((column, columnIndex) => (
-                <div key={columnIndex}>
-                  <div className="flex flex-col justify-center items-start p-2">
-                    {column.map((bean, rowIndex) => (
-                      <div
-                        style={{ animationDelay: `${rowIndex * 0.2}s` }}
-                        key={rowIndex}
-                      >
-                        <FadeAndScale offset="-300px 0px -300px 0px">
-                          &diams; {bean}
-                        </FadeAndScale>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+            <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-secondary font-regular text-md font-raleway">
+              {CoffeeType.map((type, index) => (
+                <li
+                  className=""
+                  key={index}
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <FadeAndScale offset="-300px 0px -300px 0px">
+                    <p className="text-left"> &diams; {type}</p>
+                  </FadeAndScale>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">

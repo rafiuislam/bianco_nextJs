@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img_biancaffe/Cover-biancafe.jpg";
+import HeroImg from "../public/img_biancaffe/Cover-biancafe-min.jpg";
 import FadeAndScale from "../components/animate/FadeAndScale";
 // import Popular from "../components/homeSections/Popular";
 import Image from "next/image";

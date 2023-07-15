@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import HeroImg from "../public/img_roasting/Cover-roast.jpg";
+import HeroImg from "../public/img_roasting/Cover-roast-min.jpg";
 import Image from "next/image";
 import SlideUp from "../components/animate/SlideUp";
 import FadeAndScale from "../components/animate/FadeAndScale";
