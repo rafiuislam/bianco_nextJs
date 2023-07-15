@@ -9,22 +9,19 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      // url: "/img_hero/SliderLg-1.jpg",
-      url: "/img_hero/Sliderlg01.jpg",
-      urlSmall: "/img_hero/SliderSm-1.jpg",
+      url: "/img_hero/Slider01.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-1.jpg",
     },
-    // {
-    //   id: 2,
-    //   url: "/img_hero/Slider-2.jpg",
-    // },
-    // {
-    //   id: 3,
-    //   url: "/img_hero/Slider-3.jpg",
-    // },
-    // {
-    //   id: 4,
-    //   url: "/img_hero/Slider-4.jpg",
-    // },
+    {
+      id: 2,
+      url: "/img_hero/Slider02.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-2.jpg",
+    },
+    {
+      id: 3,
+      url: "/img_hero/Slider03.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-3.jpg",
+    },
   ];
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);

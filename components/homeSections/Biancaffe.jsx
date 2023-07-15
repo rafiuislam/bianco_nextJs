@@ -12,7 +12,7 @@ const Biancaffe = () => {
       id="biancaffe"
       className="container overflow-y-hidden mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 "
     >
-      <SectionTitle title="Explore Us!" />
+      <SectionTitle title="Explore Us" />
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2">
           {/* type01 */}
