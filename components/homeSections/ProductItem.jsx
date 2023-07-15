@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cartSlice";
+// import { useDispatch } from "react-redux";
+// import { addToCart } from "../../redux/cartSlice";
 
 const ProductItem = ({ product }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   return (
     <div key={product.id}>

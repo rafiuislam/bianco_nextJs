@@ -133,6 +133,7 @@ module.exports = {
         "semi-bold": "600", // Semi-bold
         bold: "700", // bold
         "extra-bold": "800", // Extra bold
+        black: "900",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

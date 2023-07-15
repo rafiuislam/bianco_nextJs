@@ -9,7 +9,8 @@ const Hero = () => {
   const slider = [
     {
       id: 1,
-      url: "/img_hero/SliderLg-1.jpg",
+      // url: "/img_hero/SliderLg-1.jpg",
+      url: "/img_hero/Sliderlg01.jpg",
       urlSmall: "/img_hero/SliderSm-1.jpg",
     },
     // {
@@ -108,10 +109,10 @@ const Hero = () => {
             />
             {slide.id === 1 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-poppins text-primary font-medium animate-slideUpCubiBezier">
+                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
-                <div className="self-center">
+                <div className="self-end">
                   <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
                     Making moments of coffee
                   </p>
