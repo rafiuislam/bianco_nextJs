@@ -30,6 +30,7 @@ const ourBeans = () => {
     <div className="bg-bg-h">
       <Hero HeroImg={HeroImg} Herost={"Home >> Learn"} HeroPg={"Our Beans"} />
       <div>
+        {/* Bianco Beans Origins */}
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <SectionTitle title="Bianco Beans Origins" />
           <div className="flex justify-center">
@@ -48,6 +49,8 @@ const ourBeans = () => {
             </ul>
           </div>
         </section>
+
+        {/* Arabica Coffee Beans */}
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <SectionTitle title="Arabica Coffee Beans" />
           <FadeAndScale offset="-300px 0px -300px 0px">
@@ -184,6 +187,7 @@ const ourBeans = () => {
           </div>
         </section>
 
+        {/* Robusta Coffee Beans */}
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24">
           <SectionTitle title="Robusta Coffee Beans" />
           <FadeAndScale offset="-300px 0px -300px 0px">
@@ -311,13 +315,28 @@ const ourBeans = () => {
             </div>
           </div>
         </section>
-        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24 md:pb-12">
-          <div className="flex flex-col lg:flex-row justify-center items-baseline">
-            <div className="lg:w-1/2">
+
+        {/* Decaffeinato */}
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-1/2 order-1 lg:order-2">
               <FadeAndScale offset="-300px 0px -300px 0px">
+                <Image
+                  className="w-full h-auto animate-fadeIn"
+                  src="/img_bean/Decaffeinato.jpg"
+                  alt="Image 1"
+                  width={500}
+                  height={100}
+                  loading="lazy"
+                />
+              </FadeAndScale>
+            </div>
+
+            <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="pb-4 sm:pb-0">
-                  <SectionTitle title="Decaffeinato" />
+                  <SectionTitle title="Decaffeinato" align="start" />
                   <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
                     <span className="relative z-10">
                       Decaffeinated coffee beans, often referred to as decaf,
@@ -333,14 +352,32 @@ const ourBeans = () => {
                     </span>
                   </p>
                 </div>
+              </SlideUp>
+            </div>
+          </div>
+        </section>
+
+        {/* Gourmet */}
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-1/2 ">
+              <FadeAndScale offset="-300px 0px -300px 0px">
+                <Image
+                  className="w-full h-auto animate-fadeIn"
+                  src="/img_bean/Gourmet.jpg"
+                  alt="Image 1"
+                  width={500}
+                  height={100}
+                  loading="lazy"
+                />
               </FadeAndScale>
             </div>
 
-            <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
-              <FadeAndScale offset="-300px 0px -300px 0px">
+            <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
+              <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <SectionTitle title="Gourmet" />
+                  <SectionTitle title="Gourmet" align="start" />
                   <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
                     <span className="relative z-10">
                       Bianco specialty gourmet coffee is sourced from the finest
@@ -352,10 +389,11 @@ const ourBeans = () => {
                     </span>
                   </p>
                 </div>
-              </FadeAndScale>
+              </SlideUp>
             </div>
           </div>
         </section>
+
         {/* <Popular /> */}
       </div>
     </div>
