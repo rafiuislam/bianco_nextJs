@@ -7,15 +7,19 @@ import { GrFacebookOption } from "react-icons/gr";
 import SlideUp from "../components/animate/SlideUp";
 import SlideFromRight from "../components/animate/SlideFromRight";
 
-import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
+// import { useDispatch } from "react-redux";
+// import { addToCart } from "../redux/cartSlice";
+
+import ProductModal from "../components/ProductModal";
 
 const ProductDetails = () => {
   const router = useRouter();
   const { productId } = router.query;
   const [product, setProduct] = useState(null);
 
-  const dispatch = useDispatch();
+  const [showModal, setShowModal] = useState(false);
+
+  // const dispatch = useDispatch();
 
   useEffect(() => {
     // Find the product in the local products array based on the productId
@@ -75,13 +79,18 @@ const ProductDetails = () => {
                   </a>
                 </span>
               </div>
+              <div className="flex justify-center items-center w-50 h-auto pb-4">
+                <p className="text-black font-regular text-md font-raleway leading-relaxed">
+                  {product.desc}
+                </p>
+              </div>
               <div className="flex justify-center items-center w-100 h-auto">
                 <p className="text-black font-regular text-md font-raleway leading-relaxed">
                   {product.details}
                 </p>
               </div>
 
-              <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+              <div className="flex mt-2 items-center pb-5 border-b-2 border-gray-200 mb-5">
                 {/* Colors */}
                 {/* <div class="flex">
                 <span class="mr-3">Color</span>
@@ -121,13 +130,15 @@ const ProductDetails = () => {
                 </span>
                 <div className="flex ml-auto mt-4 z-10">
                   <button
-                    onClick={() => dispatch(addToCart(product))}
+                    // onClick={() => dispatch(addToCart(product))}
+                    onClick={() => setShowModal(true)}
                     className="font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0"
                   >
                     Add to Cart
                   </button>
                 </div>
               </div>
+              <ProductModal showModal={showModal} setShowModal={setShowModal} />
             </SlideFromRight>
           </div>
         </div>

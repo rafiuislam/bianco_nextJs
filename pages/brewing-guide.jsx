@@ -34,7 +34,7 @@ const brewingGuide = () => {
         </p>
       </section>
       {/* 1 */}
-      <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
+      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <SectionTitle title="Know Your Equipment" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1 ">
@@ -271,12 +271,12 @@ const brewingGuide = () => {
           <div className="lg:w-1/2 pl-0 lg:pl-8 pt-6 lg:pt-0 flex flex-col justify-center relative">
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
-              <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+              {/* <p className="mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                 <span className="relative z-10">
                   There are various methods of brewing coffee, each with its own
                   unique characteristics. Here are some popular methods:
                 </span>
-              </p>
+              </p> */}
               <div className="">
                 <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                   Drip Brewing
@@ -365,7 +365,7 @@ const brewingGuide = () => {
       </section>
       {/* 5 */}
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
-        <SectionTitle title="Serve & Enjoy" />
+        <SectionTitle title="Serve & Enjoy!" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">
             <FadeAndScale offset="-300px 0px -300px 0px">

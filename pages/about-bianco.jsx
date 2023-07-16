@@ -153,14 +153,14 @@ const aboutBianco = () => {
               </div>
               <div className="">
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
-                  <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    {" "}
-                    And Bianco Bangladesh is here,{" "}
-                  </span>
                   <span className="relative">
-                    to introduce the same rich taste, divine warmth and proud
-                    lineage of Bianco Coffee beans to the coffee connoisseurs of
-                    Bangladesh.
+                    And{" "}
+                    <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Bianco Bangladesh{" "}
+                    </span>
+                    is here, to introduce the same rich taste, divine warmth and
+                    proud lineage of Bianco Coffee beans to the coffee
+                    connoisseurs of Bangladesh.
                   </span>
                   <br /> <br />
                   <span className="relative ">

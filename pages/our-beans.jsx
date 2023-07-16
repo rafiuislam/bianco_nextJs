@@ -56,9 +56,8 @@ const ourBeans = () => {
           <FadeAndScale offset="-300px 0px -300px 0px">
             <p className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
               <span className="relative z-10">
-                Arabica coffee, scientifically known as Coffea arabica, is known
-                for the exquisite flavour and captivating aromas. The Arabica
-                beans are
+                Arabica coffee is known for the exquisite flavour and
+                captivating aromas. The Arabica beans are
                 <br /> widely regarded as the gold standard in the world of
                 coffee. The coffee has evolved into a symbol of excellence,
                 captivating discerning
@@ -193,9 +192,8 @@ const ourBeans = () => {
           <FadeAndScale offset="-300px 0px -300px 0px">
             <p className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
               <span className="relative z-10">
-                Robusta coffee, scientifically named Coffea canephora, has a
-                history that is relatively more recent in comparison to Arabica
-                coffee. With
+                Robusta coffee has a history that is relatively more recent in
+                comparison to Arabica coffee. With
                 <br /> a history rooted in Africa and a growing presence in
                 various regions worldwide, Robusta coffee beans offer a flavor
                 profile and <br /> characteristics that set them apart.
@@ -203,7 +201,7 @@ const ourBeans = () => {
             </p>
           </FadeAndScale>
           <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 ">
+            <div className="lg:w-1/2">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn pb-4"
@@ -216,7 +214,7 @@ const ourBeans = () => {
               </FadeAndScale>
             </div>
 
-            <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-start relative">
+            <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
                 <div className="">
@@ -377,7 +375,7 @@ const ourBeans = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <SectionTitle title="Gourmet" align="start" />
+                  <SectionTitle title="Speciality Gourmet" align="start" />
                   <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
                     <span className="relative z-10">
                       Bianco specialty gourmet coffee is sourced from the finest

@@ -16,7 +16,7 @@ const privacyPolicy = () => {
   return (
     <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
       <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
-        Privacy and Policy
+        Privacy Policy
       </h1>
       <div className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
         <span className="relative">

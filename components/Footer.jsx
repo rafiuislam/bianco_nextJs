@@ -216,7 +216,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <div className="p-8 pt-4 pl-0 mx-10 md:mx-0">
+          <div className="p-8 pt-8 sm:pt-4 sm:pl-0 mx-10 md:mx-0">
             <ul>
               <li className="flex items-center text-secondary font-light text-base font-custom pb-2 ">
                 <a
