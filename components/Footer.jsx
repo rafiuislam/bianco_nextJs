@@ -165,7 +165,7 @@ const Footer = () => {
               <div className="flex items-center justify-center mr-2">
                 <FaMapMarkerAlt />
               </div>
-              <span
+              <div
                 className={`ml-2 cursor-pointer transition-all duration-500 relative   before:content-['']
                 before:absolute
                 before:top-9
@@ -190,7 +190,7 @@ const Footer = () => {
                   House-43, Level-2, Shah Makhdum <br /> Avenue, Sector-12,
                   Uttara, Dhaka-1230
                 </a>
-              </span>
+              </div>
             </li>
 
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer  ">
@@ -205,12 +205,14 @@ const Footer = () => {
               <div className="flex items-center justify-center mr-2">
                 <FaEnvelope />
               </div>
-              <a
-                href="mailto:info@bianco-bd.com"
-                className="ml-2 cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-4 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative"
-              >
-                info@bianco-bd.com
-              </a>
+              <div>
+                <a
+                  href="mailto:info@bianco-bd.com"
+                  className="ml-2 cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-4 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative"
+                >
+                  info@bianco-bd.com
+                </a>
+              </div>
             </li>
           </ul>
 

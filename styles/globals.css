@@ -17,6 +17,12 @@
   }
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 .font-title {
   font-family: "Playfair Display", serif;
 }

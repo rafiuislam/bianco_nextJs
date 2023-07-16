@@ -16,7 +16,7 @@ const Biancaffe = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2">
           {/* type01 */}
-          <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-md hover:shadow-black/30">
             <div className="h-98 w-98">
               <Image
                 className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 scale-125 group-hover:scale-100"
@@ -37,9 +37,11 @@ const Biancaffe = () => {
                 {" ‘attimi di cafe’!"}
               </p>
               <div className="flex justify-center items-center">
-                <button className="mt-4 font-semibold text-sm sm:text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-secondary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-secondary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0">
-                  See More
-                </button>
+                <Link href={`biancafe`}>
+                  <button className="mt-4 font-semibold text-sm sm:text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-secondary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-secondary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0">
+                    See More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -48,7 +50,7 @@ const Biancaffe = () => {
         <div className="lg:w-1/2 lg:ml-4 pt-4 lg:pt-0 flex flex-col justify-center relative">
           {/* type02 */}
 
-          <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div className="group rounded-lg relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-md hover:shadow-black/30">
             <div className="h-98 w-98">
               <Image
                 className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 scale-125 group-hover:scale-100"

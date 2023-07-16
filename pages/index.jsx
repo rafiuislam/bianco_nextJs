@@ -5,6 +5,8 @@ import Instagram from "../components/homeSections/Instagram";
 import Shop from "../components/homeSections/Shop";
 import Biancaffe from "../components/homeSections/Biancaffe";
 
+// import { Link } from "react-scroll";
+
 //HomePage
 export default function Home() {
   return (
