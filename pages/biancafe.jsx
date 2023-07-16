@@ -96,59 +96,7 @@ const biancafe = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 ">
-            <FadeAndScale offset="-300px 0px -300px 0px">
-              <Image
-                className="w-full h-auto animate-fadeIn"
-                src="/img_biancaffe/Our-Cafe-Uttara.jpg"
-                alt="Image 1"
-                width={200}
-                height={150}
-                priority
-              />
-            </FadeAndScale>
-          </div>
 
-          <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
-            <SlideUp offset="-300px 0px -300px 0px">
-              {/* type01 */}
-              <div className="">
-                <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-4xl font-raleway">
-                  UTTARA
-                </h1>
-                <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
-                  House #a0, Road #oa, Sector- 12, Coﬀee Shopping Tower, Dhaka,
-                  Bangladesh
-                </h2>
-                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
-                  <span className="relative z-10">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using `{"Content here, content here"}`, making it look like
-                    readable English.
-                  </span>
-                </p>
-                <h2 className="mb-6 text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Opening Hours- 11am to 10.30pm
-                </h2>
-                <div className="mt-6 overflow-y-hidden md:mt-4 mb-4 text-center md:text-start">
-                  <FadeAndScale offset="-300px 0px -300px 0px">
-                    <Link href={``}>
-                      <button className="font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
-                        Click here for Menu
-                      </button>
-                    </Link>
-                  </FadeAndScale>
-                </div>
-              </div>
-            </SlideUp>
-          </div>
-        </div>
-      </section>
       <Instagram />
       {/* <Popular /> */}
     </div>
@@ -156,3 +104,59 @@ const biancafe = () => {
 };
 
 export default biancafe;
+
+{
+  /* <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
+<div className="flex flex-col lg:flex-row">
+  <div className="lg:w-1/2 ">
+    <FadeAndScale offset="-300px 0px -300px 0px">
+      <Image
+        className="w-full h-auto animate-fadeIn"
+        src="/img_biancaffe/Our-Cafe-Uttara.jpg"
+        alt="Image 1"
+        width={200}
+        height={150}
+        priority
+      />
+    </FadeAndScale>
+  </div>
+
+  <div className="lg:w-1/2 pl-0 lg:pl-8 flex flex-col justify-center relative">
+    <SlideUp offset="-300px 0px -300px 0px">
+
+      <div className="">
+        <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-4xl font-raleway">
+          UTTARA
+        </h1>
+        <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
+          House #a0, Road #oa, Sector- 12, Coﬀee Shopping Tower, Dhaka,
+          Bangladesh
+        </h2>
+        <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+          <span className="relative z-10">
+            It is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at
+            its layout. The point of using Lorem Ipsum is that it has a
+            more-or-less normal distribution of letters, as opposed to
+            using `{"Content here, content here"}`, making it look like
+            readable English.
+          </span>
+        </p>
+        <h2 className="mb-6 text-justify text-secondary font-semi-bold text-lg font-raleway">
+          Opening Hours- 11am to 10.30pm
+        </h2>
+        <div className="mt-6 overflow-y-hidden md:mt-4 mb-4 text-center md:text-start">
+          <FadeAndScale offset="-300px 0px -300px 0px">
+            <Link href={``}>
+              <button className="font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
+                Click here for Menu
+              </button>
+            </Link>
+          </FadeAndScale>
+        </div>
+      </div>
+    </SlideUp>
+  </div>
+</div>
+</section> */
+}
