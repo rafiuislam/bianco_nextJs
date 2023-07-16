@@ -12,7 +12,6 @@ const Hero = ({ HeroImg, HeroPg, Herost }) => {
           objectFit="cover"
           className="relative w-full h-auto"
           data-speed="0.5"
-          loading="eager"
           priority
         />
 

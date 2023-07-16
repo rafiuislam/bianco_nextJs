@@ -225,7 +225,7 @@ const brewingGuide = () => {
               <Image
                 className="w-full h-auto animate-fadeIn"
                 src="/img_brewing/Step3.jpg"
-                alt="Image 3"
+                alt="Image 4"
                 width={500}
                 height={100}
                 loading="lazy"
@@ -372,7 +372,7 @@ const brewingGuide = () => {
               <Image
                 className="w-full h-auto animate-fadeIn"
                 src="/img_brewing/Step005.jpg"
-                alt="Image 3"
+                alt="Image 5"
                 width={500}
                 height={100}
                 loading="lazy"
