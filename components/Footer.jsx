@@ -34,24 +34,24 @@ const Footer = () => {
     // { id: 6, label: "Shipment & Returns" },
   ];
 
-  const contactInfo = [
-    {
-      icon: <FaMapMarkerAlt />,
-      text: "House# 4a, Road# 0a, Shanta Province, Uttara, Dhaka, Bangladesh",
-      key: "address",
-    },
-    {
-      icon: <FaPhone />,
-      text: "+880 111 XXX 222 333<br/>+880 111 XXX 222 444<br/>+880 111 XXX 222 111<br/>",
-      key: "phone",
-    },
+  // const contactInfo = [
+  //   {
+  //     icon: <FaMapMarkerAlt />,
+  //     text: "House# 4a, Road# 0a, Shanta Province, Uttara, Dhaka, Bangladesh",
+  //     key: "address",
+  //   },
+  //   {
+  //     icon: <FaPhone />,
+  //     text: "+88 017 9444 8555",
+  //     key: "phone",
+  //   },
 
-    {
-      icon: <FaEnvelope />,
-      text: "Coffee@bianco-bd.com",
-      key: "email",
-    },
-  ];
+  //   {
+  //     icon: <FaEnvelope />,
+  //     text: "Coffee@bianco-bd.com",
+  //     key: "email",
+  //   },
+  // ];
 
   return (
     <section>
@@ -159,16 +159,37 @@ const Footer = () => {
         <div className="p-5 mx-10 md:mx-0">
           <ul>
             <p className="text-secondary font-semi-bold text-xl sm:pt-0 xs:pt-0 pt-6 pb-6 font-title ">
-              Connect With Us
+              Contact US
             </p>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer ">
               <div className="flex items-center justify-center mr-2">
                 <FaMapMarkerAlt />
               </div>
-              <span className="ml-2">
-                House# 4a, Road# 0a, Shanta
-                <br /> Province, Uttara, Dhaka,
-                <br /> Bangladesh
+              <span
+                className={`ml-2 cursor-pointer transition-all duration-500 relative   before:content-['']
+                before:absolute
+                before:top-9
+                before:left-0
+                before:w-1
+                before:h-0.5
+                before:rounded-full
+                before:opacity-0
+                before:transition-all
+                before:duration-500
+                before:bg-gradient-to-r
+                before:from-secondary
+                before:to-secondary
+                hover:before:w-full
+                hover:before:opacity-100`}
+              >
+                <a
+                  href="https://maps.google.com/maps?q=House%234a%2C%20Road%230a%2C%20Shanta%20Province%2C%20Uttara%2C%20Dhaka%2C%20Bangladesh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  House-43, Level-2, Shah Makhdum <br /> Avenue, Sector-12,
+                  Uttara, Dhaka-1230
+                </a>
               </span>
             </li>
 
@@ -176,17 +197,20 @@ const Footer = () => {
               <div className="flex items-center justify-center mr-2">
                 <FaPhone />
               </div>
-              <span className="ml-2">
-                <span>+880 111 XXX 222 333 </span> <br />
-                <span>+880 111 XXX 222 444</span>
-                <br /> <span> +880 111 XXX 222 111</span>
+              <span className="ml-2 cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-4 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative">
+                <a href="tel:+88 017 9444 8555">+88 017 9444 8555</a>
               </span>
             </li>
             <li className="flex items-center text-secondary font-light text-xs font-custom pb-2 cursor-pointer">
               <div className="flex items-center justify-center mr-2">
                 <FaEnvelope />
               </div>
-              <span className="ml-2">Coffee@bianco-bd.com</span>
+              <a
+                href="mailto:info@bianco-bd.com"
+                className="ml-2 cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-4 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative"
+              >
+                info@bianco-bd.com
+              </a>
             </li>
           </ul>
 

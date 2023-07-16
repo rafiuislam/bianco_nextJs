@@ -46,7 +46,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={30000}
+        autoPlaySpeed={3000}
         centerMode={false}
         className=""
         containerClass="mx-auto"

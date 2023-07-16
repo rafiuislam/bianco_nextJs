@@ -1,7 +1,6 @@
 import React from "react";
 import SlideUp from "../animate/SlideUp";
 import SlideFromLeft from "../animate/SlideFromLeft";
-import SlideFromRight from "../animate/SlideFromRight";
 import FadeAndScale from "../animate/FadeAndScale";
 
 const ContactUs = () => {

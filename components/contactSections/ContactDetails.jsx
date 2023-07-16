@@ -28,6 +28,24 @@ const ContactDetails = () => {
   //       key: "email",
   //     },
   //   ];
+
+  const underlineStyle = `
+  before:content-['']
+  before:absolute
+  before:top-10
+  before:left-0
+  before:w-1
+  before:h-0.5
+  before:rounded-full
+  before:opacity-0
+  before:transition-all
+  before:duration-500
+  before:bg-gradient-to-r
+  before:from-secondary
+  before:to-secondary
+  hover:before:w-full
+  hover:before:opacity-100
+`;
   return (
     <section id="popular" className="container mx-auto mt-4 mb-4 px-4 sm:pb-2">
       <SlideUp offset="-300px 0px -300px 0px">
@@ -57,7 +75,9 @@ const ContactDetails = () => {
                   </a>
                 </div>
                 <div className="text-center">
-                  <p className="font-light text-sm font-custom cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-10 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative">
+                  <p
+                    className={`font-light text-sm font-custom cursor-pointer transition-all duration-500 relative ${underlineStyle}`}
+                  >
                     <a
                       href="https://maps.google.com/maps?q=House%234a%2C%20Road%230a%2C%20Shanta%20Province%2C%20Uttara%2C%20Dhaka%2C%20Bangladesh"
                       target="_blank"
@@ -94,7 +114,7 @@ const ContactDetails = () => {
                 <div>
                   <a
                     href="mailto:info@bianco-bd.com"
-                    className="font-light text-sm font-custom cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-5 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative"
+                    className="font-light text-sm font-custom cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:top-4 before:left-0 before:w-1 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-gradient-to-r before:from-secondary before:to-secondary hover:before:w-full hover:before:opacity-100 relative"
                   >
                     info@bianco-bd.com
                   </a>
