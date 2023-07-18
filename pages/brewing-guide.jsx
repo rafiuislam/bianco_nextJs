@@ -371,7 +371,7 @@ const brewingGuide = () => {
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_brewing/Step005.jpg"
+                src="/img_brewing/Step_5.jpg"
                 alt="Image 5"
                 width={500}
                 height={100}

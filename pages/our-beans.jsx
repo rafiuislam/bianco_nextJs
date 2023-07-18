@@ -205,7 +205,7 @@ const ourBeans = () => {
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn pb-4"
-                  src="/img_bean/RobustaBean.jpg"
+                  src="/img_bean/robustaBeans.jpg"
                   alt="RobustaBean"
                   width={500}
                   height={500}
@@ -362,7 +362,7 @@ const ourBeans = () => {
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
-                  src="/img_bean/Gourmet.jpg"
+                  src="/img_bean/specialityGourmet.jpg"
                   alt="Image 1"
                   width={500}
                   height={100}

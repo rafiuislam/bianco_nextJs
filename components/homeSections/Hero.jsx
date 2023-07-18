@@ -22,6 +22,16 @@ const Hero = () => {
       url: "/img_hero/Slider03.jpg",
       urlSmall: "/img_hero/Slider-Mobile-3.jpg",
     },
+    {
+      id: 4,
+      url: "/img_hero/Slider-04.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-4.jpg",
+    },
+    {
+      id: 5,
+      url: "/img_hero/Slider-5.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-5.jpg",
+    },
   ];
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
