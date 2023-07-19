@@ -426,7 +426,7 @@ const ourBeans = () => {
         </section>
 
         {/* Gourmet */}
-        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-8 md:px-24">
+        <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
           <SectionTitle title="Speciality Gourmet" />
           <FadeAndScale offset="-300px 0px -300px 0px">
             <p className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
