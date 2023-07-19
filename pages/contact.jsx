@@ -9,7 +9,6 @@ const contact = () => {
   return (
     <div className="bg-bg-h">
       <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"Contact Us"} />
-
       <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
         <p className="sm:text-center px-0 lg:px-12 text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
           <span className="relative z-10">
