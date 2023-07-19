@@ -119,6 +119,17 @@ const roastingGuide = () => {
                     <span className="relative z-10">
                       The primary purpose of the tasting stage is to understand
                       and appreciate the unique characteristics of a coffee.
+                      This is where the true flavours and quality of the freshly
+                      roasted coffee are assessed. Skilled cuppers or coffee
+                      enthusiasts take part in a special tasting technique known
+                      as cupping. They carefully examine the {"coffee's"} aroma,
+                      fragrance, acidity, body, flavour notes, and aftertaste.
+                      To fully savour the experience, they slurp the coffee from
+                      spoons, allowing it to coat their taste buds and reveal
+                      its intricate flavours. Through this process, they can
+                      detect any imperfections, evaluate the overall flavour
+                      profile, and determine whether the coffee is suitable for
+                      specific brewing methods or blends.
                     </span>{" "}
                   </p>
                 </div>

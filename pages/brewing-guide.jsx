@@ -115,7 +115,8 @@ const brewingGuide = () => {
                 </header>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
-                    Use a paper filter or a reusable metal filter.
+                    Different filter options are available for coffee brewing,
+                    such as paper, metal, cloth, and mesh.
                   </span>{" "}
                 </p>
               </div>
@@ -127,7 +128,8 @@ const brewingGuide = () => {
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     {/* change text later */}
-                    Use clean, filtered water for the best taste.
+                    Generally, the ideal water temperature range for brewing
+                    coffee is between 195°F (90°C) and 205°F (96°C).
                   </span>{" "}
                 </p>
               </div>
@@ -153,14 +155,6 @@ const brewingGuide = () => {
                     For creating foam or steaming milk for lattes or
                     cappuccinos.
                   </span>{" "}
-                </p>
-              </div>
-
-              <div>
-                <br />
-                <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
-                  Acknowledge that the specific equipment you need will depend
-                  on your preferred brewing method.
                 </p>
               </div>
             </SlideUp>
