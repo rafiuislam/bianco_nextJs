@@ -34,7 +34,8 @@ const ProductModal = ({ showModal, setShowModal }) => {
       <div className="text-center">
         <div className="relative p-6 flex-auto">
           <p className="my-4 text-slate-500 text-lg leading-relaxed">
-            I always felt like I could do anything.
+            Kindly forward your information to us, and our representatives will
+            promptly get in touch with you.
           </p>
         </div>
       </div>
