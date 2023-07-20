@@ -21,9 +21,9 @@ const ProductModal = ({ showModal, setShowModal }) => {
       style={customStyles}
       ariaHideApp={false}
     >
-      <div className="flex justify-between align-baseline">
-        <h2 className="text-primary font-semi-bold text-2xl font-custom">
-          Modal Title
+      <div className="flex justify-between items-center">
+        <h2 className="mx-auto text-primary font-semi-bold text-2xl font-custom">
+          Chat with Bianco Bangladesh
         </h2>
         <IoMdClose
           size={25}
@@ -34,8 +34,8 @@ const ProductModal = ({ showModal, setShowModal }) => {
       <div className="text-center">
         <div className="relative p-6 flex-auto">
           <p className="my-4 text-slate-500 text-lg leading-relaxed">
-            Kindly forward your information to us, and our representatives will
-            promptly get in touch with you.
+            To place an order, provide us your contact details and we will be in
+            touch with you shortly.
           </p>
         </div>
       </div>
