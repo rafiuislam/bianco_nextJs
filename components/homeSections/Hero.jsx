@@ -7,20 +7,20 @@ import "react-multi-carousel/lib/styles.css";
 
 const Hero = () => {
   const slider = [
-    {
-      id: 1,
-      url: "/img_hero/Slider1.jpg",
-      urlSmall: "/img_hero/Slider-Mobile-1.jpg",
-    },
-    {
-      id: 2,
-      url: "/img_hero/Slider02.jpg",
-      urlSmall: "/img_hero/Slider-Mobile-2.jpg",
-    },
+    // {
+    //   id: 1,
+    //   url: "/img_hero/Slider1.jpg",
+    //   urlSmall: "/img_hero/Slider-Mobile-1.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   url: "/img_hero/Slider02.jpg",
+    //   urlSmall: "/img_hero/Slider-Mobile-2.jpg",
+    // },
     {
       id: 3,
-      url: "/img_hero/Slider03.jpg",
-      urlSmall: "/img_hero/Slider-Mobile-3.jpg",
+      url: "/img_hero/Slider-5.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-5.jpg",
     },
     {
       id: 4,
@@ -29,8 +29,8 @@ const Hero = () => {
     },
     {
       id: 5,
-      url: "/img_hero/Slider-5.jpg",
-      urlSmall: "/img_hero/Slider-Mobile-5.jpg",
+      url: "/img_hero/Slider03.jpg",
+      urlSmall: "/img_hero/Slider-Mobile-3.jpg",
     },
   ];
 
