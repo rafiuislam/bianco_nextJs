@@ -114,7 +114,17 @@ const Hero = () => {
               height={562}
               priority
             />
-            {slide.id === 1 && (
+            <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+              <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                Bianco Bangladesh
+              </p>
+              <div className="self-end">
+                <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
+                  Making moments of coffee
+                </p>
+              </div>
+            </div>
+            {/* {slide.id === 1 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
                 <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
                   Bianco Bangladesh
@@ -125,7 +135,7 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         ))}
       </Carousel>
