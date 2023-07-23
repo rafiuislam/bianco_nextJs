@@ -7,6 +7,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./styles/*.{js,css,jsx,tsx,mdx}",
   ],
   theme: {
     fontFamily: {
@@ -15,7 +16,7 @@ module.exports = {
       title: ["Playfair Display", "serif"],
       poppins: ["Poppins", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
-      "tilt-warp": ["Tilt Warp", "sans-serif"],
+      // "tilt-warp": ["Tilt Warp", "sans-serif"],
     },
     colors: {
       // Configure your color palette here

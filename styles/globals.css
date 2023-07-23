@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
 
@@ -26,13 +26,23 @@
   }
 }
 
-/* .font-title {
-  font-family: "Playfair Display", serif;
+@font-face {
+  font-family: "Tilt Warp";
+  src: url("../public/fonts/TiltWarp-Regular.ttf");
 }
 
-.font-custom {
-  font-family: "Raleway", sans-serif;
-} */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+.font-tilt-warp {
+  font-family: "Tilt Warp", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
 
 @keyframes parallax {
   0% {
