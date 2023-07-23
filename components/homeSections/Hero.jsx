@@ -56,7 +56,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={3000}
+        autoPlaySpeed={30000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -114,16 +114,31 @@ const Hero = () => {
               height={562}
               priority
             />
-            <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-              <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
-                Bianco Bangladesh
-              </p>
-              <div className="self-end">
-                <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
-                  Making moments of coffee
+            {isSmallScreen && slide.id === 4 && (
+              <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                  Bianco Bangladesh
                 </p>
+                <div className="self-end">
+                  <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
+                    Making moments of coffee
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
+            {isSmallScreen === false && (
+              <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                  Bianco Bangladesh
+                </p>
+                <div className="self-end">
+                  <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
+                    Making moments of coffee
+                  </p>
+                </div>
+              </div>
+            )}
+
             {/* {slide.id === 1 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
                 <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
