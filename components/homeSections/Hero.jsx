@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+// import Head from 'next/head'
 // import { Link } from "react-scroll/modules";
 // import { MdKeyboardArrowDown } from "react-icons/md";
 
@@ -116,7 +117,7 @@ const Hero = () => {
             />
             {isSmallScreen && slide.id === 4 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-sm sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                <p className="text-sm sm:text-5xl font-black font-tilt-warp text-primary animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
                 <div className="self-end">
@@ -128,12 +129,14 @@ const Hero = () => {
             )}
             {isSmallScreen === false && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                <p className="text-base sm:text-5xl font-black font-tilt-warp text-primary animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
                 <div className="self-end">
                   <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
-                    Making moments of coffee
+                    <span style={{ fontVariant: "small-caps" }}>
+                      Making moments of coffee
+                    </span>
                   </p>
                 </div>
               </div>

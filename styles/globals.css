@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
@@ -23,13 +26,13 @@
   }
 }
 
-.font-title {
+/* .font-title {
   font-family: "Playfair Display", serif;
 }
 
 .font-custom {
   font-family: "Raleway", sans-serif;
-}
+} */
 
 @keyframes parallax {
   0% {
@@ -39,28 +42,6 @@
     transform: translateZ(-1px) scale(3);
   }
 }
-/* 
-.parallax {
-  transform-style: preserve-3d;
-  perspective: 1px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-.parallax:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100vw;
-  z-index: -1;
-  transform-origin: top;
-  transform: translateZ(-1px) scale(2);
-  background: url("/img/Take-Your-Time-bg.jpg") center/cover fixed no-repeat;
-  animation: parallax 10s infinite linear;
-} */
 
 .react-multiple-carousel__arrow--right {
   right: calc(4% + -45px);

@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  images: {
-    domains: ["images.unsplash.com"],
-  },
+  // images: {
+  //   domains: ["images.unsplash.com"],
+  // },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,6 +15,7 @@ module.exports = {
       title: ["Playfair Display", "serif"],
       poppins: ["Poppins", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
+      "tilt-warp": ["Tilt Warp", "sans-serif"],
     },
     colors: {
       // Configure your color palette here
