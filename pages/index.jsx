@@ -13,9 +13,9 @@ export default function Home() {
 
       <Biancaffe />
 
-      <Shop />
-
       <About />
+
+      <Shop />
 
       <Instagram />
       {/* <Popular /> */}
