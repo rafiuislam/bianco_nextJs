@@ -56,7 +56,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={30000}
+        autoPlaySpeed={3000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -116,11 +116,11 @@ const Hero = () => {
             />
             {isSmallScreen && slide.id === 4 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
+                <p className="text-sm sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
                   Bianco Bangladesh
                 </p>
                 <div className="self-end">
-                  <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
+                  <p className="text-primary font-montserrat font-medium text-2xs sm:text-2xl font-raleway animate-fadeIn">
                     Making moments of coffee
                   </p>
                 </div>
