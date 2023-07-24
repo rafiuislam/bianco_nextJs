@@ -61,15 +61,6 @@ const aboutBianco = () => {
         </div>
       </section>
 
-      {/* <section>
-        <FadeAndScale offset="-300px 0px -300px 0px">
-          <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-secondary font-medium text-2xl sm:text-4xl font-title animate-fadeIn">
-            “Take your time; savour the moment and give in to the lush, <br />{" "}
-            velvety comfort of coffee!”
-          </h1>
-        </FadeAndScale>
-      </section> */}
-
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">

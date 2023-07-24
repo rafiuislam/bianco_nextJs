@@ -1,8 +1,14 @@
 import React from "react";
 
-const BeanType = ({ beanTypes, selectedBeanType, onBeanTypeChange }) => {
+const BeanType = ({
+  beanTypes,
+  selectedBeanType,
+  onBeanTypeChange,
+  beanPer,
+}) => {
   const handleBeanTypeChange = (value) => {
     if (selectedBeanType === value) {
+      onBeanTypeChange("");
     } else {
       // Select the clicked bean type
       onBeanTypeChange(value);

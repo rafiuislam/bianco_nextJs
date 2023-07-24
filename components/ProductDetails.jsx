@@ -128,7 +128,7 @@ const ProductDetails = () => {
                 <span className="title-font font-medium text-2xl text-black">
                   Tk {product.price}
                 </span>
-                <div className="flex ml-auto mt-4 z-10">
+                <div className="flex ml-auto mt-4">
                   <button
                     // onClick={() => dispatch(addToCart(product))}
                     onClick={() => setShowModal(true)}

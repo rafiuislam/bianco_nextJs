@@ -15,7 +15,7 @@ module.exports = {
       custom: ["Raleway", "sans-serif"],
       title: ["Playfair Display", "serif"],
       poppins: ["Poppins", "sans-serif"],
-      montserrat: ["Montserrat", "sans-serif"],
+      // montserrat: ["Montserrat", "sans-serif"],
       // "tilt-warp": ["Tilt Warp", "sans-serif"],
     },
     colors: {

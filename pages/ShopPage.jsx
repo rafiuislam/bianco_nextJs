@@ -18,9 +18,17 @@ const ShopPage = () => {
   const [selectedBeanType, setSelectedBeanType] = useState("");
   const [selectedPackage, setSelectedPackage] = useState("");
   const [selectedRoastProfile, setSelectedRoastProfile] = useState("");
+  const [selectedBeanPer, setSelectedBeanPer] = useState("");
 
   // Derive beanTypes from products
-  const beanTypes = [...new Set(products.map((product) => product.beanType))];
+  const Types = ["Arabica", "100% Arabica", "Decaf"];
+
+  const beanTypes = [...new Set(Types.map((type) => type))];
+
+  const beanPer = [...new Set(products.map((product) => product.percentage))];
+  console.log(beanPer);
+  // const beanTypes = [...new Set(products.map((product) => product.beanType))];
+
   // console.log(beanTypes);
   // console.log(selectedBeanType);
 
@@ -36,6 +44,10 @@ const ShopPage = () => {
 
   const handleBeanTypeChange = (value) => {
     setSelectedBeanType(value);
+  };
+
+  const handleBeanPerChange = (value) => {
+    setSelectedBeanPer(value);
   };
 
   const handlePackageChange = (value) => {
@@ -76,7 +88,10 @@ const ShopPage = () => {
 
     // Filter based on selected bean type
     const matchesBeanType =
-      selectedBeanType === "" || product.beanType === selectedBeanType;
+      (selectedBeanType === "" && selectedBeanPer === "") || // When no bean type or percentage is selected
+      (selectedBeanType === "100% Arabica" && product.percentage === "100%") || // When 100% Arabica is selected
+      product.beanType === selectedBeanType; // When other bean types are selected
+    // selectedBeanType === "" || product.beanType === selectedBeanType;
 
     // Filter based on selected package option
     const matchesPackageOption =
@@ -136,6 +151,8 @@ const ShopPage = () => {
             <div className="text-left pb-4 md:pb-6">
               <BeanType
                 beanTypes={beanTypes}
+                beanPer={beanPer}
+                selectedBeanPer={selectedBeanPer}
                 selectedBeanType={selectedBeanType}
                 onBeanTypeChange={handleBeanTypeChange}
               />

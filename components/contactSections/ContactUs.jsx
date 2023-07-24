@@ -1,7 +1,7 @@
 import React from "react";
-import SlideUp from "../animate/SlideUp";
 import SlideFromLeft from "../animate/SlideFromLeft";
 import FadeAndScale from "../animate/FadeAndScale";
+import SectionTitle from "../SectionTitle";
 
 const ContactUs = () => {
   return (
@@ -9,11 +9,7 @@ const ContactUs = () => {
       id="popular"
       className="container mx-auto mt-4 mb-4 px-4 pb-8 sm:pb-2 md:px-24 md:p-12"
     >
-      <SlideUp offset="-300px 0px -300px 0px">
-        <h1 className="lg:mb-6 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
-          Get in Touch With Us
-        </h1>
-      </SlideUp>
+      <SectionTitle title="Get in Touch With Us" />
       <div className="bg-bg-h w-full flex items-center justify-around">
         <div className="w-3/4 top-40 rounded">
           <div className="md:flex items-center justify-between mt-12 flex-wrap">

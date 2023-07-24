@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import SlideUp from "../animate/SlideUp";
 import Map from "../contactSections/Map";
+import SectionTitle from "../SectionTitle";
 
 const ContactDetails = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -48,11 +49,7 @@ const ContactDetails = () => {
 `;
   return (
     <section id="popular" className="container mx-auto mt-4 mb-4 px-4 sm:pb-2">
-      <SlideUp offset="-300px 0px -300px 0px">
-        <h1 className="lg:mb-6 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
-          Contact Detail
-        </h1>
-      </SlideUp>
+      <SectionTitle title="Contact Detail" />
 
       {/* new */}
       <div className="flex flex-col lg:flex-row">

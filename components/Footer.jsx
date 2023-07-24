@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
             <div className="md:pb-5 md:block">
               <div className="w-60 h-65 text-justify mb-6">
-                <p className="text-secondary font-light text-sm font-custom">
+                <p className="text-secondary font-light text-xs font-custom">
                   Take your time; savour the moment and give in to the lush,
                   velvety comfort of coffee! With this ethos, Bianco Coffee -
                   the Salerno, Naples based roastery started its operations in
