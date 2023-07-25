@@ -57,7 +57,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={3000}
+        autoPlaySpeed={30000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -121,8 +121,8 @@ const Hero = () => {
                   <Image
                     src="/img/Bianco-logo.png"
                     alt="Logo"
-                    width={70}
-                    height={10}
+                    width={50}
+                    height={12.5}
                     className=""
                   />
                   <p className="pl-2 text-sm sm:text-2xl font-tilt-warp text-primary ">
