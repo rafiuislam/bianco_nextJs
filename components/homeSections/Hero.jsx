@@ -142,11 +142,11 @@ const Hero = () => {
                   <Image
                     src="/img/Bianco-logo.png"
                     alt="Logo"
-                    width={200}
+                    width={190}
                     height={50}
                     className=""
                   />
-                  <p className="pl-2 text-base sm:text-2xl font-tilt-warp text-primary ">
+                  <p className="pl-2 text-base sm:text-2xl font-tilt-warp text-primary">
                     Bangladesh
                   </p>{" "}
                 </div>
