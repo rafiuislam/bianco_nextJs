@@ -57,7 +57,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={30000}
+        autoPlaySpeed={3000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -117,9 +117,18 @@ const Hero = () => {
             />
             {isSmallScreen && slide.id === 4 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-tilt-warp text-primary animate-slideUpCubiBezier">
-                  Bianco Bangladesh
-                </p>
+                <div className="flex">
+                  <Image
+                    src="/img/Bianco-logo.png"
+                    alt="Logo"
+                    width={70}
+                    height={10}
+                    className=""
+                  />
+                  <p className="pl-2 text-sm sm:text-2xl font-tilt-warp text-primary ">
+                    Bangladesh
+                  </p>{" "}
+                </div>
                 <div className="self-end">
                   <p className="text-primary font-montserrat text-2xs sm:text-2xl font-raleway animate-fadeIn">
                     Making moments of coffee
@@ -129,9 +138,19 @@ const Hero = () => {
             )}
             {isSmallScreen === false && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-tilt-warp text-primary animate-slideUpCubiBezier">
-                  Bianco Bangladesh
-                </p>
+                <div className="flex">
+                  <Image
+                    src="/img/Bianco-logo.png"
+                    alt="Logo"
+                    width={200}
+                    height={50}
+                    className=""
+                  />
+                  <p className="pl-2 text-base sm:text-2xl font-tilt-warp text-primary ">
+                    Bangladesh
+                  </p>{" "}
+                </div>
+
                 <div className="self-end">
                   <p className="text-primary font-montserrat text-xs sm:text-2xl font-raleway animate-fadeIn">
                     <span style={{ fontVariant: "small-caps" }}>

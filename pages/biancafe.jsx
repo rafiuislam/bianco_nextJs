@@ -42,16 +42,16 @@ const biancafe = () => {
         </p>
       </section>
       <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
-        <SectionTitle title="Our Cafes" />
+        <SectionTitle title="Our Cafe" />
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 order-1 lg:order-2">
             <FadeAndScale offset="-300px 0px -300px 0px">
               <Image
                 className="w-full h-auto animate-fadeIn"
-                src="/img_biancaffe/Our-Cafe-Gulshan.jpg"
+                src="/img_biancaffe/Coming-Soon.jpg"
                 alt="Image 1"
-                width={200}
-                height={100}
+                width={500}
+                height={300}
                 loading="lazy"
               />
             </FadeAndScale>
@@ -64,25 +64,21 @@ const biancafe = () => {
                 <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-3xl md:text-4xl font-raleway">
                   GULSHAN
                 </h1>
-                <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
+                {/* <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
                   House #0a, Road #a0, Coﬀee Shopping Tower, Gulshan 2 Circle,
                   Dhaka, Bangladesh
-                </h2>
+                </h2> */}
                 <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using `{"Content here, content here"}`, making it look like
-                    readable English.
+                    Rejuvenate with a moment of calm at Biancaffe nestled in the
+                    heart of Gulshan. Soon to be open.
                   </span>
                 </p>
-                <h2 className="mb-6 text-justify text-secondary font-semi-bold text-lg font-raleway">
+                {/* <h2 className="mb-6 text-justify text-secondary font-semi-bold text-lg font-raleway">
                   Opening Hours- 11am to 10.30pm
-                </h2>
+                </h2> */}
 
-                <div className="mt-6 overflow-y-hidden md:mt-4 mb-4 text-center md:text-start">
+                {/* <div className="mt-6 overflow-y-hidden md:mt-4 mb-4 text-center md:text-start">
                   <FadeAndScale offset="-300px 0px -300px 0px">
                     <Link href={``}>
                       <button className="font-medium text-base font-raleway relative border border-secondary bg-transparent py-2.5 px-5 uppercase text-secondary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100 z-10">
@@ -90,7 +86,7 @@ const biancafe = () => {
                       </button>
                     </Link>
                   </FadeAndScale>
-                </div>
+                </div> */}
               </div>
             </SlideUp>
           </div>

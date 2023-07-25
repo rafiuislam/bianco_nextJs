@@ -121,11 +121,11 @@ const Navbar = () => {
           <div className="md:mx-auto md:py-5 md:block">
             <Link href="/">
               <Image
-                src="/img/Bianco-Logo-Black.png"
+                src="/img/Bianco-Bangladesh-Logo.png"
                 alt="Logo"
                 width={200}
                 height={50}
-                className="md:ml-[50%]"
+                className="md:ml-[50%] pb-2"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>

@@ -58,9 +58,9 @@ const Footer = () => {
       <div className="flex flex-wrap flex-none pt-4 md:justify-center lg:justify-evenly">
         <div className="p-5 flex-col mx-auto md:mx-0 md:pb-5">
           <ul>
-            <div className="flex items-center mr-50% justify-center">
+            <div className="flex items-center mr-50% pb-2 justify-center">
               <Image
-                src="/img/Bianco-Logo-Black.png"
+                src="/img/Bianco-Bangladesh-Logo.png"
                 alt="Logo"
                 width={200}
                 height={50}
