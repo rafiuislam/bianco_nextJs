@@ -121,7 +121,7 @@ const Navbar = () => {
           <div className="md:mx-auto md:py-5 md:block">
             <Link href="/">
               <Image
-                src="/img/Bianco-Bangladesh-Logo.png"
+                src="/img/Bianco-Logo-1.png"
                 alt="Logo"
                 width={200}
                 height={50}

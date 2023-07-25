@@ -60,7 +60,7 @@ const Footer = () => {
           <ul>
             <div className="flex items-center mr-50% pb-2 justify-center">
               <Image
-                src="/img/Bianco-Bangladesh-Logo.png"
+                src="/img/Bianco-Logo-1.png"
                 alt="Logo"
                 width={200}
                 height={50}
