@@ -74,9 +74,11 @@ const ourBeans = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Origin
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Origin
+                    </header>
+                  </div>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       The origins of Arabica coffee can be traced back to the
@@ -96,9 +98,11 @@ const ourBeans = () => {
                 </div>
                 {/* type02   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Taste
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Taste
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Arabica coffee has a smooth, sweet, and complex flavour
@@ -111,9 +115,11 @@ const ourBeans = () => {
                 </div>
                 {/* type03   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Growing
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Growing
+                    </header>
+                  </div>
                   <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
@@ -155,9 +161,11 @@ const ourBeans = () => {
                 </div>
                 {/* type04   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Roast Level
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Roast Level
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco arabica coffee beans are roasted at a medium
@@ -222,9 +230,11 @@ const ourBeans = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Origin
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Origin
+                    </header>
+                  </div>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Robusta coffee is native to the western and central
@@ -243,9 +253,11 @@ const ourBeans = () => {
                 </div>
                 {/* type02   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Taste
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Taste
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Robusta coffee has a bold, earthy flavour with hints of
@@ -258,9 +270,11 @@ const ourBeans = () => {
                 </div>
                 {/* type03   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Growing
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Growing
+                    </header>
+                  </div>
                   <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
@@ -302,9 +316,11 @@ const ourBeans = () => {
                 </div>
                 {/* type04   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Roast Level
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Roast Level
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Robusta coffee is often roasted darker than Arabica
@@ -343,9 +359,11 @@ const ourBeans = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Amount of caffeine
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Amount of caffeine
+                    </header>
+                  </div>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Decaffeination removes about 97% or more of the caffeine
@@ -358,9 +376,11 @@ const ourBeans = () => {
 
                 {/* type02   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Decaffeination Process
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Decaffeination Process
+                    </header>
+                  </div>
                   <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
@@ -462,9 +482,11 @@ const ourBeans = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Criteria of Gourmet Beans
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Criteria of Gourmet Beans
+                    </header>
+                  </div>
                   <span className="">
                     <ul className="text-start pl-2 sm:pl-6 pt-1">
                       {tips.map((tip, index) => (
@@ -482,9 +504,11 @@ const ourBeans = () => {
                 </div>
                 {/* type02   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Sourcing Strategy
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Sourcing Strategy
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco maintains a comprehensive sourcing strategy that
@@ -499,9 +523,11 @@ const ourBeans = () => {
 
                 {/* type03   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Sampling
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Sampling
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       {"Bianco’s"} team of experienced cuppers and sensory
@@ -515,9 +541,11 @@ const ourBeans = () => {
 
                 {/* type04   */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Quality Control
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Quality Control
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco maintains stringent quality control measures

@@ -13,9 +13,11 @@ const RoastingTypes = () => {
           <SlideUp offset="-300px 0px -300px 0px">
             {/* type01   */}
             <div className="">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Light Roast
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Light Roast
+                </header>
+              </div>
               <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                 <span className="relative z-10">
                   Light roast coffee is renowned for its delicate and bright
@@ -28,9 +30,11 @@ const RoastingTypes = () => {
             </div>
             {/* type02   */}
             <div className="mt-6">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Medium Roast
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Medium Roast
+                </header>
+              </div>
               <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Medium roast strikes a balance between the bright acidity of
@@ -42,9 +46,11 @@ const RoastingTypes = () => {
             </div>
             {/* type03   */}
             <div className="mt-6">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Medium Dark Roast
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Medium Dark Roast
+                </header>
+              </div>
               <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Medium-dark roast, sometimes referred to as full city or
@@ -60,9 +66,11 @@ const RoastingTypes = () => {
             </div>
             {/* type04   */}
             <div className="mt-6">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Dark Roast
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Dark Roast
+                </header>
+              </div>
               <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Dark roast coffee, renowned for its intense and robust

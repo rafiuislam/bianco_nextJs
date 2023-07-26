@@ -26,9 +26,11 @@ const RoastingProcesses = () => {
           <SlideUp offset="-300px 0px -300px 0px">
             {/* type01 */}
             <div className="">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Drying Stage
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Drying Stage
+                </header>
+              </div>
               <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                 <span className="relative z-10">
                   The first step in the coffee roasting process is the drying
@@ -41,9 +43,11 @@ const RoastingProcesses = () => {
             </div>
             {/* type02 */}
             <div className="mt-6">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Browning Stage
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Browning Stage
+                </header>
+              </div>
               <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Once the coffee beans have been adequately dried, they are
@@ -59,9 +63,11 @@ const RoastingProcesses = () => {
             </div>
             {/* type03 */}
             <div className="mt-6">
-              <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                Development Stage
-              </header>
+              <div style={{ fontVariant: "small-caps" }}>
+                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  Development Stage
+                </header>
+              </div>
               <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   The development stage is the final phase in the coffee

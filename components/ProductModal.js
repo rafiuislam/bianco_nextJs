@@ -34,8 +34,11 @@ const ProductModal = ({ showModal, setShowModal }) => {
       <div className="text-center">
         <div className="relative p-6 flex-auto">
           <p className="my-4 text-slate-500 text-lg leading-relaxed">
-            To place an order, provide us your contact details and we will be in
-            touch with you shortly.
+            To place an order, please kindly contact us at{" "}
+            <a href="tel:+88 017 9444 8555" className="hover:underline">
+              +88 017 9444 8555
+            </a>{" "}
+            or simply DM us with your details
           </p>
         </div>
       </div>

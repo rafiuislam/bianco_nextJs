@@ -41,9 +41,11 @@ const brewingGuide = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01   */}
               <div className="">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Coffee Beans
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Coffee Beans
+                  </header>
+                </div>
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Choose freshly roasted beans of your preference. Consider
@@ -53,9 +55,11 @@ const brewingGuide = () => {
               </div>
               {/* type02   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Grinder{" "}
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Grinder{" "}
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     Used to grind whole coffee beans into the desired particle
@@ -66,9 +70,11 @@ const brewingGuide = () => {
               </div>
               {/* type03   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Coffee Maker
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Coffee Maker
+                  </header>
+                </div>
                 <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   {/* change text style */}
                   <span className="relative z-10">
@@ -110,9 +116,11 @@ const brewingGuide = () => {
               </div>
               {/* type04   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Filter
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Filter
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     Different filter options are available for coffee brewing,
@@ -122,9 +130,11 @@ const brewingGuide = () => {
               </div>
               {/* type05   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Water
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Water
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     {/* change text later */}
@@ -135,9 +145,11 @@ const brewingGuide = () => {
               </div>
               {/* type06   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Measuring Tools
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Measuring Tools
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     A scale or coffee scoop to measure the coffee and water
@@ -147,9 +159,11 @@ const brewingGuide = () => {
               </div>
               {/* type07   */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Milk Frother
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Milk Frother
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     For creating foam or steaming milk for lattes or
@@ -272,9 +286,11 @@ const brewingGuide = () => {
                 </span>
               </p> */}
               <div className="">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Drip Brewing
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Drip Brewing
+                  </header>
+                </div>
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Drip coffee brewing uses automatic drip coffee makers that
@@ -285,9 +301,11 @@ const brewingGuide = () => {
               </div>
               {/* type02 */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  French Press
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    French Press
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     French press is a manual brewing method that involves
@@ -299,9 +317,11 @@ const brewingGuide = () => {
               </div>
               {/* type03 */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Pour-Over
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Pour-Over
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     The pour over brewing method involves manually pouring hot
@@ -313,9 +333,11 @@ const brewingGuide = () => {
               </div>
               {/* type04 */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Espresso
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Espresso
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     Espresso is made by forcing hot water through finely ground,
@@ -328,9 +350,11 @@ const brewingGuide = () => {
               </div>
               {/* type05 */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Aeropress
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Aeropress
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     This is a versatile, portable brewing method that combines
@@ -341,9 +365,11 @@ const brewingGuide = () => {
               </div>
               {/* type06 */}
               <div className="mt-6">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Cold Brew
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Cold Brew
+                  </header>
+                </div>
                 <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     Cold brew involves steeping coffee grounds in cold or room

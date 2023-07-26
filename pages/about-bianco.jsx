@@ -30,9 +30,11 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Attimi Di Caffe
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Attimi Di Caffe
+                  </header>
+                </div>
                 <div className="mt-1 mb-4 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10 text-justify">
                     As the steam from a freshly brewed coffee cup swirls, twirls
@@ -80,9 +82,11 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  The Legacy
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    The Legacy
+                  </header>
+                </div>
                 <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Over the years, Bianco Coffee continued to flourish, gaining
@@ -123,9 +127,11 @@ const aboutBianco = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="pb-2">
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                  Artisanal Craftsmanship
-                </header>
+                <div style={{ fontVariant: "small-caps" }}>
+                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    Artisanal Craftsmanship
+                  </header>
+                </div>
                 <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Sourcing coffee beans from the finest cultivators of the

@@ -39,9 +39,11 @@ const roastingGuide = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Roast Time
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Roast Time
+                    </header>
+                  </div>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Coffee roast time varies depending on the desired roast
@@ -59,9 +61,11 @@ const roastingGuide = () => {
                 </div>
                 {/* type02 */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    Roast Degree
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      Roast Degree
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Coffee roast degree refers to the specific level of
@@ -94,9 +98,11 @@ const roastingGuide = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01 */}
                 <div className="">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Cooling Stage
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Cooling Stage
+                    </header>
+                  </div>
                   <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       This stage is crucial in preventing the beans from
@@ -112,9 +118,11 @@ const roastingGuide = () => {
                 </div>
                 {/* type02 */}
                 <div className="mt-6">
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-                    The Tasting Stage
-                  </header>
+                  <div style={{ fontVariant: "small-caps" }}>
+                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                      The Tasting Stage
+                    </header>
+                  </div>
                   <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       The primary purpose of the tasting stage is to understand

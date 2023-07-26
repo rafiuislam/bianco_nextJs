@@ -125,7 +125,7 @@ const Navbar = () => {
                 alt="Logo"
                 width={200}
                 height={50}
-                className="md:ml-[50%] pb-2"
+                className="md:ml-[50%] py-2"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>
