@@ -61,9 +61,11 @@ const biancafe = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               {/* type01 */}
               <div className="">
-                <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-3xl md:text-4xl font-raleway">
-                  GULSHAN
-                </h1>
+                <span style={{ fontVariant: "small-caps" }}>
+                  <h1 className="md:text-justify mx-auto text-center pb-2 md:pb-0 text-secondary font-semi-bold text-3xl md:text-4xl font-raleway">
+                    GULSHAN
+                  </h1>
+                </span>
                 {/* <h2 className="pb-2 sm:pb-4 text-secondary font-semi-bold text-lg font-raleway">
                   House #0a, Road #a0, Coﬀee Shopping Tower, Gulshan 2 Circle,
                   Dhaka, Bangladesh
