@@ -15,9 +15,11 @@ const privacyPolicy = () => {
 
   return (
     <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
-      <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
-        Privacy Policy
-      </h1>
+      <span style={{ fontVariant: "small-caps" }}>
+        <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
+          Privacy Policy
+        </h1>
+      </span>
       <div className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
         <span className="relative">
           Bianco Bangladesh, referred to as the {"'Company', 'we', and 'us',"}{" "}
@@ -42,9 +44,11 @@ const privacyPolicy = () => {
       <div className="lg:py-6 py-8">
         {/* Collection and Use of Personal Information */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Collection and Use of Personal Information
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Collection and Use of Personal Information
+            </header>
+          </span>
           <div className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               We may collect personal information such as your name, email
@@ -77,9 +81,11 @@ const privacyPolicy = () => {
 
         {/* Protection of Personal Information */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Protection of Personal Information
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Protection of Personal Information
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               We are committed to maintaining the security of your personal
@@ -93,9 +99,11 @@ const privacyPolicy = () => {
 
         {/* Data Sharing and Third Parties */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Data Sharing and Third Parties
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Data Sharing and Third Parties
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               We may share your personal information with trusted third-party
@@ -109,9 +117,11 @@ const privacyPolicy = () => {
 
         {/* Cookies and Tracking Technologies */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Cookies and Tracking Technologies
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Cookies and Tracking Technologies
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               Our website uses cookies and similar tracking technologies to
@@ -128,9 +138,11 @@ const privacyPolicy = () => {
         {/* Links to External Websites
          */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Links to External Websites
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Links to External Websites
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               Our website may contain links to external websites that are not
@@ -144,9 +156,11 @@ const privacyPolicy = () => {
 
         {/* Safeguards */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Safeguards
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Safeguards
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               The website www.bianco-bd.com employs SSL (Secure Socket Layers)
@@ -171,9 +185,11 @@ const privacyPolicy = () => {
 
         {/* Children's Privacy */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            {"Children's"} Privacy
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              {"Children's"} Privacy
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               Our services are not intended for individuals under the age of 18.

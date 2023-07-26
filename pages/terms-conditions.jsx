@@ -3,9 +3,11 @@ import React from "react";
 const termsConditions = () => {
   return (
     <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
-      <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
-        Terms & Conditions
-      </h1>
+      <span style={{ fontVariant: "small-caps" }}>
+        <h1 className="lg:mb-6 pb-2 md:pb-0 text-center text-primary font-medium text-4xl sm:text-5xl font-title">
+          Terms & Conditions
+        </h1>
+      </span>
       <p className="text-justify text-secondary font-regular text-md font-raleway bg-cover bg-center animate-fadeIn relative">
         <span className="relative">
           Welcome to our terms and conditions. Throughout this document, the
@@ -26,9 +28,11 @@ const termsConditions = () => {
       <div className="lg:py-6 py-8">
         {/* Eligibility */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Eligibility
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Eligibility
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               By accepting these Terms of Service, you affirm that you have
@@ -43,9 +47,11 @@ const termsConditions = () => {
 
         {/* Personal Information */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Personal Information
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Personal Information
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               Bianco Bangladesh, being responsible for handling personal
@@ -63,9 +69,11 @@ const termsConditions = () => {
 
         {/* Accuracy of Vendor Information */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Accuracy of Vendor Information
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Accuracy of Vendor Information
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               The content on this site is intended for general information
@@ -83,9 +91,11 @@ const termsConditions = () => {
 
         {/* Third Party Websites */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Third Party Websites
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Third Party Websites
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               For your convenience, Bianco Bangladesh offers links to
@@ -101,9 +111,11 @@ const termsConditions = () => {
 
         {/* Orders and Payment */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Orders and Payment
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Orders and Payment
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               By placing an order through the Website, you make an offer to
@@ -121,9 +133,11 @@ const termsConditions = () => {
 
         {/* Delivery */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Delivery
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Delivery
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               We shall make reasonable efforts to deliver the products to the
@@ -137,9 +151,11 @@ const termsConditions = () => {
 
         {/* Returns and Refunds */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Returns and Refunds
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Returns and Refunds
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               We strive to provide high-quality products. If you receive a
@@ -151,9 +167,11 @@ const termsConditions = () => {
 
         {/* Governing Law */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Governing Law
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Governing Law
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               These Terms of Use shall be governed by and interpreted in
@@ -169,9 +187,11 @@ const termsConditions = () => {
 
         {/* Questions */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Questions
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Questions
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               If you have any inquiries, feedback, or apprehensions regarding
@@ -185,9 +205,11 @@ const termsConditions = () => {
 
         {/* Severability */}
         <div className="lg:pt-8 pt-4 animate-fadeIn">
-          <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
-            Severability
-          </header>
+          <span style={{ fontVariant: "small-caps" }}>
+            <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+              Severability
+            </header>
+          </span>
           <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
             <span className="relative z-10">
               If any provision of these Terms and Conditions is found to be
