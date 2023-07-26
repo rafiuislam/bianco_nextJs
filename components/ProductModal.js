@@ -23,7 +23,9 @@ const ProductModal = ({ showModal, setShowModal }) => {
     >
       <div className="flex justify-between items-center">
         <h2 className="mx-auto text-primary font-semi-bold text-2xl font-custom">
-          Chat with Bianco Bangladesh
+          <span style={{ fontVariant: "small-caps" }}>
+            Chat with Bianco Bangladesh
+          </span>
         </h2>
         <IoMdClose
           size={25}
