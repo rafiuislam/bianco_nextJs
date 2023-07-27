@@ -13,11 +13,11 @@ const Hero = () => {
     //   url: "/img_hero/Slider1.jpg",
     //   urlSmall: "/img_hero/Slider-Mobile-1.jpg",
     // },
-    // {
-    //   id: 2,
-    //   url: "/img_hero/Slider02.jpg",
-    //   urlSmall: "/img_hero/Slider-Mobile-2.jpg",
-    // },
+    {
+      id: 2,
+      url: "/img_hero/4.png",
+      // urlSmall: "/img_hero/Slider-Mobile-2.jpg",
+    },
     {
       id: 3,
       url: "/img_hero/Slider-5.jpg",
