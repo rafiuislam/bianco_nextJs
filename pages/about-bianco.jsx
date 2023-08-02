@@ -31,11 +31,11 @@ const aboutBianco = () => {
               {/* type01 */}
               <div className="">
                 <div style={{ fontVariant: "small-caps" }}>
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                     Attimi Di Caffe
                   </header>
                 </div>
-                <div className="mt-1 mb-4 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                <div className="mt-1 mb-4 text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                   <span className="relative z-10 text-justify">
                     As the steam from a freshly brewed coffee cup swirls, twirls
                     and dissipates, so do the wearies of the world as you take
@@ -83,11 +83,11 @@ const aboutBianco = () => {
               {/* type01 */}
               <div className="">
                 <div style={{ fontVariant: "small-caps" }}>
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                     The Legacy
                   </header>
                 </div>
-                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Over the years, Bianco Coffee continued to flourish, gaining
                     recognition not only within Italy but also internationally.
@@ -128,11 +128,11 @@ const aboutBianco = () => {
               {/* type01 */}
               <div className="pb-2">
                 <div style={{ fontVariant: "small-caps" }}>
-                  <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                  <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                     Artisanal Craftsmanship
                   </header>
                 </div>
-                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                   <span className="relative z-10">
                     Sourcing coffee beans from the finest cultivators of the
                     famed Central and South American coffee belt as well as
@@ -149,7 +149,7 @@ const aboutBianco = () => {
                 </p>
               </div>
               <div className="">
-                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                   <span className="relative">
                     And{" "}
                     <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">

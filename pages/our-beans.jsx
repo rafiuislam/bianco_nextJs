@@ -36,7 +36,7 @@ const ourBeans = () => {
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <SectionTitle title="Bianco Beans Origins" />
           <div className="flex justify-center">
-            <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-secondary font-regular text-md font-raleway">
+            <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-secondary font-regular text-base font-raleway">
               {CoffeeType.map((type, index) => (
                 <li
                   className=""
@@ -73,13 +73,14 @@ const ourBeans = () => {
             <div className="lg:w-1/2 pr-0 lg:pr-8 pt-6 lg:pt-0 flex flex-col justify-center relative order-2 lg:order-1 ">
               <SlideUp offset="-300px 0px -300px 0px">
                 {/* type01   */}
+
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Origin
                     </header>
                   </div>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       The origins of Arabica coffee can be traced back to the
                       highlands of Ethiopia, specifically to the region known as
@@ -99,11 +100,11 @@ const ourBeans = () => {
                 {/* type02   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Taste
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Arabica coffee has a smooth, sweet, and complex flavour
                       with hints of chocolate, nuts, fruit, and berries. The
@@ -116,11 +117,11 @@ const ourBeans = () => {
                 {/* type03   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Growing
                     </header>
                   </div>
-                  <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <div className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
                       The ideal growing conditions for Arabica coffee are:{" "}
@@ -128,14 +129,14 @@ const ourBeans = () => {
                     <br />
                     <ul className="pl-8">
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Altitude:
                         </span>{" "}
                         Arabica coffee grows best at altitudes of 1,200 to 2,000
                         meters (3,900 to 6,600 feet) above sea level.
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Temperature:
                         </span>{" "}
                         Arabica coffee prefers a cool, temperate climate with
@@ -143,14 +144,14 @@ const ourBeans = () => {
                         (59 and 75 degrees Fahrenheit).
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Rainfall:
                         </span>{" "}
                         Arabica coffee needs an annual rainfall of 1,500 to
                         2,500 millimeters (60 to 100 inches).
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Soil:
                         </span>{" "}
                         Arabica coffee grows best in well-drained, acidic soils
@@ -162,11 +163,11 @@ const ourBeans = () => {
                 {/* type04   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Roast Level
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco arabica coffee beans are roasted at a medium
                       temperature of 210°C–219°C. Medium-roasted coffees often
@@ -182,7 +183,7 @@ const ourBeans = () => {
               </SlideUp>
             </div>
 
-            <div className="lg:w-1/2 order-1 lg:order-2">
+            <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col justify-center">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
@@ -213,7 +214,7 @@ const ourBeans = () => {
             </p>
           </FadeAndScale>
           <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 flex flex-col justify-center">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn pb-4"
@@ -231,11 +232,11 @@ const ourBeans = () => {
                 {/* type01   */}
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Origin
                     </header>
                   </div>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Robusta coffee is native to the western and central
                       regions of sub-Saharan Africa. It was first discovered and
@@ -254,11 +255,11 @@ const ourBeans = () => {
                 {/* type02   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Taste
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Robusta coffee has a bold, earthy flavour with hints of
                       chocolate, nuts, and wood. It is often described as being
@@ -271,11 +272,11 @@ const ourBeans = () => {
                 {/* type03   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Growing
                     </header>
                   </div>
-                  <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <div className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
                       The ideal growing conditions for Robusta coffee are:{" "}
@@ -283,14 +284,14 @@ const ourBeans = () => {
                     <br />
                     <ul className="pl-8">
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Altitude:
                         </span>{" "}
                         Robusta coffee grows best at altitudes of 600 to 1,200
                         meters (2,000 to 3,900 feet) above sea level.
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Temperature:
                         </span>{" "}
                         Robusta coffee prefers a warm, humid climate with
@@ -298,14 +299,14 @@ const ourBeans = () => {
                         (68 and 82 degrees Fahrenheit).
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Rainfall:
                         </span>{" "}
                         Robusta coffee needs an annual rainfall of 1,500 to
                         2,500 millimeters (60 to 100 inches).
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Soil:
                         </span>{" "}
                         Robusta coffee grows best in well-drained, loamy soils
@@ -317,11 +318,11 @@ const ourBeans = () => {
                 {/* type04   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Roast Level
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Robusta coffee is often roasted darker than Arabica
                       coffee, as this brings out the {"coffee's"} bold, earthy
@@ -360,11 +361,11 @@ const ourBeans = () => {
                 {/* type01   */}
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Amount of caffeine
                     </header>
                   </div>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Decaffeination removes about 97% or more of the caffeine
                       in coffee beans. A typical cup of decaf coffee has about 2
@@ -377,11 +378,11 @@ const ourBeans = () => {
                 {/* type02   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Decaffeination Process
                     </header>
                   </div>
-                  <div className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <div className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     {/* change text style */}
                     <span className="relative z-10">
                       Usually there are 4 methods of decaffeination.{" "}
@@ -389,7 +390,7 @@ const ourBeans = () => {
                     <br />
                     <ul className="pl-8">
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Solvent-based processes:
                         </span>{" "}
                         This method involves soaking the beans in a solvent,
@@ -398,7 +399,7 @@ const ourBeans = () => {
                         rinsed to remove any residual solvent.
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Carbon dioxide (CO2) method:
                         </span>{" "}
                         In this method, compressed carbon dioxide is used as a
@@ -409,7 +410,7 @@ const ourBeans = () => {
                         decaffeinated beans.
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Swiss water process:
                         </span>{" "}
                         The Swiss Water Process is a solvent-free method. It
@@ -419,7 +420,7 @@ const ourBeans = () => {
                         molecules.
                       </li>
                       <li>
-                        <span className="text-justify text-secondary font-semi-bold text-sm font-raleway">
+                        <span className="text-justify text-secondary font-semi-bold text-lg font-raleway">
                           Triglyceride method:
                         </span>{" "}
                         The triglycerides are mixed with the beans, and the
@@ -483,7 +484,7 @@ const ourBeans = () => {
                 {/* type01   */}
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Criteria of Gourmet Beans
                     </header>
                   </div>
@@ -492,7 +493,7 @@ const ourBeans = () => {
                       {tips.map((tip, index) => (
                         <li
                           key={index}
-                          className="mb-2 text-secondary font-regular text-sm font-raleway bg-cover bg-center relative animate-fadeIn"
+                          className="mb-2 text-secondary font-regular text-base font-raleway bg-cover bg-center relative animate-fadeIn"
                           //   style={{ animationDelay: `${index * 0.2}s` }}
                         >
                           {" "}
@@ -505,11 +506,11 @@ const ourBeans = () => {
                 {/* type02   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Sourcing Strategy
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco maintains a comprehensive sourcing strategy that
                       combines direct relationships with coffee farmers,
@@ -524,11 +525,11 @@ const ourBeans = () => {
                 {/* type03   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Sampling
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       {"Bianco’s"} team of experienced cuppers and sensory
                       experts continuously evaluates coffee samples from
@@ -542,11 +543,11 @@ const ourBeans = () => {
                 {/* type04   */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Quality Control
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Bianco maintains stringent quality control measures
                       throughout the sourcing and roasting process. Advanced

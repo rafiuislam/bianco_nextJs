@@ -7,6 +7,7 @@ import SortComponent from "../components/shopSections/SortComponent";
 import SearchFilter from "../components/shopSections/SearchFilter";
 import BeanType from "../components/shopSections/BeanType";
 import PackageOption from "../components/shopSections/PackageOption";
+import { MdOutlineClear } from "react-icons/md";
 // import RoastProfile from "../components/shopSections/RoastProfile";
 
 const ShopPage = () => {
@@ -76,12 +77,27 @@ const ShopPage = () => {
   const filteredProducts = products.filter((product) => {
     const isInStock = !showInStockOnly || product.inStock;
     // !false || false => true || false / true  true
-    const isInRange =
-      (priceRangeFrom === "" && priceRangeTo === "") ||
-      (priceRangeFrom !== "" &&
-        priceRangeTo !== "" &&
-        product.price >= parseFloat(priceRangeFrom) &&
-        product.price <= parseFloat(priceRangeTo));
+
+    // Filter based on price range
+    const isInRange = () => {
+      if (priceRangeFrom === "" && priceRangeTo === "") {
+        // Both price inputs are empty, consider it as in range
+        return true;
+      } else if (priceRangeFrom === "") {
+        // Only priceRangeTo is provided
+        return product.price <= parseFloat(priceRangeTo);
+      } else if (priceRangeTo === "") {
+        // Only priceRangeFrom is provided
+        return product.price >= parseFloat(priceRangeFrom);
+      } else {
+        // Both price inputs are provided, check for range
+        return (
+          product.price >= parseFloat(priceRangeFrom) &&
+          product.price <= parseFloat(priceRangeTo)
+        );
+      }
+    };
+
     const matchesSearchQuery = product.name
       .toLowerCase()
       .includes(searchQuery.trim().toLowerCase());
@@ -104,7 +120,7 @@ const ShopPage = () => {
 
     return (
       isInStock &&
-      isInRange &&
+      isInRange() &&
       matchesSearchQuery &&
       matchesBeanType &&
       matchesPackageOption &&
@@ -123,6 +139,19 @@ const ShopPage = () => {
     }
   };
 
+  // Function to clear all filters
+  const handleClearFilters = () => {
+    setShowInStockOnly(false);
+    setPriceRangeFrom("");
+    setPriceRangeTo("");
+    setSortBy("");
+    setSearchQuery("");
+    setSelectedBeanType("");
+    setSelectedPackage("");
+    setSelectedRoastProfile("");
+    setSelectedBeanPer("");
+  };
+
   const sortedAndFilteredProducts = sortProducts(filteredProducts);
 
   return (
@@ -130,11 +159,18 @@ const ShopPage = () => {
       <div className="col-span-12 md:col-span-3 md:row-span-full bg-bg-h p-6 md:pb-20 h-full">
         <h1 className="lg:mb-6 text-center text-primary font-medium text-5xl font-title">
           Shop
-        </h1>
+        </h1>{" "}
         <div className="lg:ml-20 md:ml-10 mt-10">
-          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 ">
+          <div className="mb-2 text-left text-black font-medium text-xl font-Raleway border-b-2 border-black w-3/4 flex justify-between">
             <h1>Filters</h1>
+            <div onClick={handleClearFilters}>
+              <MdOutlineClear
+                size={25}
+                className="cursor-pointer hover:scale-125 transition-transform duration-300 hover:fill-red"
+              />
+            </div>
           </div>
+
           <div className="mb-1 text-left text-black font-medium text-sm font-Raleway">
             <p>Availability</p>
           </div>

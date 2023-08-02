@@ -14,11 +14,11 @@ const RoastingTypes = () => {
             {/* type01   */}
             <div className="">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Light Roast
                 </header>
               </div>
-              <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+              <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                 <span className="relative z-10">
                   Light roast coffee is renowned for its delicate and bright
                   flavours. During the roasting process, the beans are heated
@@ -31,11 +31,11 @@ const RoastingTypes = () => {
             {/* type02   */}
             <div className="mt-6">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Medium Roast
                 </header>
               </div>
-              <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+              <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Medium roast strikes a balance between the bright acidity of
                   light roasts and the richer, more caramelised flavours of
@@ -47,11 +47,11 @@ const RoastingTypes = () => {
             {/* type03   */}
             <div className="mt-6">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Medium Dark Roast
                 </header>
               </div>
-              <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+              <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Medium-dark roast, sometimes referred to as full city or
                   Vienna roast, takes the beans a step further into the roasting
@@ -67,11 +67,11 @@ const RoastingTypes = () => {
             {/* type04   */}
             <div className="mt-6">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Dark Roast
                 </header>
               </div>
-              <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+              <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Dark roast coffee, renowned for its intense and robust
                   flavours, captivates the taste buds of coffee connoisseurs
@@ -85,7 +85,7 @@ const RoastingTypes = () => {
           </SlideUp>
         </div>
 
-        <div className="lg:w-1/2 order-1 lg:order-2">
+        <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col justify-center relative">
           <FadeAndScale offset="-300px 0px -300px 0px">
             <Image
               className="w-full h-auto animate-fadeIn"

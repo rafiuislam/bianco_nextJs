@@ -22,7 +22,7 @@ const roastingGuide = () => {
 
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
           <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 order-1 lg:order-2">
+            <div className="lg:w-1/2 order-1 lg:order-2 flex flex-col justify-center relative">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
@@ -40,11 +40,11 @@ const roastingGuide = () => {
                 {/* type01 */}
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Roast Time
                     </header>
                   </div>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       Coffee roast time varies depending on the desired roast
                       level, the specific coffee beans being roasted, and the
@@ -62,11 +62,11 @@ const roastingGuide = () => {
                 {/* type02 */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       Roast Degree
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                     <span className="relative z-10">
                       Coffee roast degree refers to the specific level of
                       darkness to which coffee beans are roasted. Bianco coffee
@@ -81,7 +81,7 @@ const roastingGuide = () => {
 
         <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24 md:pb-12">
           <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 ">
+            <div className="lg:w-1/2 flex flex-col justify-center relative">
               <FadeAndScale offset="-300px 0px -300px 0px">
                 <Image
                   className="w-full h-auto animate-fadeIn"
@@ -99,11 +99,11 @@ const roastingGuide = () => {
                 {/* type01 */}
                 <div className="">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Cooling Stage
                     </header>
                   </div>
-                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       This stage is crucial in preventing the beans from
                       continuing to roast and allows them to cool down rapidly
@@ -119,11 +119,11 @@ const roastingGuide = () => {
                 {/* type02 */}
                 <div className="mt-6">
                   <div style={{ fontVariant: "small-caps" }}>
-                    <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                    <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                       The Tasting Stage
                     </header>
                   </div>
-                  <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+                  <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                     <span className="relative z-10">
                       The primary purpose of the tasting stage is to understand
                       and appreciate the unique characteristics of a coffee.

@@ -12,26 +12,26 @@ import SectionTitle from "../components/SectionTitle";
 const biancafe = () => {
   return (
     <div className="bg-bg-h">
-      <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"BIANCAFFE"} />
+      <Hero HeroImg={HeroImg} Herost={"Home"} HeroPg={"Biancaffé"} />
       <section className="container mx-auto mt-4 px-4 sm:pb-2 py-4 md:px-24">
         <p className="text-justify text-secondary font-regular font-raleway bg-cover bg-center animate-fadeIn relative">
           <span className="relative z-10">
             Coffee is not meant to be ‘just’ drunk. It is meant to be
-            experienced. With that in mind, Biancaffe - the cafe division of
+            experienced. With that in mind, Biancaffé - the cafe division of
             Bianco Coffee opened its doors to help spread the art and culture of
-            Italian coffee throughout the world. <br /> <br /> Biancaffe Dhaka
+            Italian coffee throughout the world. <br /> <br /> Biancaffé Dhaka
             aims to be ‘the’ cafe in Dhaka for coffee connoisseurs of the city
             to come together and experience the true essence of Italian coffee
             culture and excellence. Whether some much needed solo R&R or
             decompressing with colleagues and friends or even to catch up on
             some work over a few tantalizing cups of freshly brewed premium
-            Italian coffee - Biancaffe is the coffee shop in Dhaka to be at!{" "}
-            <br /> <br /> With a team of highly skilled baristas, Biancaffe
+            Italian coffee - Biancaffé is the coffee shop in Dhaka to be at!{" "}
+            <br /> <br /> With a team of highly skilled baristas, Biancaffé
             Dhaka takes pride in serving meticulously crafted Italian coffee
             that satisfies even the most discerning palates. From the classic
             espresso to velvety cappuccinos and lattes, every sip transports
             patrons to the streets of Italy. To complement the extraordinary
-            coffee offerings, Biancaffe Dhaka also presents a delectable array
+            coffee offerings, Biancaffé Dhaka also presents a delectable array
             of pastries and snacks. These mouthwatering delights pair perfectly
             with the aromatic beverages, completing the ultimate Italian coffee
             experience <br /> <br /> Whether you are a coffee connoisseur or
@@ -70,7 +70,7 @@ const biancafe = () => {
                   House #0a, Road #a0, Coﬀee Shopping Tower, Gulshan 2 Circle,
                   Dhaka, Bangladesh
                 </h2> */}
-                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+                <p className="mt-1 mb-6 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                   <span className="relative z-10">
                     Rejuvenate with a moment of calm at Biancaffe nestled in the
                     heart of Gulshan. Soon to be open.

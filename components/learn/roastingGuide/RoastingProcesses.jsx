@@ -9,7 +9,7 @@ const RoastingProcesses = () => {
     <section className="container mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
       <SectionTitle title="Roasting Processes" />
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 ">
+        <div className="lg:w-1/2 flex flex-col justify-center relative">
           <FadeAndScale offset="-300px 0px -300px 0px">
             <Image
               className="w-full h-auto animate-fadeIn"
@@ -27,11 +27,11 @@ const RoastingProcesses = () => {
             {/* type01 */}
             <div className="">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Drying Stage
                 </header>
               </div>
-              <p className="mt-1 mb-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+              <p className="mt-1 mb-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
                 <span className="relative z-10">
                   The first step in the coffee roasting process is the drying
                   stage. After the coffee cherries are harvested and the seeds
@@ -44,11 +44,11 @@ const RoastingProcesses = () => {
             {/* type02 */}
             <div className="mt-6">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Browning Stage
                 </header>
               </div>
-              <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+              <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   Once the coffee beans have been adequately dried, they are
                   ready for the roasting process. The browning stage is marked
@@ -64,11 +64,11 @@ const RoastingProcesses = () => {
             {/* type03 */}
             <div className="mt-6">
               <div style={{ fontVariant: "small-caps" }}>
-                <header className="text-justify text-secondary font-semi-bold text-lg font-raleway">
+                <header className="text-justify text-secondary font-semi-bold text-xl font-raleway">
                   Development Stage
                 </header>
               </div>
-              <p className="mt-1 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center animate-slideFromLeft relative">
+              <p className="mt-1 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center animate-slideFromLeft relative">
                 <span className="relative z-10">
                   The development stage is the final phase in the coffee
                   roasting process. During this stage, the roasted beans

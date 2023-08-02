@@ -15,7 +15,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
           <SlideUp offset="-300px 0px -300px 0px">
-            <p className="mt-4 text-justify text-secondary font-regular text-sm font-raleway bg-cover bg-center relative">
+            <p className="mt-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
               <span className="relative z-10">
                 Hailing from the famed Salerno region of Italy, Bianco Coffee is
                 one of the oldest and proudest names in coffee lore. Bianco

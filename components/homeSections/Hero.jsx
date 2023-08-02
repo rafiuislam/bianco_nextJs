@@ -13,11 +13,11 @@ const Hero = () => {
     //   url: "/img_hero/Slider1.jpg",
     //   urlSmall: "/img_hero/Slider-Mobile-1.jpg",
     // },
-    {
-      id: 2,
-      url: "/img_hero/4.png",
-      // urlSmall: "/img_hero/Slider-Mobile-2.jpg",
-    },
+    // {
+    //   id: 2,
+    //   url: "/img_hero/Slider02.jpg",
+    //   urlSmall: "/img_hero/Slider-Mobile-2.jpg",
+    // },
     {
       id: 3,
       url: "/img_hero/Slider-5.jpg",
@@ -57,7 +57,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={3000}
+        autoPlaySpeed={300000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -117,26 +117,27 @@ const Hero = () => {
             />
             {isSmallScreen && slide.id === 4 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <div className="flex">
-                  <Image
-                    src="/img/Bianco-logo.png"
-                    alt="Logo"
-                    width={50}
-                    height={12.5}
-                    className=""
-                  />
-                  <p className="pl-2 text-sm sm:text-2xl font-tilt-warp text-primary ">
-                    Bangladesh
-                  </p>{" "}
-                </div>
-                <div className="self-end">
-                  <p className="text-primary font-montserrat text-2xs sm:text-2xl font-raleway animate-fadeIn">
-                    Making moments of coffee
-                  </p>
-                </div>
+                <Image
+                  src="/img/Bianco-w-Logo-1.png"
+                  alt="Logo"
+                  width={80}
+                  height={15}
+                  className=""
+                />
               </div>
             )}
-            {isSmallScreen === false && (
+            {isSmallScreen === false && slide.id !== 5 && (
+              <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
+                <Image
+                  src="/img/Bianco-w-Logo-1.png"
+                  alt="Logo"
+                  width={190}
+                  height={50}
+                  className=""
+                />
+              </div>
+            )}
+            {isSmallScreen === false && slide.id === 5 && (
               <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
                 <div className="flex">
                   <Image

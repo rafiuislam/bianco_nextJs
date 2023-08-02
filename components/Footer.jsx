@@ -70,16 +70,11 @@ const Footer = () => {
             <div className="md:pb-5 md:block">
               <div className="w-60 h-65 text-justify mb-6">
                 <p className="text-secondary font-light text-xs font-custom">
-                  Take your time; savour the moment and give in to the lush,
-                  velvety comfort of coffee! With this ethos, Bianco Coffee -
-                  the Salerno, Naples based roastery started its operations in
-                  1932, and over time, it has gone on to become{" "}
-                  {"‘il principale ambasciatore’"} of Italian coffee beans
+                  Bianco Coffee - the Salerno, Naples based roastery started its
+                  operations in 1932, and over time, it has gone on to become{" "}
+                  {`‘il principale ambasciatore’ `}of Italian coffee beans
                   across the globe. The rich, warm taste of Bianco Coffee beans
-                  is now enjoyed in 30+ countries worldwide. With almost a
-                  century of history, experience and expertise, the Bianco
-                  Coffee moniker exudes prestige, heritage and legacy like no
-                  other in the already enriched Italian coffee lore.
+                  is now enjoyed in 30+ countries worldwide.
                 </p>
               </div>
             </div>
