@@ -6,7 +6,8 @@ import imgBian2 from "../../public/img/sliderShop.jpg";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle";
 
-const Biancaffe = () => {
+const Biancaffe = ({ alt: { alt02, alt03 } }) => {
+  // console.log(alt02);
   return (
     <section
       id="biancaffe"
@@ -21,7 +22,7 @@ const Biancaffe = () => {
               <Image
                 className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 scale-125 group-hover:scale-100"
                 src={imgBian}
-                alt=""
+                alt={alt02}
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
@@ -57,7 +58,7 @@ const Biancaffe = () => {
               <Image
                 className="h-full w-full overflow-y-hidden object-cover transition-transform duration-500 scale-125 group-hover:scale-100"
                 src={imgBian2}
-                alt=""
+                alt={alt03}
                 width={750}
                 height={500}
                 priority={true}

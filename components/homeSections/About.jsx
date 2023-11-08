@@ -5,7 +5,7 @@ import SlideUp from "../animate/SlideUp";
 import FadeAndScale from "../animate/FadeAndScale";
 import SectionTitle from "../SectionTitle";
 
-const About = () => {
+const About = ({ alt }) => {
   return (
     <section
       id="about"
@@ -13,7 +13,7 @@ const About = () => {
     >
       <SectionTitle title="About Bianco" />
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1 ">
+        <div className="lg:w-1/2 p-4 px-0 lg:px-6 flex flex-col justify-center relative order-2 lg:order-1">
           <SlideUp offset="-300px 0px -300px 0px">
             <p className="mt-4 text-justify text-secondary font-regular text-base font-raleway bg-cover bg-center relative">
               <span className="relative z-10">
@@ -23,7 +23,7 @@ const About = () => {
                 warmth and proud lineage of Bianco Coffee to the coffee
                 connoisseurs of Bangladesh.
               </span>
-              <span className="absolute inset-0 flex items-center justify-center z-0 ">
+              <span className="absolute inset-0 flex items-center justify-center z-0">
                 <Image
                   src="/img/Abt-Bianco-Bean.png"
                   alt="Logo"
@@ -50,7 +50,7 @@ const About = () => {
             <Image
               className="w-full h-auto animate-fadeIn"
               src="/img_about/2.jpg"
-              alt="Image 2"
+              alt={alt}
               width={500}
               height={100}
               loading="lazy"

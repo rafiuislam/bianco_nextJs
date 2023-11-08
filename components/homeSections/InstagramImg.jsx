@@ -21,7 +21,7 @@ const InstagramImg = ({ socialImg }) => {
 
           <div>
             <Image
-              src="/img/Bianco-Logo-White.png"
+              src="/img/Bianco-w-Logo-1.png"
               alt="Logo"
               width={100}
               height={50}

@@ -4,7 +4,7 @@ import SlideUp from "../../animate/SlideUp";
 import FadeAndScale from "../../animate/FadeAndScale";
 import SectionTitle from "../../SectionTitle";
 
-const RoastingTypes = () => {
+const RoastingTypes = ({ alt }) => {
   return (
     <section className="container  mx-auto mt-4 mb-4 px-4 sm:pb-2 py-4 md:px-24">
       <SectionTitle title="Roasting Types" />
@@ -90,7 +90,7 @@ const RoastingTypes = () => {
             <Image
               className="w-full h-auto animate-fadeIn"
               src="/img_roasting/RoastingType.jpg"
-              alt="Image 1"
+              alt={alt}
               width={500}
               height={500}
               loading="lazy"

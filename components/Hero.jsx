@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-const Hero = ({ HeroImg, HeroPg, Herost }) => {
+const Hero = ({ HeroImg, HeroPg, Herost, alt }) => {
+  console.log(alt);
   return (
     <section id="hero" className="w-full m-auto">
       <div className="relative h-[400px]">
         <Image
           src={HeroImg}
-          alt="Logo"
+          alt={alt}
           layout="fill"
           objectFit="cover"
           className="relative w-full h-auto"

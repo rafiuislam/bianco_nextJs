@@ -2,14 +2,17 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { useDispatch } from "react-redux";
-// import { addToCart } from "../../redux/cartSlice";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 import SlideUp from "../animate/SlideUp";
 import ProductModal from "../ProductModal";
+import { API_URL } from "../../utils/urls";
 
-const ProductCard = ({ product, index }) => {
+const ProductCard = ({ product: { attributes: p, id }, index }) => {
   const [showModal, setShowModal] = useState(false);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+
+  console.log(p.imageSrc?.data?.attributes?.formats?.medium?.url);
 
   return (
     <div>
@@ -19,10 +22,10 @@ const ProductCard = ({ product, index }) => {
         delay={index * 200}
       >
         <div className="group flex flex-col justify-center items-center">
-          <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1 group-hover:opacity-75  ">
+          <div className="w-full overflow-hidden rounded-md flex justify-center items-center aspect-w-1 aspect-h-1">
             <Image
-              src={product.imageSrc}
-              alt={product.imageAlt}
+              src={`${API_URL}${p.imageSrc?.data?.attributes?.formats?.medium?.url}`}
+              alt={p.s_alt}
               className="object-contain object-center"
               width={100}
               height={50}
@@ -31,23 +34,23 @@ const ProductCard = ({ product, index }) => {
 
           <div className="mt-4 text-center">
             <h3 className="text-primary font-semi-bold text-lg font-custom">
-              <Link href={product.href}>
+              <Link href={`/product/${p.href}`}>
                 <span aria-hidden="true" className="absolute inset-0" />
-                {product.name}
+                {p.name}
               </Link>
             </h3>
             <p className="py-2 text-black font-light text-lg font-custom">
-              Tk {product.price}
+              TK {p.price}
             </p>
             <div className="flex justify-center items-center w-60 h-20">
               <p className="text-black font-regular text-sm font-raleway ">
-                {product.desc}
+                {p.desc}
               </p>
             </div>
             <div className="z-10 flex justify-center items-center">
               <button
-                // onClick={() => dispatch(addToCart(product))}
                 onClick={() => setShowModal(true)}
+                // onClick={() => dispatch(addToCart(p))}
                 className="mt-4 font-semibold text-base font-raleway rounded active:bg-primary/80 relative -top-1 -left-1 bg-primary py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-primary before:transition-all before:content-[''] active:top-0 active:left-0 before:active:top-0 before:active:left-0"
               >
                 Add to Cart

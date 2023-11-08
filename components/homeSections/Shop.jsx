@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductItem from "./ProductItem";
-import { products } from "../../data/products";
+// import { products } from "../../data/products";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import SectionTitle from "../SectionTitle";
 
@@ -27,7 +27,7 @@ const responsive = {
 const LeftArrow = ({ onClick }) => (
   <BsChevronCompactLeft
     size={30}
-    className="absolute top-1/3 left-0 max-w-4 cursor-pointer text-secondary"
+    className="absolute top-1/3 left-0 max-w-4 cursor-pointer text-secondary hover:text-primary"
     onClick={onClick}
   />
 );
@@ -35,12 +35,12 @@ const LeftArrow = ({ onClick }) => (
 const RightArrow = ({ onClick }) => (
   <BsChevronCompactRight
     size={30}
-    className="absolute top-1/3 right-0 max-w-4 cursor-pointer text-secondary"
+    className="absolute top-1/3 right-0 max-w-4 cursor-pointer text-secondary hover:text-primary"
     onClick={onClick}
   />
 );
 
-const Shop = () => {
+const Shop = ({ products }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -62,8 +62,8 @@ const Shop = () => {
             customLeftArrow={<LeftArrow />}
             customRightArrow={<RightArrow />}
           >
-            {products.map((product) => (
-              <ProductItem key={product.id} product={product} />
+            {products?.data?.map((product) => (
+              <ProductItem key={product?.id} product={product} />
             ))}
           </Carousel>
         </div>

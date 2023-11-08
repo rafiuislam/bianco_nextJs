@@ -30,6 +30,7 @@ const InStockFilter = ({ products, onFilterChange }) => {
             type="checkbox"
             checked={showInStockOnly}
             onChange={toggleShowInStockOnly}
+            className="cursor-pointer"
           />
           <span className="pl-2">In Stock </span>
           {/* ({"0" + inStockCount}) */}

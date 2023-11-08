@@ -1,14 +1,17 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import FacebookMsg from "./FacebookMsg";
+import SessionProvider from "./SessionProvider";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
-      {children}
-      <FacebookMsg />
-      <Footer />
+      <SessionProvider>
+        <Navbar />
+        {children}
+        <FacebookMsg />
+        <Footer />
+      </SessionProvider>
     </>
   );
 };

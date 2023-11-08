@@ -8,8 +8,8 @@ const sortOptions = [
 const SortComponent = ({ sortBy, setSortBy }) => {
   return (
     <select
-      className="bg-bg-h border outline-none p-1"
-      value={sortBy || "PriceLowToHigh"}
+      className="cursor-pointer bg-bg-h border outline-none p-1"
+      value={sortBy || "PriceHighToLow"}
       onChange={(e) => setSortBy(e.target.value)}
     >
       {sortOptions.map((item, index) => (

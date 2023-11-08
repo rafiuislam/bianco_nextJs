@@ -71,6 +71,10 @@ module.exports = {
           "0%": { transform: "scale(0)" },
           "100%": { transform: "scale(1)" },
         },
+        closeMenu: {
+          "100%": { transform: "scale(1)" },
+          "0%": { transform: "scale(0)" },
+        },
         fadeIn: {
           from: { opacity: 0 },
           to: { opacity: 1 },

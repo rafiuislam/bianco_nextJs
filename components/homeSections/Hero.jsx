@@ -6,7 +6,8 @@ import "react-multi-carousel/lib/styles.css";
 // import { Link } from "react-scroll/modules";
 // import { MdKeyboardArrowDown } from "react-icons/md";
 
-const Hero = () => {
+const Hero = ({ img: { imgSrc }, alt }) => {
+  // console.log(alt);
   const slider = [
     // {
     //   id: 1,
@@ -21,6 +22,7 @@ const Hero = () => {
     {
       id: 3,
       url: "/img_hero/Slider-5.jpg",
+      // url: `http://127.0.0.1:1337${imgSrc.data[0].attributes.formats.large.url}`,
       urlSmall: "/img_hero/Slider-Mobile-5.jpg",
     },
     {
@@ -57,7 +59,7 @@ const Hero = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={300000}
+        autoPlaySpeed={3000}
         centerMode={false}
         className=""
         containerClass="mx-auto"
@@ -110,7 +112,7 @@ const Hero = () => {
               src={isSmallScreen ? slide.urlSmall : slide.url}
               className="w-full object-fill"
               // layout="responsive"
-              alt="Slider Image"
+              alt={alt}
               width={1920}
               height={562}
               priority
@@ -161,37 +163,9 @@ const Hero = () => {
                 </div>
               </div>
             )}
-
-            {/* {slide.id === 1 && (
-              <div className="absolute sm:right-8 right-[-16px] top-1/2 transform -translate-y-1/2 text-right mr-20 flex flex-col justify-center items-end md:items-start">
-                <p className="text-base sm:text-5xl font-montserrat text-primary font-black animate-slideUpCubiBezier">
-                  Bianco Bangladesh
-                </p>
-                <div className="self-end">
-                  <p className="text-primary font-montserrat font-medium text-xs sm:text-2xl font-raleway animate-fadeIn">
-                    Making moments of coffee
-                  </p>
-                </div>
-              </div>
-            )} */}
           </div>
         ))}
       </Carousel>
-      {/* <div className="flex flex-row items-center text-center justify-center pt-2">
-        <Link
-          to="biancaffe"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <MdKeyboardArrowDown
-            size={40}
-            className="animate-bounce fill-primary cursor-pointer"
-          />
-        </Link>
-      </div> */}
     </section>
   );
 };
